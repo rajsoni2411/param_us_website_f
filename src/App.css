@@ -1,38 +1,359 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Faustina:wght@300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-image: url('./assets/images/background_image.png');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ---------------------------------------------- header hover & active page effect -------------------------------------------- */
+
+.text-gradient {
+    background: linear-gradient(233deg, #1FA2FF 0%, #12D8FA 50%, #A6FFCB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hover\:text-gradient:hover {
+    background: linear-gradient(233deg, #1FA2FF 0%, #12D8FA 50%, #A6FFCB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+/* ---------------------------------------------- header hover & active page effect -------------------------------------------- */
+
+/* ----------------------------------------------- footer glow animation --------------------------------------------- */
+
+.div-2-mini {
+    animation: gradient 5s ease-in-out infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes gradient {
+    0% {
+        opacity: 0;
+        background-image: radial-gradient(circle,rgb(0, 239, 243) 30%,rgb(91, 215, 250) 60%, rgba(132, 254, 246, 0.1) 80%,transparent 80%);
+    }
+
+    50% {
+        opacity: 7%;
+        background-image: radial-gradient(circle,rgb(0, 239, 243) 30%,rgb(91, 215, 250) 60%,rgba(132, 254, 246, 0.1) 80%,transparent 80%);
+
+    }
+
+    100% {
+        opacity: 0%;
+        background-image: radial-gradient(circle,rgb(0, 239, 243) 30%,rgb(91, 215, 250) 50%,rgba(132, 254, 246, 0.1) 60%,transparent 80%)
+    }
+}
+
+/* ----------------------------------------------- footer glow animation --------------------------------------------- */
+
+/* ----------------------------------------------- hexagon css ----------------------------------------------- */
+.hex {
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+    transition: box-shadow 2s ease;
+}
+.hex-inner:hover {
+    background-image: linear-gradient(0deg, rgba(6, 192, 254, 0.2), rgba(80, 233, 253, 0.2), rgba(6, 251, 251, 0.2));
+    animation: fadeIn 2s ease-in-out;
+}
+.img-container {
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+}
+.text-container h2 {
+    @apply text-[40px] font-semibold bg-gradient-to-r from-[#1FA2FF] from-[0%] via-45% to-[#A6FFCB] to-[92%] bg-clip-text text-transparent
+}
+
+/* ----------------------------------------------- hexagon css ----------------------------------------------- */
+
+/*  ----------------------------------------------- Privacy Policy css  ----------------------------------------------- */
+.privacy-policy-container p {
+    font-family: 'Faustina';
+}
+
+.privacy-policy-content p {
+    @apply text-lg font-normal text-white font-['Poppins']
+}
+
+/* .privacy-policy-content h2 {
+    @apply text-white text-[50px] font-bold bg-gradient-to-r from-[#1FA2FF] from-[0%] to-[#A6FFCB] to-[20%] text-transparent bg-clip-text
+} */
+
+.privacy-policy-content ul {
+    @apply text-white list-disc flex flex-col gap-5 ps-4 font-normal text-xl font-['Poppins']
+}
+
+/*  ----------------------------------------------- Privacy Policy css  ----------------------------------------------- */
+
+/* ----------------------------------------------- Our Clients css ----------------------------------------------- */
+.our-clients-content h2 {
+    @apply font-['Poppins'] bg-gradient-to-r from-[#1FA2FF] from-[40%] to-[#A6FFCB] to-[50%] text-transparent bg-clip-text font-bold text-[56px] text-center pb-[60px]
+}
+
+.img-shadow-inner:hover {
+    opacity: 0.1;
+}
+
+.img-shadow:hover::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    background: linear-gradient(to right, rgb(31, 162, 255), rgb(18, 216, 250), rgb(166, 255, 203));
+    filter: blur(10px);
+}
+
+.ring-3 {
+    position: absolute;
+    left: -10%;
+    z-index: 0;
+    top: 480px;
+    width: 841px;
+    height: 778px;
+}
+
+.ring-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 3px;
+    /* Border thickness */
+    background: linear-gradient(285deg,
+            #A6FFCB 0%,
+            #12D8FA 50%,
+            #1FA2FF 90%);
+    /* border: 3px solid; */
+
+    /* border-image-source: linear-gradient(90deg, #1FA2FF 0%, #12D8FA 50%, #A6FFCB 100%); */
+    margin-top: 40px;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 1;
+}
+
+/* Image inside the border */
+.ring-3 img {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image scales properly */
+    border-radius: 50%;
+    /* Ensures the image is also rounded */
+}
+
+
+
+
+.ring-2 {
+    position: absolute;
+    left: 53%;
+    z-index: 0;
+    top: 13%;
+    width: 763px;
+    height: 858px;
+    border-radius: 50%;
+    /* Makes it rounded */
+    overflow: hidden;
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) rgb(59 130 246 / 0%) !important;
+    /* Ensures content stays inside the rounded shape */
+}
+
+/* Gradient border */
+.ring-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 5px;
+    /* Border thickness */
+    background: linear-gradient(90deg,
+            rgba(166, 255, 203, 0.5) 0%,
+            rgba(18, 216, 250, 0.5) 50%,
+            rgba(31, 162, 255, 0.5) 100%);
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    /* mask-composite: exclude;  */
+    z-index: 1;
+}
+
+/* Image inside the border */
+.ring-2 img {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image scales properly */
+    border-radius: 50%;
+    /* Ensures the image is also rounded */
+}
+
+.ring-1 {
+    position: absolute;
+    left: 24.5%;
+    z-index: 0;
+    top: 13%;
+    width: 685px;
+    height: 501px;
+    border-radius: 50%;
+    /* Makes it rounded */
+    overflow: hidden;
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) rgb(59 130 246 / 0%) !important;
+    /* Ensures content stays inside the rounded shape */
+}
+
+/* Gradient border */
+.ring-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 2.5px;
+    /* Border thickness */
+    background: linear-gradient(-90deg,
+            rgba(166, 255, 203, 0.5) 0%,
+            rgba(18, 216, 250, 0.5) 50%,
+            rgba(31, 162, 255, 0.5) 0%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 1;
+}
+
+/* Image inside the border */
+.ring-1 img {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image scales properly */
+    border-radius: 50%;
+    /* Ensures the image is also rounded */
+}
+
+.carousel-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #1b76bc;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.border-gradient {
+    border: 3px solid transparent;
+    background: linear-gradient(90deg, #1FA2FF 0%, #12D8FA 50%, #A6FFCB 100%);
+    background-origin: border-box;
+}
+
+.border-gradient::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    padding: 3px;
+    border-radius: 15px;
+    background-color: black;
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+}
+
+.scroller {
+    height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 10em;
+}
+
+.scroller>span {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    background: linear-gradient(90deg, #1FA2FF 0%, #12D8FA 50%, #A6FFCB 100%);
+    -webkit-background-clip: text;
+    animation: slide 7s infinite;
+    animation-delay: 3.5s;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+
+    35% {
+        top: -1.2em;
+    }
+
+    50% {
+        top: -2.4em;
+    }
+
+    75% {
+        top: -3.6em;
+    }
 }
