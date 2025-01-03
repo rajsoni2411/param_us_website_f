@@ -321,3 +321,172 @@ body {
 }
 
 /* ----------------------------------------------- Scroller text hero section css ----------------------------------------------- */
+
+/* ------------------------------------------------ career button ------------------------------------------ */
+
+.diagonal:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 1000%;
+    background: linear-gradient(112deg, rgba(166, 255, 203, 1) 0%, rgba(18, 216, 250, 1) 15%, rgba(31, 162, 255, 1) 40%);
+    z-index: -1;
+    transform-origin: 0% 0%;
+    transform: translateX(calc(20% - 25px)) translateY(10%) rotate(-45deg);
+    transform: translateY(10%) translateX(16%) rotate(-45deg);
+    transition: transform .3s;
+}
+
+.diagonal:hover::after {
+    transform: translateY(10%) translateX(-53px) rotate(-45deg);
+}
+
+.diagonal {
+    position: relative;
+    background-color: black;
+    color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    z-index: 1;
+    padding: 0;
+    width: 155px;
+    height: 62px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.diagonal:hover::after {
+    transform: translateY(10%) translateX(-55px) rotate(-45deg);
+}
+
+.diagonal .old-text,
+.diagonal .new-text {
+    position: absolute;
+    transition: transform 0.7s ease, opacity 0.7s ease;
+    will-change: transform, opacity;
+}
+
+.old-text {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.new-text {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.diagonal:hover .old-text {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.diagonal:hover .new-text {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.button-inner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 1000%;
+    background: linear-gradient(112deg, #A6FFCB 0%, #12D8FA 15%, #1FA2FF 40%);
+    z-index: -1;
+    transform-origin: 0% 0%;
+    transform: translateX(calc(20% - 25px)) translateY(10%) rotate(-45deg);
+    transform: translateY(10%) translateX(16%) rotate(-45deg);
+    transition: transform .3s;
+}
+
+.button-inner:hover::after {
+    transform: translateY(10%) translateX(-53px) rotate(-45deg);
+}
+
+.button-container::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    background: linear-gradient(to right, rgb(31, 162, 255), rgb(18, 216, 250), rgb(166, 255, 203));
+    filter: blur(70px);
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.button-container:hover::after {
+    opacity: 1;
+}
+
+/* ---------------------------------------------- contact us css --------------------------------------- */
+
+.line-1 {
+    position: relative;
+     font-size: 72px;
+    border-right: 2px solid;
+    line-height: 90.72px;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 10%;
+    transform: translateY(-50%);
+    width: 0;
+    display: inline-block;
+    border-image: linear-gradient(to bottom, #38bdf8, #67e8f9, #5eead4);
+    border-image-slice: 1;
+    animation: typewriter 6s steps(15) 1s infinite normal both;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 685px;
+    }
+}
+
+.text-border {
+    -webkit-text-stroke: 2px #FFFFFF80;
+    /* Outline width and color */
+    color: transparent;
+    /* Makes the inner text transparent */
+}
+
+
+.gradient-box {
+    position: absolute;
+    width: 100%;
+    height: 142px;
+    background: linear-gradient(to right, #38bdf8, #67e8f9, #5eead4);
+    animation: colorShift 3s ease-in-out infinite;
+    z-index: -1;
+}
+
+@keyframes colorShift {
+
+    0%,
+    100% {
+        background: linear-gradient(to right, #38bdf8, #67e8f9, #5eead4);
+    }
+
+    50% {
+        background: linear-gradient(to right, #5eead4, #67e8f9, #38bdf8);
+    }
+}

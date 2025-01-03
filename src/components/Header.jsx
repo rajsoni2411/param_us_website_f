@@ -65,7 +65,7 @@ const Header = () => {
                             { name: 'Our Services', path: '/services' },
                             { name: 'Our Clients', path: '/our-clients' },
                             { name: 'Career', path: '/careers' },
-                            { name: 'Contact Us', path: '/contact' },
+                            { name: 'Contact Us', path: '/contact-us' },
                         ].map((link) => (
                             <li key={link.path} className="group">
                                 <Link

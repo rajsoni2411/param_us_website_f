@@ -101,9 +101,9 @@ const Footer = () => {
                                 <hr className="w-1/12 mt-2 border-0 h-1 bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB]" />
                             </p>
                             <p className='text-lg'>Subscribe to our newsletter to get our latest updates</p>
-                            <div className="email-input flex flex-row text-lg">
-                                <input type="text" name="email" id="email" placeholder='Your Email Address' className='p-3 text-black w-[85%] focus:outline-none focus:ring-0  rounded-s' />
-                                <div className="bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB] h-full w-[15%] flex justify-center items-center p-4 relative rounded-e">
+                            <div className="email-input flex flex-row text-base">
+                                <input type="text" name="email" id="email" placeholder='Your Email Address' className='pl-3 text-[#495057] w-[85%] focus:outline-none focus:ring-0  rounded-s' />
+                                <div className="bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB] h-full w-[56px] flex justify-center items-center px-4 py-2 relative rounded-e">
                                     <img src={sendImage} className='w-6 h-6 relative' alt="" />
                                 </div>
                             </div>
