@@ -129,7 +129,16 @@ const HeroSection = () => {
             }
         );
 
+        gsap.to(".play", {
+            scale: 1.2,
+            duration: 1.5,
+            ease: "power1.inOut",
+            yoyo: true,
+            repeat: -1,
+        })
+
     }, []);
+
 
 
     const handleMouseEnter = (e) => {
@@ -221,7 +230,7 @@ const HeroSection = () => {
 
                 </div>
 
-                <div className="flex flex-col w-[55%] gap-9 relative h-full">
+                <div className="flex flex-col w-[55%] gap-9 z-20 relative h-full">
 
                     <div className=" ring-1 ring-zoom-out absolute">
 
@@ -242,11 +251,11 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <div className=" flex w-full justify-center items-center text-white font-faustina gap-20">
+            <div className=" flex w-full justify-center items-center text-white font-faustina gap-20 z-10 relative h-[320px] -mt-[120px] bg-black">
                 <p className="font-semibold text-[80px] leading-[100px]">Our Success Speaks For Itself</p>
                 <div className='flex gap-8 items-center'>
                     <div className='  w-[83px] h-[83px] rounded-[50%] flex justify-center items-center bg-gradient-to-r from-[rgb(31,162,255)] via-[rgb(18,216,250)] to-[rgb(166,255,203)]'>
-                        <img src={tringle} alt='Triangle Image' className=''></img>
+                        <img src={tringle} alt='TriangleImage' className='play'></img>
                     </div>
                     <p className="font-normal text-[32px] leading-[100px]">PLAY NOW</p>
                 </div>
@@ -257,7 +266,7 @@ const HeroSection = () => {
                     <div className='flex flex-row justify-center gap-11'>
 
                         {/* A walk Through us */}
-                        <div className='flex flex-col  w-[984px] h-[579px] justify-between my-32 gap-10'>
+                        <div className='flex flex-col  w-[984px] h-[579px] justify-between mb-32 gap-10'>
                             <p className="bg-gradient-to-r from-[#1FA2FF] from-0% via-[#12D8FA] via-[95%]  to-[#A6FFCB] to[100%]  text-transparent bg-clip-text font-semibold text-6xl/[70.56px] font-faustina pt-20">A Walk Through Us</p>
                             <div className='flex flex-col gap-5 text-white font-faustina font-normal text-xl/[35px] '>
                                 <p>Running strong since 2001</p>
@@ -283,7 +292,7 @@ const HeroSection = () => {
                         </div>
 
                         <div className='flex justify-center'>
-                            <img src={walk} className="h-[831px] w-[780px] object-contain"></img>
+                            <img src={walk} className="h-[831px] w-[780px] object-contain" alt='walk through'/>
                         </div>
                     </div>
                 </div>

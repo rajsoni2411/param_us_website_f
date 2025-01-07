@@ -19,7 +19,7 @@ const Footer = () => {
                 {/* ------------------------------------------- Section-1 includes hr address email phone and hr  ------------------------------------------- */}
 
                 <div className="h-48 flex justify-center items-center relative">
-                    <div className='w-[80%] h-[90%] absolute top-[10px] left-[10%] div-2-mini z-10'></div>
+                    <div className='w-[80%] h-[100%] absolute left-[10%] div-2-mini z-10'></div>
                     <div className="div-1 w-1/5">
                         <hr className="border-0 h-[5px] bg-gradient-to-r from-sky-400 to-cyan-300 my-4 w-11/12 rounded-r" />
                     </div>

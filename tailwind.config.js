@@ -16,6 +16,9 @@ module.exports = {
         "hex5-bg": "url('./assets/hexagons/hex5.jpeg')",
         "hex6-bg": "url('./assets/hexagons/hex6.jpeg')",
       },
+      clipPath: {
+        'bottom-inset': 'inset(0% 0% 20% 0%)'
+      },
       keyframes: {
         "zoom-in": {
           "0%": {
@@ -77,7 +80,7 @@ module.exports = {
         faustina: ['Faustina'],
         raleway: ['Raleway'],
         poppins: ['Poppins'],
-      }
+      },
     },
   },
   plugins: [],

@@ -16,6 +16,7 @@ const WhyChooseParam = () => {
     const hex4Ref = useRef(null);
     const hex5Ref = useRef(null);
     const hex6Ref = useRef(null);
+
     const activeRef = useRef(null);
 
     const [active, setActive] = useState(null)
@@ -25,26 +26,26 @@ const WhyChooseParam = () => {
 
         if (active !== null) {
             gsap.to(hex1Ref.current, {
-                x: '-600', opacity: 1, duration: 1, ease: 'power2.out'
+                x: '-600', opacity: 0, duration: 1, ease: 'power2.out',
             });
 
             gsap.to(hex2Ref.current, {
-                x: '-600', y: '600', opacity: 1, duration: 1, ease: 'power2.out'
+                x: '-600', y: '600', opacity: 0, duration: 1, ease: 'power2.out',
             });
 
             gsap.to(hex3Ref.current, {
-                x: '-600', y: '-600', opacity: 1, duration: 1, ease: 'power2.out'
+                x: '-600', y: '-600', opacity: 0, duration: 1, ease: 'power2.out',
             });
 
             gsap.to(hex4Ref.current, {
-                x: '600', y: '600', opacity: 1, duration: 1, ease: 'power2.out'
+                x: '600', y: '600', opacity: 0, duration: 1, ease: 'power2.out',
             });
 
             gsap.to(hex5Ref.current, {
-                x: '600', y: '600', opacity: 1, duration: 1, ease: 'power2.out'
+                x: '600', y: '600', opacity: 0, duration: 1, ease: 'power2.out',
             });
             gsap.to(hex6Ref.current, {
-                x: '600', opacity: 1, duration: 1, ease: 'power2.out',
+                x: '600', opacity: 0, duration: 1, ease: 'power2.out',
             });
 
             gsap.fromTo(
@@ -56,9 +57,7 @@ const WhyChooseParam = () => {
     }, [active])
 
     const handleCancelClick = () => {
-
         console.log(activeRef.current)
-
         gsap.to(
             activeRef.current,
             {
@@ -104,7 +103,7 @@ const WhyChooseParam = () => {
     const hexRefs = [hex1Ref, hex2Ref, hex3Ref, hex4Ref, hex5Ref, hex6Ref];
     const handleMouseEnter = (index) => {
         gsap.to(hexRefs[index].current, {
-            scale: 1.1,            // scale the element by 2x
+            scale: 1.07,            // scale the element by 1.07x
             duration: 0.5,       // animation duration of 0.5 seconds
             transformOrigin: "bottom left", // scale from the bottom left
         });
@@ -150,8 +149,8 @@ const WhyChooseParam = () => {
         }
     ]
     return (
-        <div className="w-full h-full flex justify-center overflow-hidden">
-            <div className="w-full h-full flex flex-col justify-center items-center gap-[60px]">
+        <div className="w-full flex justify-center overflow-hidden">
+            <div className="w-full flex flex-col justify-center items-center gap-[60px]">
                 {/* Text */}
                 <div className="w-[80%]">
                     <div className="text-center flex flex-col gap-4 animate-zoomIn">
@@ -162,34 +161,46 @@ const WhyChooseParam = () => {
                     </div>
                 </div>
                 {/* Hexagon */}
-                <div className={` ${active !== null && 'h-0'}  w-[90%] h-full`}>
+                <div className={` ${active !== null ? 'h-0' : 'h-full'} w-[90%]`}>
 
                     <div className="flex gap-8 justify-center items-center font-[Faustina] font-semibold text-[32px] relative py-4">
 
                         {/* Hex 1*/}
-                        <div className="w-[325px] h-[525px] flex justify-center items-center" ref={hex1Ref} >
-                            <div className="hex w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={() => handleMouseLeave(0)}>
+                        <div className="w-[325px] h-[525px] flex justify-center items-center relative" ref={hex1Ref}>
 
-                                <div className="hex-inner hex bg-black w-full h-full flex justify-center">
+                            <div className="hex hex-parent group w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={() => handleMouseLeave(0)}>
+
+
+                                <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
+
+                                    {/* inner shadow of hex */}
+                                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
                                     <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
+
                                         <p className='text-white text-center'>Always there for you</p>
+
                                         <div className="w-[43px] h-[43px] cursor-pointer" onClick={() => setActive(0)}>
                                             <img src={plusImage} alt='' />
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            {/* Outer shadow of hex */}
+                            <div className="hex-shadow absolute w-[100%] h-[90%] top-[10px] left-[-15px]"></div>
                         </div>
 
                         {/* Hex 2 */}
-                        <div className="w-[325px] h-[525px] flex justify-center items-center" ref={hex2Ref} >
+                        <div className="w-[325px] h-[525px] flex justify-center items-center relative" ref={hex2Ref} >
 
-                            <div className="hex w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave(1)}>
+                            <div className="hex hex-parent group w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave(1)}>
 
-                                <div className="hex-inner hex bg-black w-full h-full flex justify-center">
+                                <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
+
+                                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
                                     <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
+
                                         <p className='text-white text-center'>Enthusiastic Employees</p>
 
                                         <div className="w-[43px] h-[43px] cursor-pointer" onClick={() => setActive(1)}>
@@ -198,16 +209,21 @@ const WhyChooseParam = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className="hex-shadow absolute w-[100%] h-[90%] top-[10px] left-[-15px]"></div>
+
                         </div>
 
                         {/* Hex 3 and 4 */}
-                        <div className="w-[325px] flex flex-col gap-10">
+                        <div className="w-[325px] flex flex-col gap-10 relative">
                             {/* Hex 3 */}
-                            <div className="hex h-[270px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" ref={hex3Ref} onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={() => handleMouseLeave(2)}>
+                            <div className="hex hex-parent group h-[270px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1 " ref={hex3Ref} onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={() => handleMouseLeave(2)}>
 
-                                <div className="hex-inner hex bg-black w-full h-full flex justify-center">
+                                <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
+
+                                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
                                     <div className="w-[70%] h-full flex flex-col justify-center items-center gap-8">
+
                                         <p className='text-white text-center'>Specialized Customer Service Model</p>
 
                                         <div className="w-[43px] h-[43px] cursor-pointer" onClick={() => setActive(2)}>
@@ -216,10 +232,15 @@ const WhyChooseParam = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* Hex 4 */}
-                            <div className="hex h-[270px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" id='hex-3' ref={hex4Ref} onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={() => handleMouseLeave(3)}>
+                            <div className="hex-shadow absolute w-[100%] h-[50%] top-[10px] left-[-15px]"></div>
 
-                                <div className="hex-inner hex bg-black w-full h-full flex justify-center">
+
+                            {/* Hex 4 */}
+                            <div className="hex hex-parent group h-[270px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" ref={hex4Ref} onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={() => handleMouseLeave(3)} >
+
+                                <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden "  >
+
+                                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
                                     <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
                                         <p className='text-white text-center'>Affordable yet Effective</p>
@@ -230,13 +251,17 @@ const WhyChooseParam = () => {
                                     </div>
                                 </div>
                             </div>
+                            {/* <div className="hex-shadow absolute w-[130%] h-[90%] top-[46%] left-[-55px]"></div> */}
                         </div>
+
                         {/* Hex 5*/}
-                        <div className="w-[325px] h-[525px] flex justify-center items-center" ref={hex5Ref} >
+                        <div className="w-[325px] h-[525px] flex justify-center items-center relative" ref={hex5Ref} >
 
-                            <div className="hex w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" onMouseEnter={() => handleMouseEnter(4)} onMouseLeave={() => handleMouseLeave(4)}>
+                            <div className="hex hex-parent group w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" onMouseEnter={() => handleMouseEnter(4)} onMouseLeave={() => handleMouseLeave(4)}>
 
-                                <div className="hex-inner hex bg-black w-full h-full flex justify-center">
+                                <div className="hex-inner hex bg-black w-full h-full flex justify-center  relative overflow-hidden">
+
+                                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
                                     <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
                                         <p className='text-white text-center'>Innovation at it's best</p>
@@ -247,13 +272,17 @@ const WhyChooseParam = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className="hex-shadow absolute w-[100%] h-[90%] top-[10px] left-[-15px]"></div>
+
                         </div>
                         {/* Hex 6 */}
-                        <div className="w-[325px] h-[525px] flex justify-center items-center" ref={hex6Ref} >
+                        <div className="w-[325px] h-[525px] flex justify-center items-center relative" ref={hex6Ref} >
 
-                            <div className="hex w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" onMouseEnter={() => handleMouseEnter(5)} onMouseLeave={() => handleMouseLeave(5)}>
+                            <div className="hex hex-parent group w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" onMouseEnter={() => handleMouseEnter(5)} onMouseLeave={() => handleMouseLeave(5)}>
 
-                                <div className="hex-inner hex bg-black w-full h-full flex justify-center">
+                                <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
+
+                                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
                                     <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
                                         <p className='text-white text-center'>We bet to be on time</p>
@@ -264,31 +293,33 @@ const WhyChooseParam = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className="hex-shadow absolute w-[100%] h-[90%] top-[10px] left-[-15px]"></div>
+
                         </div>
                     </div>
                 </div>
 
-                {active !== null && (
 
-                    <div className={`hex-detail w-[75%] h-[600px] items-start font-[Faustina] flex flex-row gap-32 `} ref={activeRef}>
-                        <div className="img-text-container w-[95%] flex items-end">
-                            <div className="img-text-inner  w-[100%] flex gap-20">
-                                <img src={hexArray[active]?.img} alt='' className="img-container w-[40%]" />
-                                <div className="text-container flex flex-col items-start gap-10 justify-center text-white w-[55%]">
 
-                                    <h2 className='text-[40px] font-semibold bg-gradient-to-r from-[#1FA2FF] from-[0%] via-45% to-[#A6FFCB] to-[92%] bg-clip-text text-transparent'>{hexArray[active]?.title}</h2>
+                <div className={`hex-detail w-[75%] font-[Faustina] flex flex-row gap-32 ${active !== null ? 'h-[650px]' : 'h-0'}`} ref={activeRef}>
+                    <div className="img-text-container w-[95%] flex items-center">
+                        <div className="img-text-inner h-[60%] w-[100%] flex gap-20">
+                            <img src={hexArray[active]?.img} alt='' className="img-container h-[100%] w-[40%]" />
+                            <div className="text-container flex flex-col items-start gap-10 justify-center text-white w-[55%]">
 
-                                    <p className='text-[20px] leading-[40px] font-normal'>{hexArray[active]?.content}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="w-[5%] mt-20">
-                            <div className="w-[60px] h-[60px] cursor-pointer" >
-                                <img src={crossImage} alt='' onClick={handleCancelClick} />
+                                <h2 className='text-[40px] font-semibold bg-gradient-to-r from-[#1FA2FF] from-[0%] via-45% to-[#A6FFCB] to-[92%] bg-clip-text text-transparent'>{hexArray[active]?.title}</h2>
+
+                                <p className='text-[20px] leading-[40px] font-normal'>{hexArray[active]?.content}</p>
                             </div>
                         </div>
                     </div>
-                )}
+                    <div className="w-[5%]">
+                        <div className="w-[60px] h-[60px] cursor-pointer" >
+                            <img src={crossImage} alt='' onClick={handleCancelClick} />
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     )
