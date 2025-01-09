@@ -145,7 +145,7 @@ const Careers = () => {
         <div className="h-full w-full flex  justify-center items-center">
             <div className="w-[90%] flex flex-col justify-center items-center">
                 {/* Background image of Career */}
-                <div className="bg-ourcareer h-[440px] w-full  bg-center bg-cover object-cover opacity-95 rounded-[110px] flex flex-col justify-center items-center mt-20  font-faustina text-white gap-4 relative mb-[60px]">
+                <div className="bg-careers-bg h-[440px] w-full  bg-center bg-cover object-cover opacity-95 rounded-[110px] flex flex-col justify-center items-center mt-20  font-faustina text-white gap-4 relative mb-[60px]">
                     <div className=" absolute inset-0 bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  opacity-15 rounded-[110px]"></div>
                     <div className='z-50 flex  flex-col justify-center items-center'>
                         <p className="font-bold text-6xl leading-20">Come Work With Us</p>

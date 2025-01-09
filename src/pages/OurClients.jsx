@@ -93,7 +93,6 @@ const OurClients = () => {
                     <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 rounded-[110px]"></div>
                     <p className='font-bold text-[64px]'>Our Clients</p>
                     <p className='font-medium text-[32px]'>"Come Meet Our Clients Turned Into Friends"</p>
-
                 </div>
 
                 <div className="our-clients-content  flex justify-center ">

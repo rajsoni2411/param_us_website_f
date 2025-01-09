@@ -139,7 +139,7 @@ const HeroSection = () => {
 
     }, []);
 
-
+    // ---------------------------------------------------- rolling text button animation ----------------------------------------------------
 
     const handleMouseEnter = (e) => {
         const button = e.currentTarget;
@@ -176,6 +176,8 @@ const HeroSection = () => {
             opacity: 0,
         });
     };
+
+    // ---------------------------------------------------- rolling text button animation ----------------------------------------------------
 
     return (
         <>
@@ -222,10 +224,6 @@ const HeroSection = () => {
                                 </div>
                             </div>
                         </div>
-
-                        {/* <div className="h-[400px] absolute -bottom-[470px] z-10 w-full bg-black">
-
-                      </div> */}
                     </div>
 
                 </div>
@@ -254,7 +252,7 @@ const HeroSection = () => {
             <div className=" flex w-full justify-center items-center text-white font-faustina gap-20 z-10 relative h-[320px] -mt-[120px] bg-black">
                 <p className="font-semibold text-[80px] leading-[100px]">Our Success Speaks For Itself</p>
                 <div className='flex gap-8 items-center'>
-                    <div className='  w-[83px] h-[83px] rounded-[50%] flex justify-center items-center bg-gradient-to-r from-[rgb(31,162,255)] via-[rgb(18,216,250)] to-[rgb(166,255,203)]'>
+                    <div className='play  w-[83px] h-[83px] rounded-[50%] flex justify-center items-center bg-gradient-to-r from-[rgb(31,162,255)] via-[rgb(18,216,250)] to-[rgb(166,255,203)]'>
                         <img src={tringle} alt='TriangleImage' className='play'></img>
                     </div>
                     <p className="font-normal text-[32px] leading-[100px]">PLAY NOW</p>
@@ -262,18 +260,13 @@ const HeroSection = () => {
             </div>
             <div className="w-full h-full flex justify-center">
                 <div className='w-[85%] flex justify-center'>
-
                     <div className='flex flex-row justify-center gap-11'>
-
-                        {/* A walk Through us */}
                         <div className='flex flex-col  w-[984px] h-[579px] justify-between mb-32 gap-10'>
                             <p className="bg-gradient-to-r from-[#1FA2FF] from-0% via-[#12D8FA] via-[95%]  to-[#A6FFCB] to[100%]  text-transparent bg-clip-text font-semibold text-6xl/[70.56px] font-faustina pt-20">A Walk Through Us</p>
                             <div className='flex flex-col gap-5 text-white font-faustina font-normal text-xl/[35px] '>
                                 <p>Running strong since 2001</p>
                                 <p>“At the end of the day, care is a human activity. Technology is not there to replace caregivers; it is there to support them.”</p>
                                 <p>With a similar vision, Param Group of Companies was developed by Mr. Vipul Amin in 2001 to help people reach the best healthcare services around them. Param Group was born with just an idea in mind to use technology to benefit the lives of people. Our vision is what drives us to perform exceptional acts and expand human satisfaction. We, at Param Group, do this by offering groundbreaking services in the education, healthcare, and IT industries. Today, we are a celebrated company around the globe that has successfully crossed decades of excellence.</p>
-
-                                {/* Button */}
                                 <div className="flex justify-center items-center w-[155px] h-[62px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
                                     <button
                                         className="button-main bg-black uppercase w-full h-full rounded-[14px]  font-poppins font-medium text-[20px] diagonal text-xl text-center relative py-[16px] px-[52px]"
@@ -290,9 +283,8 @@ const HeroSection = () => {
                                 </div>
                             </div>
                         </div>
-
                         <div className='flex justify-center'>
-                            <img src={walk} className="h-[831px] w-[780px] object-contain" alt='walk through'/>
+                            <img src={walk} className="h-[831px] w-[780px] object-contain" alt='walk through' />
                         </div>
                     </div>
                 </div>

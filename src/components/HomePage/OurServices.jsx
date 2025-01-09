@@ -44,7 +44,13 @@ const OurServices = () => {
             { opacity: 0.1, duration: 1.2, ease: 'power2.in' },
             { opacity: 1, duration: 1.0, ease: 'power2.in' }
         );
-
+        gsap.to(".play", {
+            scale: 1,
+            duration: 1.5,
+            ease: "power1.inOut",
+            yoyo: true,
+            repeat: -1,
+        })
         const prevActive = prevActiveRef.current; // previous value
 
         // this will update ref for the next render
@@ -281,9 +287,9 @@ const OurServices = () => {
                                             <div className="arrow-container h-full w-[65px] flex items-center mt-[40%]">
                                                 <div className="left-arrow rounded-[6px] bg-gradient-to-r from-[#1FA2FF] from-[30%] via-[#12D8FA] via-50% to-[#A6FFCB] to-100% p-[2px] h-[50px] w-full" >
 
-                                                    <div className="bg-black w-full h-full rounded-[6px] flex justify-center items-center cursor-pointer" onClick={carouselMovePrev}>
+                                                    <div className="bg-black w-full h-full rounded-[6px] flex justify-center items-center cursor-pointer play" onClick={carouselMovePrev}>
 
-                                                        <img src={leftArrow} alt="" className='' />
+                                                        <img src={leftArrow} alt="" className='play' />
                                                     </div>
                                                 </div>
 
@@ -322,9 +328,8 @@ const OurServices = () => {
 
                                             <div className="arrow-container h-full w-[65px] flex items-center mt-[40%] ">
                                                 <div className="right-arrow rounded-[6px] bg-gradient-to-l from-[#1FA2FF] from-[30%] via-[#12D8FA] via-50% to-[#A6FFCB] to-100% p-[2px] h-[50px] w-full" >
-                                                    <div className="bg-black w-full h-full rounded-[6px] flex justify-center items-center cursor-pointer" onClick={carouselMoveNext}>
-
-                                                        <img src={rightArrow} alt="" className='' />
+                                                    <div className="bg-black w-full h-full rounded-[6px] play flex justify-center items-center cursor-pointer" onClick={carouselMoveNext}>
+                                                        <img src={rightArrow} alt="" className='play' />
                                                     </div>
                                                 </div>
                                             </div>

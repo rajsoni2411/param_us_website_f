@@ -15,6 +15,7 @@ module.exports = {
         "hex4-bg": "url('./assets/hexagons/hex4.jpeg')",
         "hex5-bg": "url('./assets/hexagons/hex5.jpeg')",
         "hex6-bg": "url('./assets/hexagons/hex6.jpeg')",
+        "service-bg": "url('./assets/images/services.jpg')"
       },
       clipPath: {
         'bottom-inset': 'inset(0% 0% 20% 0%)'
