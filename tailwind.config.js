@@ -6,7 +6,13 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        1024:'1024px'
+        xs: '320px',
+        640: '640px',
+        miniTablet: '768px',
+        tablet: '1024px',
+        1280: '1280px',
+        1536: '1536px',
+        1920: '1920px',
       },
       backgroundImage: {
         "home-bg": "url('./assets/images/bgclients.jpeg')",
