@@ -9,6 +9,7 @@ const Home = () => {
             <HeroSection />
             <OurServices />
             <WhyChooseParam />
+            
         </>
     )
 }

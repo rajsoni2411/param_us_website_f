@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        1024:'1024px'
+      },
       backgroundImage: {
         "home-bg": "url('./assets/images/bgclients.jpeg')",
         "careers-bg": "url('./assets/careers/careersbg.jpeg')",

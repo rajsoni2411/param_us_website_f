@@ -85,7 +85,7 @@ const OurClients = () => {
 
     return (
         <div className='our-clients w-full flex justify-center'>
-            <div className="our-clients-inner w-[calc(100%_-_200px)]">
+            <div className="our-clients-inner w-[calc(100%_-_60px)] 1024:w-[calc(100%_-_200px)]">
 
                 {/* -------------------------------------------------- Background Image div ----------------------------------------------- */}
 
