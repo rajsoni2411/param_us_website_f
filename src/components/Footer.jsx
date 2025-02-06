@@ -14,7 +14,7 @@ const Footer = () => {
 
     return (
       <>
-        <div className='mt-72'>
+        <div className="mt-72">
           {/* ------------------------------------------- Section-1 includes hr address email phone and hr  ------------------------------------------- */}
           <div className="flex flex-col xs:flex-row md:flex-row justify-center items-center relative md:py-12 lg:py-16">
             <div className="w-[90%] md:w-[80%] h-full absolute left-[5%] md:left-[10%] div-2-mini z-10"></div>
@@ -78,14 +78,14 @@ const Footer = () => {
           {/* ------------------------------------------- Section-2 includes about us, reference, subscribe ---------------------------------------------------------- */}
 
           <div className="font-faustina text-white px-4 sm:px-8 md:px-24 mt-16">
-            <div className="flex flex-col md:flex-row flex-wrap justify-between items-start py-[100px] gap-16 md:gap-0">
-              <div className="about-us w-full md:w-1/3 ">
+            <div className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-between items-start py-[100px] gap-16 md:gap-0 lg:gap-12">
+              <div className="about-us w-full md:w-1/2 lg:w-1/3 flex flex-col justify-between">
                 <div className="about-us-text">
-                  <p className="text-2xl font-semibold ">
+                  <p className="text-2xl font-semibold">
                     About Us
                     <hr className="w-1/12 mt-2 border-0 h-1 bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB]" />
                   </p>
-                  <div className="about-us-content flex flex-col text-lg leading-[30px] gap-4 w-full md:w-[70%] mt-4">
+                  <div className="about-us-content flex flex-col text-lg leading-[30px] gap-4 w-full md:w-[80%] mt-4">
                     <p>
                       "At the end of the day, care is a human activity.
                       Technology is not there to replace caregivers; it is there
@@ -93,7 +93,7 @@ const Footer = () => {
                     </p>
                     <p>
                       With a similar vision, Param Group was developed by Mr.
-                      Vipul Amin
+                      Vipul Amin.
                     </p>
                     <p className="bg-gradient-to-r from-[#1FA2FF] from-[0%] to-[#A6FFCB] to-[10%] text-transparent bg-clip-text">
                       Read More
@@ -101,45 +101,53 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="reference col w-full md:w-1/3">
-                <p className="text-2xl font-semibold">
-                  Reference Link
-                  <hr className="w-1/12 mt-2 border-0 h-1 bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB]" />
-                </p>
-                <div className="reference-content flex col-span-3 mt-4">
-                  <div className="left text-lg flex flex-col  gap-5 leading-9 w-1/2 ">
-                    <p>Our Services</p>
-                    <p>Our Clients</p>
-                    <p>Career</p>
-                    <p>Legal Notice</p>
-                  </div>
-                  <div className="right leading-9 flex flex-col gap-5 w-1/2 text-lg">
-                    <p>
-                      <Link to={"/privacy-policy"}>Privacy Policy</Link>
-                    </p>
-                    <p>About Us</p>
-                    <p>Contact Us</p>
+
+              <div className="right-side w-full md:w-1/2 lg:w-2/3 flex flex-col md:gap-12 lg:flex-row lg:gap-8">
+                <div className="reference w-full lg:w-1/2">
+                  <p className="text-2xl font-semibold">
+                    Reference Link
+                    <hr className="w-1/12 mt-2 border-0 h-1 bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB]" />
+                  </p>
+                  <div className="reference-content flex mt-4">
+                    <div className="left text-lg flex flex-col gap-5 leading-9 w-1/2">
+                      <p>Our Services</p>
+                      <p>Our Clients</p>
+                      <p>Career</p>
+                      <p>Legal Notice</p>
+                    </div>
+                    <div className="right leading-9 flex flex-col gap-5 w-1/2 text-lg">
+                      <p>
+                        <Link to={"/privacy-policy"}>Privacy Policy</Link>
+                      </p>
+                      <p>About Us</p>
+                      <p>Contact Us</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="subscribe w-full md:w-1/3 flex flex-col gap-8">
-                <p className="text-2xl font-semibold">
-                  Subscribe
-                  <hr className="w-1/12 mt-2 border-0 h-1 bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB]" />
-                </p>
-                <p className="text-lg">
-                  Subscribe to our newsletter to get our latest updates
-                </p>
-                <div className="email-input flex flex-row text-base">
-                  <input
-                    type="text"
-                    name="email"
-                    id="email"
-                    placeholder="Your Email Address"
-                    className="pl-3 text-[#495057] w-full focus:outline-none focus:ring-0  rounded-s"
-                  />
-                  <div className="bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB] h-full w-[56px] flex justify-center items-center px-4 py-2 relative rounded-e">
-                    <img src={sendImage} className="w-6 h-6 relative" alt="" />
+
+                <div className="subscribe w-full lg:w-1/2 flex flex-col gap-8">
+                  <p className="text-2xl font-semibold">
+                    Subscribe
+                    <hr className="w-1/12 mt-2 border-0 h-1 bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB]" />
+                  </p>
+                  <p className="text-lg">
+                    Subscribe to our newsletter to get our latest updates
+                  </p>
+                  <div className="email-input flex flex-row text-base">
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email Address"
+                      className="pl-3 text-[#495057] w-full focus:outline-none focus:ring-0 rounded-s"
+                    />
+                    <div className="bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB] h-full w-[56px] flex justify-center items-center px-4 py-2 relative rounded-e">
+                      <img
+                        src={sendImage}
+                        className="w-6 h-6 relative"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

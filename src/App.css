@@ -473,7 +473,7 @@ body {
 
 .line-1 {
     position: relative;
-    font-size: 72px;
+    /* font-size: 72px; */
     border-right: 2px solid;
     line-height: 90.72px;
     white-space: nowrap;
