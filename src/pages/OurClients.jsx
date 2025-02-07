@@ -84,135 +84,149 @@ const OurClients = () => {
 
 
     return (
-        <div className='our-clients w-full flex justify-center'>
-            <div className="our-clients-inner w-[calc(100%_-_60px)] 1024:w-[calc(100%_-_200px)]">
+      <div className="our-clients w-full flex justify-center relative z-50">
+        <div className="our-clients-inner w-[calc(100%_-_60px)] 1024:w-[calc(100%_-_200px)]">
+          {/* -------------------------------------------------- Background Image div ----------------------------------------------- */}
 
-                {/* -------------------------------------------------- Background Image div ----------------------------------------------- */}
+          {/* <div className="font-faustina h-[440px] w-full mt-[60px] bg-home-bg rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
+            <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 rounded-[110px]"></div>
+            <p className="font-bold text-[64px]">Our Clients</p>
+            <p className="font-medium text-[32px]"></p>
+          </div> */}
+          <div className="font-faustina h-auto  xs:h-[200px] lg:h-[440px]  md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-home-bg   xs:rounded-[62px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
+            <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 rounded-[110px] xs:rounded-[62px]"></div>
+            <p className="font-bold text-4xl lg:text-[64px] xs:text-2xl mb-9">
+              Our Clients
+            </p>
+            <p className="font-medium text-xl lg:text-[32px] xs:text-[13px] text-center">
+              "Come Meet Our Clients Turned Into Friends"
+            </p>
+          </div>
+          <div className="our-clients-content   flex justify-center   text-[56px]">
+            <div className="mt-[60px]">
+              <h2 className="xs:text-[40px]  ">Financial</h2>
+              <div className="justify-center flex flex-wrap gap-5 ">
+                {/* --------------------------------------------------- Gradient for image  -------------------------------------------------------- */}
 
-                <div className="font-faustina h-[440px] w-full mt-[60px] bg-home-bg rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
-                    <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 rounded-[110px]"></div>
-                    <p className='font-bold text-[64px]'>Our Clients</p>
-                    <p className='font-medium text-[32px]'>"Come Meet Our Clients Turned Into Friends"</p>
-                </div>
-
-                <div className="our-clients-content  flex justify-center ">
-                    <div className="mt-[60px]">
-                        <h2>Financial</h2>
-                        <div className="justify-center flex flex-wrap gap-5">
-
-                            {/* --------------------------------------------------- Gradient for image  -------------------------------------------------------- */}
-
-                            {imgArray1?.map((itm, i) => {
-                                return (
-                                    <div className="img-shadow relative" key={i}>
-                                        <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
-                                        <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] w-[415px]">
-                                            <div className="bg-white bg-opacity-80 w-full h-full rounded-[15px] p-7 flex items-center justify-center">
-                                                <img src={itm?.img} alt="" className='object-cover' />
-                                            </div>
-                                        </div>
-                                    </div>
-                                )
-                            })}
-
+                {imgArray1?.map((itm, i) => {
+                  return (
+                    <div className=" img-shadow  relative" key={i}>
+                      <div className=" img-shadow-inner rounded-[15px]  absolute w-[100%] h-[100%]   bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0 "></div>
+                      <div className="bg-gradient-to-r  from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[350px]   ">
+                        <div className="bg-white  bg-opacity-80 w-full h-full rounded-[15px] p-7 flex items-center justify-center">
+                          <img src={itm?.img} alt="" className="object-cover" />
                         </div>
-                        <div className="mt-[60px]">
-                            <h2>Insurance</h2>
-                            <div className="justify-center flex flex-wrap gap-5">
-
-                                {/* --------------------------------------------------- Gradient for image  -------------------------------------------------------- */}
-
-                                {imgArray2?.map((itm, i) => {
-                                    return (
-                                        <div className="img-shadow relative" key={i}>
-                                            <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
-                                            <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] w-[415px]">
-                                                <div className="bg-white bg-opacity-80 w-full h-full rounded-[15px] p-7 flex items-center justify-center">
-                                                    <img src={itm?.img} alt="" className='object-cover' />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )
-                                })}
-
-                            </div>
-                        </div>
-                        <div className="mt-[60px]">
-                            <h2>Telecom</h2>
-                            <div className="justify-center flex flex-wrap gap-5">
-
-                                {/* --------------------------------------------------- Gradient for image  -------------------------------------------------------- */}
-
-                                {imgArray3?.map((itm, i) => {
-                                    return (
-                                        <div className="img-shadow relative" key={i}>
-                                            <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
-                                            <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] w-[415px]">
-                                                <div className="bg-white bg-opacity-80 w-full h-full rounded-[15px] p-7 flex items-center justify-center">
-                                                    <img src={itm?.img} alt="" className='object-cover' />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )
-                                })}
-                            </div>
-                        </div>
-                        <div className="mt-[60px]">
-                            <h2>Pharmaceutical</h2>
-                            <div className="justify-center flex flex-wrap gap-5">
-
-                                {/* --------------------------------------------------- Gradient for image  -------------------------------------------------------- */}
-
-                                {imgArray4?.map((itm, i) => {
-                                    return (
-                                        <div className="img-shadow relative" key={i}>
-                                            <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
-                                            <div className="bg-gradient-to-l from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] w-[415px]">
-                                                <div className="bg-opacity-80  bg-white w-full h-full rounded-[15px] p-7 flex items-center justify-center">
-                                                    <img src={itm?.img} alt="" className='object-cover' />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )
-                                })}
-                            </div>
-                        </div>
-                        <div className="others mt-[60px]">
-                            <h2>Others</h2>
-                            <div className="justify-center flex flex-wrap gap-5">
-
-                                {/* --------------------------------------------------- Gradient for image  -------------------------------------------------------- */}
-
-                                {imgArray5?.map((itm, i) => {
-                                    return (
-                                        <div className="img-shadow relative" key={i}>
-                                            <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
-                                            <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] w-[415px]">
-
-                                                <div className="bg-white bg-opacity-80 w-full h-full rounded-[15px] p-7 flex items-center justify-center">
-                                                    <img src={itm?.img} alt="" className='object-cover' />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )
-                                })}
-
-                                <div className="img-shadow relative">
-                                    <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
-                                    <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] w-[415px]">
-
-                                        <div className="bg-white text-black font-['Poppins'] text-[40px] font-bold flex justify-center items-center bg-opacity-80 w-full h-full rounded-[15px] ">
-                                            <p>& Many More</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      </div>
                     </div>
+                  );
+                })}
+              </div>
+              <div className="mt-[60px]">
+                <h2 className="xs:text-[40px]  ">Insurance</h2>
+                <div className="justify-center flex flex-wrap gap-5">
+                  {/* --------------------------------------------------- Gradient for image  -------------------------------------------------------- */}
+
+                  {imgArray2?.map((itm, i) => {
+                    return (
+                      <div className="img-shadow relative" key={i}>
+                        <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
+                        <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[350px]  ">
+                          <div className="bg-white bg-opacity-80 w-full h-full rounded-[15px] p-7 flex items-center justify-center">
+                            <img
+                              src={itm?.img}
+                              alt=""
+                              className="object-cover"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
+              </div>
+              <div className="mt-[60px]">
+                <h2 className="xs:text-[40px]  ">Telecom</h2>
+                <div className="justify-center flex flex-wrap gap-5">
+                  {/* --------------------------------------------------- Gradient for image  -------------------------------------------------------- */}
+
+                  {imgArray3?.map((itm, i) => {
+                    return (
+                      <div className="img-shadow relative" key={i}>
+                        <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
+                        <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[350px]  ">
+                          <div className="bg-white bg-opacity-80 w-full h-full rounded-[15px] p-7 flex items-center justify-center">
+                            <img
+                              src={itm?.img}
+                              alt=""
+                              className="object-cover"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+              <div className="mt-[60px]">
+                <h2 className="xs:text-[40px]  ">Pharmaceutical</h2>
+                <div className="justify-center flex flex-wrap gap-5">
+                  {/* --------------------------------------------------- Gradient for image  -------------------------------------------------------- */}
+
+                  {imgArray4?.map((itm, i) => {
+                    return (
+                      <div className="img-shadow relative" key={i}>
+                        <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
+                        <div className="bg-gradient-to-l from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[350px]  ">
+                          <div className="bg-opacity-80  bg-white w-full h-full rounded-[15px] p-7 flex items-center justify-center">
+                            <img
+                              src={itm?.img}
+                              alt=""
+                              className="object-cover"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+              <div className="others mt-[60px]">
+                <h2 className="xs:text-[40px]  ">Others</h2>
+                <div className="justify-center flex flex-wrap gap-5">
+                  {/* --------------------------------------------------- Gradient for image  -------------------------------------------------------- */}
+
+                  {imgArray5?.map((itm, i) => {
+                    return (
+                      <div className="img-shadow relative" key={i}>
+                        <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
+                        <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[350px]  ">
+                          <div className="bg-white bg-opacity-80 w-full h-full rounded-[15px] p-7 flex items-center justify-center">
+                            <img
+                              src={itm?.img}
+                              alt=""
+                              className="object-cover"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+
+                  <div className="img-shadow relative">
+                    <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
+                    <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[350px]  ">
+                      <div className="bg-white text-black font-['Poppins'] text-[40px] font-bold flex justify-center items-center bg-opacity-80 w-full h-full rounded-[15px] ">
+                        <p>& Many More</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div >
-    )
+          </div>
+        </div>
+      </div>
+    );
 }
 
 export default OurClients

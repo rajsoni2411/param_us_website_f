@@ -149,179 +149,251 @@ const WhyChooseParam = () => {
         }
     ]
     return (
-        <div className="w-full flex justify-center overflow-hidden">
-            <div className="w-full flex flex-col justify-center items-center gap-[60px]">
-                {/* Text */}
-                <div className="w-[80%]">
-                    <div className="text-center flex flex-col gap-4 animate-zoomIn">
-                        <h2 className='bg-gradient-to-r from-[#1FA2FF] from-[40%] via-cyan-300 via-60% to-[#A6FFCB] to-70% text-transparent bg-clip-text font-semibold text-[56px] font-[Faustina]'>Why Choose Param</h2>
+      <div className="w-full flex justify-center overflow-hidden ">
+        <div className="w-full flex flex-col justify-center items-center lg:gap-[60px]">
+          {/* Text */}
+          <div className="w-[80%]">
+            <div className="text-center flex flex-col gap-4 animate-zoomIn">
+              <h2 className="bg-gradient-to-r from-[#1FA2FF] from-[40%] via-cyan-300 via-60% to-[#A6FFCB] to-70% text-transparent bg-clip-text font-semibold text-[56px] font-[Faustina]">
+                Why Choose Param
+              </h2>
 
-                        <p className='text-[18px] font-normal text-white font-[Poppins] leading-[35px]'>What Do Opportunities Say To Businesses With No Technology? They Say Better Luck Next Time. To Make Sure You Jump On Every Opportunity Available, Param Group Of Companies Offers You Top-Notch Engineering Solutions With Brainstorming Ideas To Shift You Closer To Your Targets.</p>
-
-                    </div>
-                </div>
-                {/* Hexagon */}
-                <div className={` ${active !== null ? 'h-0' : 'h-full'} w-[90%]`}>
-
-                    <div className="flex gap-8 justify-center items-center font-[Faustina] font-semibold text-[32px] relative py-4">
-
-                        {/* Hex 1*/}
-                        <div className="w-[325px] h-[525px] flex justify-center items-center relative" ref={hex1Ref}>
-
-                            <div className="hex hex-parent group w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={() => handleMouseLeave(0)}>
-
-
-                                <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
-
-                                    {/* inner shadow of hex */}
-                                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
-
-                                    <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
-
-                                        <p className='text-white text-center'>Always there for you</p>
-
-                                        <div className="w-[43px] h-[43px] cursor-pointer" onClick={() => setActive(0)}>
-                                            <img src={plusImage} alt='' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Outer shadow of hex */}
-                            <div className="hex-shadow absolute w-[100%] h-[90%] top-[10px] left-[-15px]"></div>
-                        </div>
-
-                        {/* Hex 2 */}
-                        <div className="w-[325px] h-[525px] flex justify-center items-center relative" ref={hex2Ref} >
-
-                            <div className="hex hex-parent group w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave(1)}>
-
-                                <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
-
-                                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
-
-                                    <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
-
-                                        <p className='text-white text-center'>Enthusiastic Employees</p>
-
-                                        <div className="w-[43px] h-[43px] cursor-pointer" onClick={() => setActive(1)}>
-                                            <img src={plusImage} alt='' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="hex-shadow absolute w-[100%] h-[90%] top-[10px] left-[-15px]"></div>
-
-                        </div>
-
-                        {/* Hex 3 and 4 */}
-                        <div className="w-[325px] flex flex-col gap-10 relative">
-                            {/* Hex 3 */}
-                            <div className="hex hex-parent group h-[270px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1 " ref={hex3Ref} onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={() => handleMouseLeave(2)}>
-
-                                <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
-
-                                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
-
-                                    <div className="w-[70%] h-full flex flex-col justify-center items-center gap-8">
-
-                                        <p className='text-white text-center'>Specialized Customer Service Model</p>
-
-                                        <div className="w-[43px] h-[43px] cursor-pointer" onClick={() => setActive(2)}>
-                                            <img src={plusImage} alt='' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="hex-shadow absolute w-[100%] h-[50%] top-[10px] left-[-15px]"></div>
-
-
-                            {/* Hex 4 */}
-                            <div className="hex hex-parent group h-[270px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" ref={hex4Ref} onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={() => handleMouseLeave(3)} >
-
-                                <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden "  >
-
-                                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
-
-                                    <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
-                                        <p className='text-white text-center'>Affordable yet Effective</p>
-
-                                        <div className="w-[43px] h-[43px] cursor-pointer" onClick={() => setActive(3)}>
-                                            <img src={plusImage} alt='' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* <div className="hex-shadow absolute w-[130%] h-[90%] top-[46%] left-[-55px]"></div> */}
-                        </div>
-
-                        {/* Hex 5*/}
-                        <div className="w-[325px] h-[525px] flex justify-center items-center relative" ref={hex5Ref} >
-
-                            <div className="hex hex-parent group w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" onMouseEnter={() => handleMouseEnter(4)} onMouseLeave={() => handleMouseLeave(4)}>
-
-                                <div className="hex-inner hex bg-black w-full h-full flex justify-center  relative overflow-hidden">
-
-                                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
-
-                                    <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
-                                        <p className='text-white text-center'>Innovation at it's best</p>
-
-                                        <div className="w-[43px] h-[43px] cursor-pointer" onClick={() => setActive(4)}>
-                                            <img src={plusImage} alt='' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="hex-shadow absolute w-[100%] h-[90%] top-[10px] left-[-15px]"></div>
-
-                        </div>
-                        {/* Hex 6 */}
-                        <div className="w-[325px] h-[525px] flex justify-center items-center relative" ref={hex6Ref} >
-
-                            <div className="hex hex-parent group w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1" onMouseEnter={() => handleMouseEnter(5)} onMouseLeave={() => handleMouseLeave(5)}>
-
-                                <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
-
-                                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
-
-                                    <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
-                                        <p className='text-white text-center'>We bet to be on time</p>
-
-                                        <div className="w-[43px] h-[43px] cursor-pointer" onClick={() => setActive(5)}>
-                                            <img src={plusImage} alt='' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="hex-shadow absolute w-[100%] h-[90%] top-[10px] left-[-15px]"></div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div className={`hex-detail w-[75%] font-[Faustina] flex flex-row gap-32 ${active !== null ? 'h-[650px]' : 'h-0'}`} ref={activeRef}>
-                    <div className="img-text-container w-[95%] flex items-center">
-                        <div className="img-text-inner h-[60%] w-[100%] flex gap-20">
-                            <img src={hexArray[active]?.img} alt='' className="img-container h-[100%] w-[40%]" />
-                            <div className="text-container flex flex-col items-start gap-10 justify-center text-white w-[55%]">
-
-                                <h2 className='text-[40px] font-semibold bg-gradient-to-r from-[#1FA2FF] from-[0%] via-45% to-[#A6FFCB] to-[92%] bg-clip-text text-transparent'>{hexArray[active]?.title}</h2>
-
-                                <p className='text-[20px] leading-[40px] font-normal'>{hexArray[active]?.content}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-[5%]">
-                        <div className="w-[60px] h-[60px] cursor-pointer" >
-                            <img src={crossImage} alt='' onClick={handleCancelClick} />
-                        </div>
-                    </div>
-                </div>
-
+              <p className="text-[18px] font-normal text-white font-[Poppins] leading-[35px]">
+                What Do Opportunities Say To Businesses With No Technology? They
+                Say Better Luck Next Time. To Make Sure You Jump On Every
+                Opportunity Available, Param Group Of Companies Offers You
+                Top-Notch Engineering Solutions With Brainstorming Ideas To
+                Shift You Closer To Your Targets.
+              </p>
             </div>
+          </div>
+          {/* Hexagon */}
+          <div className={` ${active !== null ? "h-0" : "h-full"} w-[90%] `}>
+            <div className="flex  lg:flex-row xl:flex-row  xs:flex-col gap-8 justify-center items-center font-[Faustina] font-semibold text-[32px] relative lg:py-4">
+              {/* Hex 1*/}
+              <div
+                className="w-[325px] h-[525px]   lg:mb-0 xs:-mb-64 flex justify-center items-center relative"
+                ref={hex1Ref}
+              >
+                <div
+                  className="hex hex-parent group w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                  onMouseEnter={() => handleMouseEnter(0)}
+                  onMouseLeave={() => handleMouseLeave(0)}
+                >
+                  <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
+                    {/* inner shadow of hex */}
+                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
+
+                    <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
+                      <p className="text-white text-center">
+                        Always there for you
+                      </p>
+
+                      <div
+                        className="w-[43px] h-[43px] cursor-pointer"
+                        onClick={() => setActive(0)}
+                      >
+                        <img src={plusImage} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* Outer shadow of hex */}
+                <div className="hex-shadow absolute w-[100%] h-[90%] top-[10px] left-[-15px]"></div>
+              </div>
+
+              {/* Hex 2 */}
+              <div
+                className="w-[325px] h-[525px]  lg:mb-0 xs:-mb-32 flex justify-center items-center relative"
+                ref={hex2Ref}
+              >
+                <div
+                  className="hex hex-parent group w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                  onMouseEnter={() => handleMouseEnter(1)}
+                  onMouseLeave={() => handleMouseLeave(1)}
+                >
+                  <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
+                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
+
+                    <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
+                      <p className="text-white text-center">
+                        Enthusiastic Employees
+                      </p>
+
+                      <div
+                        className="w-[43px] h-[43px] cursor-pointer"
+                        onClick={() => setActive(1)}
+                      >
+                        <img src={plusImage} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="hex-shadow absolute w-[100%] h-[90%] top-[10px] left-[-15px]"></div>
+              </div>
+
+              {/* Hex 3 and 4 */}
+              <div className="w-[325px]  flex flex-col lg:gap-10 xs:gap-32 relative">
+                {/* Hex 3 */}
+                <div
+                  className="hex hex-parent group h-[270px]   lg:mb-0 xs:-mb-24 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1 "
+                  ref={hex3Ref}
+                  onMouseEnter={() => handleMouseEnter(2)}
+                  onMouseLeave={() => handleMouseLeave(2)}
+                >
+                  <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
+                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
+
+                    <div className="w-[70%] h-full flex flex-col justify-center items-center gap-8">
+                      <p className="text-white text-center">
+                        Specialized Customer Service Model
+                      </p>
+
+                      <div
+                        className="w-[43px] h-[43px] cursor-pointer"
+                        onClick={() => setActive(2)}
+                      >
+                        <img src={plusImage} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="hex-shadow absolute w-[100%] h-[50%] top-[10px] left-[-15px]"></div>
+
+                {/* Hex 4 */}
+                <div
+                  className="hex hex-parent group  lg:mb-0 xs:-mb-32 h-[270px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                  ref={hex4Ref}
+                  onMouseEnter={() => handleMouseEnter(3)}
+                  onMouseLeave={() => handleMouseLeave(3)}
+                >
+                  <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden ">
+                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
+
+                    <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
+                      <p className="text-white text-center">
+                        Affordable yet Effective
+                      </p>
+
+                      <div
+                        className="w-[43px] h-[43px] cursor-pointer"
+                        onClick={() => setActive(3)}
+                      >
+                        <img src={plusImage} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="hex-shadow absolute w-[130%] h-[90%] top-[46%] left-[-55px]"></div> */}
+              </div>
+
+              {/* Hex 5*/}
+              <div
+                className="w-[325px] h-[525px]   lg:mb-0 xs:-mb-64 flex justify-center items-center relative"
+                ref={hex5Ref}
+              >
+                <div
+                  className="hex hex-parent group w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                  onMouseEnter={() => handleMouseEnter(4)}
+                  onMouseLeave={() => handleMouseLeave(4)}
+                >
+                  <div className="hex-inner hex bg-black w-full h-full flex justify-center  relative overflow-hidden">
+                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
+
+                    <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
+                      <p className="text-white text-center">
+                        Innovation at it's best
+                      </p>
+
+                      <div
+                        className="w-[43px] h-[43px] cursor-pointer"
+                        onClick={() => setActive(4)}
+                      >
+                        <img src={plusImage} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="hex-shadow absolute w-[100%] h-[90%] top-[10px] left-[-15px]"></div>
+              </div>
+              {/* Hex 6 */}
+              <div
+                className="w-[325px] h-[525px]  flex justify-center items-center relative"
+                ref={hex6Ref}
+              >
+                <div
+                  className="hex hex-parent group w-full h-1/2 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                  onMouseEnter={() => handleMouseEnter(5)}
+                  onMouseLeave={() => handleMouseLeave(5)}
+                >
+                  <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
+                    <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
+
+                    <div className="w-[60%] h-full flex flex-col  justify-center items-center gap-8">
+                      <p className="text-white text-center">
+                        We bet to be on time
+                      </p>
+
+                      <div
+                        className="w-[43px] h-[43px] cursor-pointer"
+                        onClick={() => setActive(5)}
+                      >
+                        <img src={plusImage} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="hex-shadow absolute w-[100%] h-[90%] top-[10px] left-[-15px]"></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className={`hex-detail lg:w-[75%] xs:w-[100%]  xs:flex-col xl:flex-row   font-[Faustina] flex lg:flex-row gap-32 ${
+              active !== null ? "h-auto" : "h-0"
+            }`}
+            ref={activeRef}
+          >
+            <div className="img-text-container w-[95%] flex  items-center ">
+              <div className="img-text-inner h-full justify-center items-center w-[100%] flex lg:flex-row xl:flex-row xs:flex-col gap-20">
+                <div className="img-text-inner relative h-full w-[100%] flex lg:flex-col xl:flex-col xs:flex-row sm:flex-row md:flex-row items-center gap-5 left-[12%]">
+                  {/* Left Side - Image (80%) */}
+                  <div className="w-[80%] flex justify-start items-center relative">
+                    <img
+                      src={hexArray[active]?.img}
+                      alt=""
+                      className="img-container h-auto w-full "
+                    />
+
+                    {/* Close Button - Positioned at the Top-Right */}
+                    <img
+                      src={crossImage}
+                      alt="Close"
+                      className="w-[60px] h-[60px] cursor-pointer absolute top-4 right-[-12%] lg:hidden xl:hidden"
+                      onClick={handleCancelClick}
+                    />
+                  </div>
+                </div>
+
+                <div className="text-container flex flex-col items-center justify-center gap-10 text-center text-white lg:w-[55%] xs:w-[85%] w-full">
+                  <h2 className="text-[40px] font-semibold bg-gradient-to-r from-[#1FA2FF] from-[0%] via-45% to-[#A6FFCB] to-[92%] bg-clip-text text-transparent">
+                    {hexArray[active]?.title}
+                  </h2>
+
+                  <p className="text-[20px] leading-[30px] font-normal">
+                    {hexArray[active]?.content}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-[5%]">
+              <div className="hidden lg:block xl:block w-[60px] h-[60px] cursor-pointer">
+                <img src={crossImage} alt="" onClick={handleCancelClick} />
+              </div>
+            </div>
+          </div>
         </div>
-    )
+      </div>
+    );
 }
 export default WhyChooseParam

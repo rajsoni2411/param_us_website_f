@@ -10,7 +10,7 @@ import paramLogo from '../assets/navbar/param-logo 1.svg';
 import xImage from '../assets/navbar/x.svg';
 import menuLine from '../assets/navbar/menu-line.svg';
 import closeButton from '../assets/navbar/close-button.svg';
-import { FiMenu, FiX } from 'react-icons/fi';
+// import { FiMenu, FiX } from 'react-icons/fi';
 // ------------------------------------------------------ All Imports ----------------------------------------------------
 
 const Header = () => {
@@ -35,7 +35,7 @@ const Header = () => {
 
 
     return (
-      <header ref={headerRef} className="font-poppins px-6 lg:px-16 py-4">
+      <header ref={headerRef} className="font-poppins px-6 lg:px-16 py-4 z-50">
         {/*  -------------------------------------------  Mini Navbar  -------------------------------------------  */}
 
         <div className="hidden md:flex justify-end items-center text-xs sm:text-sm md:text-base font-medium text-white gap-2 sm:gap-4 md:gap-6 lg:gap-10">
@@ -125,7 +125,7 @@ const Header = () => {
           </nav>
 
           <div
-            className={`lg:hidden fixed top-0 left-0 w-full  bg-white text-black flex flex-col items-center gap-6 pt-20 transition-transform duration-300 ${
+            className={`lg:hidden  fixed top-0 left-0 w-full  bg-white text-black flex flex-col items-center gap-6 pt-20 transition-transform  duration-300 ${
               isOpen ? "translate-x-0" : "-translate-x-full"
             }`}
           >
@@ -135,7 +135,7 @@ const Header = () => {
             >
               <img src={closeButton} className="w-8 h-8" alt="close icon" />
             </button>
-            <ul className="flex flex-col gap-6 text-lg font-semibold bg-white w-full z-50 h-full ">
+            <ul className="flex flex-col gap-6 text-lg font-semibold bg-white w-full z-50 h-full static ">
               {[
                 { name: "Home", path: "/" },
                 { name: "About Us", path: "/aboutus" },

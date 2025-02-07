@@ -101,73 +101,131 @@ const OurServices = () => {
 
     // ---------------------------------------------------- rolling text button animation ----------------------------------------------------
     return (
-        <div className="our-clients bg-container  w-full flex justify-center">
-            <div className="our-clients-inner w-[calc(100%_-_200px)]">
+      <div className="our-clients bg-container  w-full flex justify-center overflow-x-hidden relative z-50">
+        <div className="our-clients-inner w-[calc(100%_-_80px)] ">
+          {/* -------------------------------------------------- Background Image div ----------------------------------------------- */}
 
-                {/* -------------------------------------------------- Background Image div ----------------------------------------------- */}
-
-                <div className="font-faustina  h-[440px] w-full mt-[60px] bg-service-bg rounded-[110px] text-white flex flex-col justify-center items-center  relative bg-cover bg-center bg-no-repeat">
-                    <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#A6FFCB66] from-[0%] via-30% to-[#12d8fa] to-[90%] opacity-20 rounded-[110px]"></div>
-                    <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#00000080] from-[0%] via-25% to-[00000087] opacity-90 rounded-[110px]"></div>
-                    <p className="font-bold text-[64px] z-10 bg-container">Our Core Services</p>
-                    <p className="font-medium text-[32px] bg-container w-10/12 text-center z-10">
-                        "Explore the world of technology with us. Come find your hidden competencies by kick-starting your business with new insights"
-                    </p>
-                </div>
-                <div className="w-full flex flex-wrap justify-between mt-20">
-                    {hexagonDetails.map((hex, index) => (
-                        <div
-                            key={index}
-                            className="w-[14%] h-[62px] flex justify-center items-center relative cursor-pointer"
-                            onClick={() => handleHexagonClick(index)}
-                        >
-                            <div
-                                className={`hex hex-parent group w-full p-1 bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] via-[90%] to-[#1FA2FF] to-[180%]`}                            >
-                                <div className={`hex bg-black ${active === index
-                                    ? "bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] via-[90%] to-[#1FA2FF] to-[180%]"
-                                    : "bg-black"
-                                    } w-full p-4 h-full flex justify-center relative overflow-hidden`}>
-                                    <div className="w-[60%] h-full flex flex-col justify-center items-center">
-                                        <p className={`text-center font-faustina text-2xl font-bold ${active === index ? "text-black" : "text-white"}`}>
-                                            {hex.title}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-                <div className='w-full flex flex-col items-center  justify-center mt-24'>
-                    <p className='uppercase text-2xl font-bold font-faustina text-white'>{hexagonDetails[active].title}</p>
-                    <p className='text-[56px] font-semibold text-head-gradient font-faustina'>{hexagonDetails[active].mainTitle}</p>
-                    <p className='text-xl font-faustina text-white'>{hexagonDetails[active].highlight}</p>
-                    <div className='w-full flex mt-24 gap-28'>
-                        <div className='w-1/2 flex flex-col gap-8'>
-                            {hexagonDetails[active]?.p1 && <p className='font-poppins text-2xl tracking-[1px] font-normal  text-white'>{hexagonDetails[active]?.p1}</p>}
-                            {hexagonDetails[active]?.p2 && <p className='font-poppins text-2xl tracking-[1px]  text-white'>{hexagonDetails[active]?.p2}</p>}
-                            <p className='font-poppins text-2xl tracking-[1px] text-white'>For More Information</p>
-                            <div className="flex justify-center  items-center w-[220px] h-[62px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
-                                <button className="button-main bg-black uppercase w-full h-full rounded-[14px]  font-poppins font-medium diagonal text-xl text-center relative py-[20px] !px-[60px]"
-                                    onMouseEnter={handleMouseEnter}
-                                    onMouseLeave={handleMouseLeave}>
-                                    <span className="btn1 absolute transition-all top-0 left-0 w-full h-full flex justify-center items-center text-white">
-                                        VISIT OUR WEBSITE
-                                    </span>
-                                    <span className="btn2 absolute tranistion-all opacity-0 top-[50px] left-0 w-full h-full flex justify-center items-center text-white">
-                                        VISIT OUR WEBSITE
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                        <div className='w-1/2 flex justify-center relative'>
-                            <img src={small} className='w-[138px] absolute left-48 top-10 -z-10 hexagon' />
-                            <img src={hexagonDetails[active].image} className='zoom-out' />
-                            <img src={big} className='w-[478px] h-[470px] absolute right-11 bottom-0 -z-10 hexagon' />
-                        </div>
+          <div className="font-faustina h-auto  xs:h-[200px] lg:h-[440px] md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-service-bg  xs:rounded-[62px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
+            <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 rounded-[110px] xs:rounded-[62px]"></div>
+            <p className="font-bold text-4xl lg:text-[64px] xs:text-2xl mb-9">
+              Our Core Services
+            </p>
+            <p className="font-medium text-xl lg:text-[32px] xs:text-[13px] text-center">
+              "Explore the world of technology with us. Come find your hidden
+              competencies by kick-starting your business with new insights"
+            </p>
+          </div>
+          <div className="w-auto mt-24  overflow-x-auto gray-100">
+            <div className="p-8 overflow-x-auto scrollbar-hide flex ">
+              {hexagonDetails.map((hex, index) => (
+                <div
+                  key={index}
+                  className="flex justify-center items-center relative cursor-pointer mx-2 "
+                  onClick={() => handleHexagonClick(index)}
+                  style={{ maxWidth: "300px", minHeight: "30px" }}
+                >
+                  <div
+                    className={`hex hex-parent group min-w-[150px]  px-2 py-1 bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] via-[90%] to-[#1FA2FF] to-[180%]`}
+                  >
+                    <div
+                      className={`hex bg-black ${
+                        active === index
+                          ? "bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] via-[90%] to-[#1FA2FF] to-[180%]"
+                          : "bg-black"
+                      } w-full h-full flex justify-center items-center relative`}
+                    >
+                      <p
+                        className={`text-center font-faustina text-lg font-bold p-3 whitespace-nowrap px-10 ${
+                          active === index ? "text-black" : "text-white"
+                        }`}
+                      >
+                        {hex.title}
+                      </p>
                     </div>
+                  </div>
                 </div>
+              ))}
             </div>
+          </div>
+          <div className="w-full flex flex-col items-center  justify-center mt-24">
+            <p className="uppercase text-2xl font-bold font-faustina text-white">
+              {hexagonDetails[active].title}
+            </p>
+            <p className="text-[56px] font-semibold text-head-gradient font-faustina">
+              {hexagonDetails[active].mainTitle}
+            </p>
+            <p className="text-xl font-faustina text-white">
+              {hexagonDetails[active].highlight}
+            </p>
+            <div className="w-full flex lg:flex-row justify-center items-center  xs:flex-col-reverse mt-24 lg:gap-28">
+              <div className="w-1/2 xs:w-full flex flex-col    gap-8">
+                {hexagonDetails[active]?.p1 && (
+                  <p className="font-poppins text-2xl tracking-[1px] font-normal  text-white">
+                    {hexagonDetails[active]?.p1}
+                  </p>
+                )}
+                {hexagonDetails[active]?.p2 && (
+                  <p className="font-poppins text-2xl tracking-[1px]  text-white">
+                    {hexagonDetails[active]?.p2}
+                  </p>
+                )}
+                <p className="font-poppins text-2xl tracking-[1px] text-white">
+                  For More Information
+                </p>
+                <div className="flex justify-center  items-center w-[220px] h-[62px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
+                  <button
+                    className="button-main bg-black uppercase w-full h-full rounded-[14px]  font-poppins font-medium diagonal text-xl text-center relative py-[20px] !px-[60px]"
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <span className="btn1 absolute transition-all top-0 left-0 w-full h-full flex justify-center items-center text-white">
+                      VISIT OUR WEBSITE
+                    </span>
+                    <span className="btn2 absolute tranistion-all opacity-0 top-[50px] left-0 w-full h-full flex justify-center items-center text-white">
+                      VISIT OUR WEBSITE
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div className="w-1/2 xs:w-[80%] flex items-center justify-center relative">
+                {/* Small Hexagon */}
+                <img
+                  src={small}
+                  alt="small hexagon"
+                  className="absolute 
+               xl:left-[2%] lg:left-[9%] md:left-[7%] sm:left-[2%] xs:left-[7%]
+               xl:w-[30%] lg:w-[28%] md:w-[22%] sm:w-[42%] xs:w-[31%]
+               xl:top-[12%] lg:top-[10%] md:top-[11%] sm:top-[7%] xs:top-[8%] 
+               -z-10 hexagon"
+                />
+
+                {/* Main Center Hexagon */}
+                <img
+                  src={hexagonDetails[active].image}
+                  alt="center hexagon"
+                  className="zoom-out flex items-center justify-center 
+               w-full "
+                />
+
+                {/* Big Hexagon */}
+                <img
+                  src={big}
+                  alt="big hexagon"
+                  className="absolute 
+               xl:w-[82%] xl:h-[78%] 
+               lg:w-[66%] lg:h-[75%] 
+               md:w-[64%] md:h-[65%] 
+               sm:w-[75%] sm:h-[77%] 
+               xs:w-[81%] xs:h-[83%]
+               xl:left-[23%] lg:left-[41%] md:left-[45%] sm:left-[32%] xs:left-[28%]
+               xl:bottom-[3%] lg:bottom-[3%] md:bottom-[6%] sm:bottom-[2.5%] xs:bottom-[2%]
+               -z-10 hexagon"
+                />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     );
 };
 

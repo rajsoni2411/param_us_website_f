@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       screens: {
         xs: '320px',
-        640: '640px',
+        sm: '640px',
         miniTablet: '768px',
         tablet: '1024px',
         1280: '1280px',
@@ -16,7 +16,7 @@ module.exports = {
       },
       backgroundImage: {
         "home-bg": "url('./assets/images/bgclients.jpeg')",
-        "careers-bg": "url('./assets/careers/careersbg.jpeg')",
+        "careers-bg": "url('./assets/careers/carrerbg.png')",
         "aboutus-bg": "url('./assets/images/aboutus.jpg')",
         "hex1-bg": "url('./assets/hexagons/hex1.jpeg')",
         "hex2-bg": "url('./assets/hexagons/hex2.jpeg')",

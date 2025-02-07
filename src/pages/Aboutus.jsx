@@ -23,9 +23,9 @@ function Aboutus() {
   // ----------------------------------------------  Animation Variants ----------------------------------------------
 
   return (
-    <div className="w-full min-h-screen bg-cover bg-center flex justify-center items-center text-white overflow-hidden">
-      <div className="w-full lg:w-[calc(100%_-_200px)] px-4">
-        <div className="font-faustina h-auto  xs:h-[200px] lg:h-[440px]   w-full mt-[60px] bg-aboutus-bg  xs:rounded-[62px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
+    <div className="w-full min-h-screen bg-cover bg-center flex justify-center items-center text-white overflow-hidden relative -z-50">
+      <div className="w-[calc(100%_-_80px)] ">
+        <div className="font-faustina h-auto  xs:h-[200px] lg:h-[440px] md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-aboutus-bg  xs:rounded-[62px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
           <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 rounded-[110px] xs:rounded-[62px]"></div>
           <p className="font-bold text-4xl lg:text-[64px] xs:text-2xl mb-9">
             Our History

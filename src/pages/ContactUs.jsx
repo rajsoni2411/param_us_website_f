@@ -64,7 +64,7 @@ const ContactUs = () => {
 
     return (
       //----------main-div-----------
-      <div className="w-full flex flex-col   gap-[10px] mt-20 ">
+      <div className="w-full flex flex-col   gap-[10px] mt-20 relative z-50 ">
         {/* ---------------div-1--------------- */}
         <div className="w-full px-4 lg:px-10 flex flex-col lg:flex-row items-start space-y-4 lg:space-y-0 lg:space-x-4">
           <div className="flex justify-center lg:justify-start w-full">
@@ -81,7 +81,7 @@ const ContactUs = () => {
 
         {/* -----------------------div-2----------------- */}
         <div className="relative flex w-full h-full justify-center items-center">
-          <div className="hidden md:flex gradient-box absolute w-full bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-sky-300 z-[-1]"></div>
+          <div className="hidden md:flex gradient-box absolute  lg:top-[48%] md:top-[51%] xl:top-[36%] w-full bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-sky-300 z-[-1]"></div>
           {/* --------3-container-div---------- */}
 
           <div className="grid lg:grid-cols-2 md:grid-cols-2  xs:grid-cols-1 xl:grid-cols-3 sm:grid-cols-1 w-[90%] h-full gap-[60px] ">
@@ -152,7 +152,7 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-auto rounded-[25px] gap-8 p-1 self-stretch md:col-span-2 lg:col-span-1  lg:mx-auto  md:mx-auto">
+            <div className="flex flex-col justify-center items-center bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-auto rounded-[25px] gap-8 p-1 self-stretch md:col-span-2 lg:col-span-2 xl:col-span-1  lg:mx-auto  md:mx-auto">
               <div className="flex flex-col bg-black rounded-[25px] h-full w-full gap-8 px-[25px] py-[32px]">
                 <p className="font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text text-[32px]">
                   Param Group of Companies - CANADA
@@ -184,9 +184,9 @@ const ContactUs = () => {
                   </div>
                 </div>
               </div>
-                    </div>
+            </div>
 
-                    {/* ----------------container-div-close--------------------- */}
+            {/* ----------------container-div-close--------------------- */}
           </div>
         </div>
 
