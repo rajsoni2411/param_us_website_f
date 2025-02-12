@@ -285,7 +285,7 @@ const OurServices = () => {
                   key={item.id}
                 >
                   {/* Main circle */}
-                  <div className="main-circle  xl:w-[80%] lg:w-[95%] md:w-[96%] lg:h-[100%] md:h-[78%] sm:w-[96%] xs:w-[100%] h-full px-1 pt-1 md:bg-gradient-to-r from-[#1FA2FF] from-[35%] via-cyan-300 via-50% to-[#A6FFCB] to-90% sm:bg-none xs:bg-none">
+                  <div className="main-circle 2xl:w-[80%] xl:w-[89%] lg:w-[89%] md:w-[96%] lg:h-[100%] md:h-[78%] sm:w-[96%] xs:w-[100%] h-full px-1 pt-1 md:bg-gradient-to-r from-[#1FA2FF] from-[35%] via-cyan-300 via-50% to-[#A6FFCB] to-90% sm:bg-none xs:bg-none">
                     <div className="main-circle w-full h-full bg-black flex justify-center items-center">
                       {/* main circle inner */}
                       <div className="flex lg:w-[59%] xl:w-[65%] 2xl:w-[60%] md:w-[79%]  sm:w-[76%] xs:w-[71%] md:gap-20 sm:gap-[15px] xs:gap-10 justify-center items-center">
@@ -306,12 +306,12 @@ const OurServices = () => {
 
                         {/* Content inside main circle */}
                         <div className="inner-2 w-full flex flex-col justify-center gap-4 lg:mt-0 md:mt-[17%] sm:mt-[24px] xs:mt-28">
-                          <div className="vector-img-div w-full md:h-[110px] sm:h-[80px] xs:h-[50px] flex justify-center">
+                          <div className="vector-img-div w-full md:h-[90px] sm:h-[80px] xs:h-[50px] flex justify-center">
                             {/* img */}
                             <img
                               src={item?.img}
                               alt=""
-                              className="lg:w-[80px]  md:w-[40px] sm:w-[60px] xs:w-full h-full"
+                              className="lg:w-[60px] xl:w-[60px] md:w-[40px] sm:w-[60px] xs:w-full h-full"
                             />
                           </div>
                           <div className="carousel-text w-full h-full flex flex-col text-center gap-8 text-white">
@@ -363,10 +363,10 @@ const OurServices = () => {
                   </div>
 
                   {/* Top circle */}
-                  <div className="top-circle absolute flex justify-center items-center top-0 lg:left-[42%] md:left-[36%] sm:left-[30%] xs:left-[19%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% h-[263px] w-[263px] rounded-[50%] p-1">
+                  <div className="top-circle absolute flex justify-center items-center top-0 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% md:h-[263px] md:w-[263px] xs:h-[163px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-0">
                     <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
-                      <div className="top-circle-text xs:w-[60%] md:w-[80%]  h-[70%] p-4">
-                        <p className="font-[Faustina] lg:text-[40px] md:text-[30px]  text-[30px]  font-bold text-white text-center flex items-center justify-center">
+                      <div className="top-circle-text w-[80%] h-[70%] p-4 flex justify-center items-center">
+                        <p className="font-[Faustina] lg:text-[40px] md:text-[30px] text-[30px] xs:text-[20px] font-bold text-white text-center">
                           {item?.title}
                         </p>
                       </div>
@@ -374,10 +374,10 @@ const OurServices = () => {
                   </div>
 
                   {/* top circle hidden on right */}
-                  <div className="top-circle-hidden-right flex justify-center items-center absolute top-0 md:left-[72%] lg:left-[62%] sm:left-[80%] xs:left-[95%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100%  h-[263px] w-[263px] rounded-[50%] p-1">
+                  <div className="top-circle-hidden-right flex justify-center items-center absolute top-0 md:left-[72%] lg:left-[62%] sm:left-[80%] xs:left-[106%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100%  md:h-[263px] md:w-[263px] xs:h-[163px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-0">
                     <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
                       <div className="top-circle-text w-[80%] h-[70%] p-4">
-                        <p className="font-[Faustina] lg:text-[40px] md:text-[30px] text-[30px] font-bold text-white text-center flex items-center justify-center">
+                        <p className="font-[Faustina] lg:text-[40px] md:text-[30px]  xs:text-[20px] text-[30px] font-bold text-white text-center flex items-center justify-center">
                           {item?.title}
                         </p>
                       </div>
@@ -385,10 +385,10 @@ const OurServices = () => {
                   </div>
 
                   {/* top circle hidden on left */}
-                  <div className="top-circle-hidden-left flex justify-center items-center absolute top-0 lg:left-[22%] md:-left-[2%] sm:-left-[30%] xs:-left-[56%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% h-[263px] w-[263px] rounded-[50%] p-1">
+                  <div className="top-circle-hidden-left flex justify-center items-center absolute top-0 lg:left-[22%] md:-left-[2%] sm:-left-[30%] xs:-left-[44%] transform translate-x-0 bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% md:h-[263px] md:w-[263px] xs:h-[163px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-0">
                     <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
                       <div className="top-circle-text w-[80%] h-[70%] p-4">
-                        <p className="font-[Faustina] lg:text-[40px] md:text-[30px]   text-[30px]font-bold text-white text-center flex items-center justify-center">
+                        <p className="font-[Faustina] lg:text-[40px] md:text-[30px]   xs:text-[20px]  text-[30px]font-bold text-white text-center flex items-center justify-center">
                           {item?.title}
                         </p>
                       </div>
@@ -396,7 +396,7 @@ const OurServices = () => {
                   </div>
 
                   {/* small gradient vertical line */}
-                  <div className="gradient-vertical absolute top-[263px] md:left-[50%] sm:left-[45%] h-[34px] w-1 bg-gradient-to-b from-[#1FA2FF] from-[5%] via-cyan-300 via-70% to-[#A6FFCB] to-100%"></div>
+                  <div className="gradient-vertical absolute top-[263px] md:left-[50%] sm:left-[50%] h-[34px] w-1 bg-gradient-to-b from-[#1FA2FF] from-[5%] via-cyan-300 via-70% to-[#A6FFCB] to-100%"></div>
 
                   {/* design below top circle */}
                   <div className="mini-circle-1 w-[10px] h-[10px] rounded-[50%] absolute top-[294px] md:left-[40%] sm:left-[32%] xs:left-[23%] bg-gradient-to-r from-[#1FA2FF] from-[0%] via-cyan-300 via-1% to-[#A6FFCB] to-2%"></div>
@@ -406,7 +406,7 @@ const OurServices = () => {
                   <div className="mini-circle-1 w-[10px] h-[10px] rounded-[50%] absolute top-[294px] md:left-[60%] sm:left-[67%] xs:left-[75%] bg-gradient-to-r from-[#1FA2FF] from-[0%] via-cyan-300 via-1% to-[#A6FFCB] to-2%"></div>
 
                   {/* left-1-circle */}
-                  <div className="hidden md:block left-1-circle absolute top-[11%] md:left-[15%] xl:left-[22%]  lg:left-[16%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
+                  <div className="hidden md:block left-1-circle absolute top-[11%] md:left-[15%] xl:left-[18%]  2xl:left-[22%] lg:left-[16%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
                     <div
                       className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center cursor-pointer"
                       onClick={carouselMovePrev}
@@ -420,7 +420,7 @@ const OurServices = () => {
                   </div>
 
                   {/* left-2-circle */}
-                  <div className="hidden md:block left-2-circle absolute xl:top-[31%] sm:top-[31%]  lg:top-[48%] md:-left-[2%] lg:left-[0%] xl:left-[7%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
+                  <div className="hidden md:block left-2-circle absolute xl:top-[31%] sm:top-[37%]  lg:top-[48%] md:-left-[5%] lg:left-[0%]  xl:left-[3%] 2xl:left-[7%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
                     <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
                       <div className="left-1-circle-text w-[80%] h-[70%]">
                         <p className="font-[Faustina] md:text-[20px] lg:text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full">
@@ -431,7 +431,7 @@ const OurServices = () => {
                   </div>
 
                   {/* left-3-circle */}
-                  <div className="hidden md:block left-3-circle absolute md:top-[69%] xl:top-[58%]  lg:top-[81%] md:left-[16%]  lg:left-[16%] xl:left-[6%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
+                  <div className="hidden md:block left-3-circle absolute md:top-[69%] xl:top-[58%]  lg:top-[81%] md:left-[16%]  lg:left-[16%] xl:left-[1%] 2xl:left-[6%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
                     <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
                       <div className="left-1-circle-text w-[80%] h-[70%]">
                         <p className="font-[Faustina] md:text-[20px] lg:text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full">
@@ -442,7 +442,7 @@ const OurServices = () => {
                   </div>
 
                   {/* right-1-circle */}
-                  <div className="hidden md:block left-1-circle absolute top-[11%] md:right-[11%] lg:right-[17%] xl:right-[22%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1 cursor-pointer">
+                  <div className="hidden md:block left-1-circle absolute top-[11%] md:right-[11%] lg:right-[17%] xl:right-[19%] 2xl:right-[22%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1 cursor-pointer">
                     <div
                       className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center"
                       onClick={carouselMoveNext}
@@ -456,7 +456,7 @@ const OurServices = () => {
                   </div>
 
                   {/* right-2-circle */}
-                  <div className="hidden md:block right-2-circle absolute md:top-[31%] xl:top-[33%] xl:right-[7%] lg:top-[47%] md:-right-[2%] lg:right-[0%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
+                  <div className="hidden md:block right-2-circle absolute md:top-[37%] xl:top-[33%] xl:right-[2%] 2xl:right-[7%] lg:top-[47%] md:-right-[5%] lg:right-[0%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
                     <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
                       <div className="left-1-circle-text w-[80%] h-[70%]">
                         <p className="font-[Faustina] md:text-[20px] lg:text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full">
@@ -467,7 +467,7 @@ const OurServices = () => {
                   </div>
 
                   {/* right-3-circle */}
-                  <div className="hidden md:block right-3-circle absolute  md:top-[68%] xl:top-[59%]  lg:top-[81%] md:right-[10%] lg:right-[17%] xl:right-[6%]  bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
+                  <div className="hidden md:block right-3-circle absolute  md:top-[68%] xl:top-[59%]  lg:top-[81%] md:right-[10%] lg:right-[17%] xl:right-[1%] 2xl:right-[6%]  bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
                     <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
                       <div className="left-1-circle-text w-[80%] h-[70%]">
                         <p className="font-[Faustina] md:text-[20px] lg:text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full">

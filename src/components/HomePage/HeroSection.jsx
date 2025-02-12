@@ -28,6 +28,12 @@ const HeroSection = () => {
         ease: "power2.out",
         stagger: 0.3,
         borderRadius: "79px",
+        onUpdate: function () {
+          const width = window.innerWidth;
+          if (width >= 320 && width <= 1280) {
+            gsap.set(".image", { borderRadius: "50px" });
+          }
+        },
       }
     );
 
@@ -43,6 +49,12 @@ const HeroSection = () => {
         duration: 2.5,
         ease: "power2.out",
         borderRadius: "79px",
+        onUpdate: function () {
+          const width = window.innerWidth;
+          if (width >= 320 && width <= 1280) {
+            gsap.set(".zoom-out", { borderRadius: "50px" });
+          }
+        },
       }
     );
 
@@ -80,7 +92,13 @@ const HeroSection = () => {
         ease: "power2.out",
         scale: 1,
         repeatDelay: 0.8,
-        borderRadius: "79px",
+        borderRadius: "50px",
+        onUpdate: function () {
+          const width = window.innerWidth;
+          if (width >= 320 && width <= 1280) {
+            gsap.set(".rotate-x", { borderRadius: "50px" });
+          }
+        },
       }
     );
 
@@ -184,17 +202,17 @@ const HeroSection = () => {
   return (
     <div>
       {/* Main Hero Section */}
-      <div className="text-white md:h-[1000px] xs:h-[1250px]  sm:h-[1550px] mt-3 overflow-hidden relative z-50 md:flex">
+      <div className="text-white md:h-[80vh] lg:h-[100vh] xl:h-auto xs:h-[1250px]  sm:h-[1550px] mt-3 overflow-hidden relative z-50 md:flex">
         {/* Left Content */}
         <div className="md:w-[45%] w-[100%] overflow-hidden">
           <div className="flex flex-col gap-3 mt-20  xl:ml-28 md:ml-8 xs:ml-6">
-            <p className="font-raleway font-medium xs:text-[20px] md:text-[24px] xl:text-[36px]">
+            <p className="font-raleway font-medium xs:text-[20px] md:text-[24px] lg:text-[30px] xl:text-[36px]">
               Since 2001
             </p>
-            <h1 className="font-raleway font-medium xs:text-[25px] md:text-[32px] xl:text-[48px]">
+            <h1 className="font-raleway font-medium xs:text-[25px] md:text-[25px] lg:text-[35px] xl:text-[48px]">
               Delivering Excellence in{" "}
             </h1>
-            <div className="scroller font-faustina font-semibold xs:text-[48px] md:text-[65px] xl:text-[90px]">
+            <div className="scroller font-faustina font-semibold xs:text-[48px] md:text-[50px] lg:text-[65px] xl:text-[90px]">
               <span>
                 IT Consulting
                 <br />
@@ -209,7 +227,7 @@ const HeroSection = () => {
 
           {/* Desktop Ring Boxes (visible on md and lg) */}
           <div className="hidden md:block w-full h-full overflow-hidden">
-            <div className="ring-3 single-round 2xl:top-[51%]  md:top-[53%] 2xl:-left-[14%] xl:-left-[17%] lg:-left-[20%] lg:top-[54%] md:-left-[47%] md:w-[94%] md:h-[81%] lg:w-[841px] lg:h-[778px]">
+            <div className="ring-3 single-round 2xl:top-[51%]  md:top-[49%] 2xl:-left-[14%] xl:-left-[17%] lg:-left-[21%] lg:top-[50%] md:-left-[49%] md:w-[94%] md:h-[81%] lg:w-[841px] lg:h-[778px]">
               <div className="w-full h-full relative -top-8 font-faustina">
                 <div className="box1 md:w-[180px] md:h-[85px] lg:w-[180px] lg:h-[95px] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute md:top-[8%] lg:top-0 md:left-[56%] lg:left-[35%]">
                   <div className="absolute inset-0 rounded-2xl border-gradient"></div>
@@ -223,7 +241,7 @@ const HeroSection = () => {
                   </div>
                 </div>
 
-                <div className="box2 md:w-[180px] md:h-[85px] lg:w-[180px] lg:h-[95px] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute md:top-[23%] lg:top-28 md:right-[5%] lg:right-[2.5%]">
+                <div className="box2 md:w-[180px] md:h-[85px] lg:w-[180px] lg:h-[95px] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute md:top-[23%] lg:top-28 md:right-[5%] lg:right-[11.5%]">
                   <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                   <div className="relative flex flex-col gap-1 justify-center items-center z-10">
                     <p className="md:text-[30px] lg:text-[28px] leading-[33px] font-semibold">
@@ -241,7 +259,7 @@ const HeroSection = () => {
                     <p className="md:text-[30px] lg:text-[28px] leading-[33px] font-semibold">
                       2100 +
                     </p>
-                    <p className="md:text-lg lg:text-lg leading-[25px]">
+                    <p className=" md:text-lg lg:text-lg leading-[25px]">
                       STUDENT TRAINED
                     </p>
                   </div>
@@ -254,20 +272,20 @@ const HeroSection = () => {
         {/* Right Image Section */}
         <div className="flex flex-col md:w-[55%] xs:w-[100%] md:gap-9 xs:gap-4 z-20 relative h-full px-8 mt-10">
           {/* Decorative Rings */}
-          <div className="hidden md:block ring-1 ring-zoom-out absolute"></div>
-          <div className="hidden md:block ring-2 ring-zoom-out absolute"></div>
+          <div className="hidden md:block ring-1 ring-zoom-out absolute   md:left-[5%] md:top-[0%] md:w-[385.47px] md:h-[281.93px] lg:left-[25%] lg:top-[0%] lg:w-[385.47px] lg:h-[281.93px] xl:left-[25%] xl:top-[10%] xl:w-[475px] xl:h-[350px] 2xl:left-[30%] 2xl:top-[10%] 2xl:w-[585px] 2xl:h-[401px]"></div>
+          <div className="hidden md:block ring-2 ring-zoom-out absolute md:left-[52%] md:top-[0%] md:w-[482.82px] md:h-[546.36px] lg:left-[52%] lg:top-[0%] lg:w-[482.82px] lg:h-[546.36px] xl:left-[55%] xl:top-[10%] xl:w-[725px] xl:h-[828px]  2xl:left-[52%] 2xl:top-[10%] 2xl:w-[725px] 2xl:h-[828px]"></div>
           <div className="block md:hidden ring-1 ring-zoom-out absolute xs:left-[30%] xs:top-[0%] xs:w-[54%] xs:h-[15%]"></div>
           <div className="block md:hidden ring-2 ring-zoom-out absolute xs:left-[52%] xs:top-[2%] xs:w-[80%] xs:h-[29%]"></div>
 
           <div className="flex gap-5 items-end pt-10">
-            <div className="image overflow-hidden xs:w-[55%] xs:h-[81%] md:w-[56%] md:h-[260px]">
+            <div className="image overflow-hidden xs:w-[55%] xs:h-[81%] xl:w-[56%] xl:h-[260px] md:w-[271px] md:h-[171.85px]">
               <img
                 src={image2}
                 alt="2"
                 className="object-cover object-top w-full h-full"
               />
             </div>
-            <div className="zoom-out overflow-hidden xs:w-[35%] xs:h-[135%] md:w-[38%] md:h-[362px]">
+            <div className="zoom-out overflow-hidden xs:w-[35%] xs:h-[135%] md:w-[41%] md:h-[141%] xl:w-[38%] xl:h-[362px]">
               <img
                 src={image1}
                 alt="1"
@@ -276,14 +294,14 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="flex gap-5 pb-10">
-            <div className="zoom-out overflow-hidden xs:w-[35%] xs:h-[135%] md:w-[38%] md:h-[362px]">
+            <div className="zoom-out overflow-hidden xs:w-[35%] xs:h-[135%] md:w-[41%] md:h-[141%] xl:w-[38%] xl:h-[362px]">
               <img
                 src={image3}
                 alt="3"
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="rotate-x overflow-auto xs:w-[55%] xs:h-[81%] md:w-[56%] md:h-[260px]">
+            <div className="rotate-x overflow-auto xs:w-[55%] xs:h-[81%] xl:w-[56%] xl:h-[260px] md:w-[271px] md:h-[171.85px]">
               <img
                 src={image4}
                 alt="4"
@@ -295,39 +313,39 @@ const HeroSection = () => {
 
         {/* Mobile Ring Boxes (visible on xs/sm only) */}
         <div className="block md:hidden w-full h-full overflow-hidden">
-          <div className="ring-3 xs:top-[70%] sm:top-[67.5%] xs:left-[-87%] xs:w-[179%] xs:h-[43%] md:top-0 single-round">
+          <div className="ring-3 xs:top-[70%] sm:top-[67.5%] xs:left-[-87%] xs:w-[179%] xs:h-[67%] md:top-0 single-round">
             <div className="w-full h-full relative -top-16 font-faustina">
-              <div className="box1 xs:w-[20%] xs:top-[8%] xs:h-[18%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[50%]">
+              <div className="box1 xs:w-[20%] xs:top-[8%] xs:h-[10%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[50%]">
                 <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                 <div className="relative flex flex-col gap-1 justify-center items-center z-10">
-                  <p className="xs:text-[20px] md:text-[40px] leading-[33px] font-semibold">
+                  <p className="xs:text-[30px] md:text-[40px] leading-[33px] font-semibold">
                     109 +
                   </p>
-                  <p className="xs:text-xs md:text-xl leading-[25px]">
+                  <p className=" xs:text-xs  sm:text-xl md:text-xl leading-[25px]">
                     Client Served
                   </p>
                 </div>
               </div>
 
-              <div className="box2 xs:w-[20%] xs:top-[24%] xs:h-[18%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[73%]">
+              <div className="box2 xs:w-[20%] xs:top-[24%] xs:h-[10%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[73%]">
                 <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                 <div className="relative flex flex-col gap-1 justify-center items-center z-10">
-                  <p className="xs:text-[20px] md:text-[40px] leading-[33px] font-semibold">
+                  <p className="xs:text-[30px] md:text-[40px] leading-[33px] font-semibold">
                     28000 +
                   </p>
-                  <p className="xs:text-xs md:text-xl leading-[25px]">
+                  <p className=" xs:text-xs sm:text-xl md:text-xl leading-[25px]">
                     PEOPLE HELPED
                   </p>
                 </div>
               </div>
 
-              <div className="box3 xs:w-[20%] xs:top-[60%] xs:h-[18%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[82%]">
+              <div className="box3 xs:w-[20%] xs:top-[40%] xs:h-[10%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[82%]">
                 <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                 <div className="relative flex flex-col gap-1 justify-center items-center z-10">
-                  <p className="xs:text-[20px] md:text-[40px] leading-[33px] font-semibold">
+                  <p className="xs:text-[30px] md:text-[40px] leading-[33px] font-semibold">
                     2100 +
                   </p>
-                  <p className="xs:text-xs md:text-xl leading-[25px]">
+                  <p className="xs:text-xs sm:text-lg md:text-xl leading-[25px]">
                     STUDENT TRAINED
                   </p>
                 </div>
@@ -338,7 +356,7 @@ const HeroSection = () => {
       </div>
 
       {/* "Our Success Speaks For Itself" Section */}
-      <div className="flex md:flex-row flex-col w-full justify-center items-center text-white font-faustina gap-20 z-10 relative h-[320px] md:-mt-[80px] lg:-mt-[120px] bg-black md:p-7 lg:p-7 xl:p-0">
+      <div className="flex md:flex-row flex-col w-full justify-center items-center text-white font-faustina gap-20 z-10 relative h-[320px] md:-mt-[60px] lg:-mt-[60px] bg-black md:p-7 lg:p-7 ">
         <p className="font-semibold xs:text-[29px] md:text-[60px] lg:text-[80px] xs:leading-none md:leading-[80px] lg:leading-[100px]">
           Our Success Speaks For Itself
         </p>

@@ -173,7 +173,7 @@ const WhyChooseParam = () => {
               <div className=" flex xs:flex-col  xl:flex-row gap-10 relative">
                 {/* Hex 1*/}
                 <div
-                  className=" 2xl:w-[325px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px]  md:w-[250px] md:h-[250px] xs:w-[325px] xs:h-[625px]  xl:mb-0 xs:-mb-32    md:mb-0 flex justify-center items-center relative
+                  className=" 2xl:w-[325px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px]  md:w-[250px] md:h-[250px] xs:w-[325px] xs:h-[525px]  xl:mb-0 xs:-mb-32    md:mb-0 flex justify-center items-center relative
                     "
                   ref={hex1Ref}
                 >
@@ -237,8 +237,8 @@ const WhyChooseParam = () => {
 
               {/* Hex 3 and 4 */}
               <div
-                className="2xl:w-[325px] 2xl:h-[725px] xl:w-[275px] xl:h-[675px]  md:w-[250px]  md:h-[850px] xs:w-[325px] xs:h-[525px] 
-                 flex flex-col md:gap-10 xs:gap-20  relative"
+                className="2xl:w-[325px] 2xl:h-[725px] xl:w-[275px] xl:h-[675px]  md:w-[250px]  md:h-[850px] xs:w-[325px] xs:h-[675px] 
+                 flex flex-col md:gap-10 xs:gap-52  relative"
               >
                 {/* Hex 3 */}
                 <div
@@ -293,57 +293,61 @@ const WhyChooseParam = () => {
                 {/* <div className="hex-shadow absolute w-[130%] h-[90%] top-[46%] left-[-55px]"></div> */}
               </div>
 
-              <div className="flex  xs:flex-col lg:flex-col xl:flex-row gap-10">
+              <div className=" flex xs:flex-col  xl:flex-row gap-10 relative">
                 {/* Hex 5*/}
                 <div
-                  className="2xl:w-[325px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px]  md:w-[250px]  md:h-[250px] xs:w-[325px] xs:h-[625px]   lg:mb-0 md:mb-0 flex justify-center items-center relative"
-                  ref={hex5Ref}
+                  className=" 2xl:w-[325px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px]  md:w-[250px] md:h-[250px] xs:w-[325px] xs:h-[525px]  xl:mb-0 xs:-mb-32    md:mb-0 flex justify-center items-center relative
+                    "
+                  ref={hex1Ref}
                 >
                   <div
                     className="hex hex-parent group xl:w-[325px] xl:h-[325px]  md:w-[250px]  md:h-[250px] xs:w-[325px] xs:h-[325px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
-                    onMouseEnter={() => handleMouseEnter(4)}
-                    onMouseLeave={() => handleMouseLeave(4)}
+                    onMouseEnter={() => handleMouseEnter(0)}
+                    onMouseLeave={() => handleMouseLeave(0)}
                   >
-                    <div className="hex-inner hex bg-black w-full h-full flex justify-center  relative overflow-hidden">
+                    <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
+                      {/* inner shadow of hex */}
                       <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
                       <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
                         <p className="text-white text-center">
-                          Innovation at it's best
+                          Always there for you
                         </p>
 
                         <div
                           className="w-[43px] h-[43px] cursor-pointer"
-                          onClick={() => setActive(4)}
+                          onClick={() => setActive(0)}
                         >
                           <img src={plusImage} alt="" />
                         </div>
                       </div>
                     </div>
                   </div>
+                  {/* Outer shadow of hex */}
                   <div className="hex-shadow absolute w-[100%] h-[90%] top-[10px] left-[-15px]"></div>
                 </div>
+
                 {/* Hex 6 */}
                 <div
-                  className="2xl:w-[325px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px] md:w-[250px]  md:h-[250px] xs:w-[325px] xs:h-[525px] flex justify-center items-center relative"
-                  ref={hex6Ref}
+                  className="2xl:w-[325px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px]  md:w-[250px]  md:h-[250px] xs:w-[325px] xs:h-[525px] flex justify-center items-center relative"
+                  ref={hex2Ref}
                 >
                   <div
                     className="hex hex-parent group xl:w-[325px] xl:h-[325px]  md:w-[250px]  md:h-[250px] xs:w-[325px] xs:h-[325px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
-                    onMouseEnter={() => handleMouseEnter(5)}
-                    onMouseLeave={() => handleMouseLeave(5)}
+                    onMouseEnter={() => handleMouseEnter(1)}
+                    onMouseLeave={() => handleMouseLeave(1)}
                   >
                     <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
                       <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
-                      <div className="w-[60%] h-full flex flex-col  justify-center items-center gap-8">
+                      <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
                         <p className="text-white text-center">
-                          We bet to be on time
+                          Enthusiastic Employees
                         </p>
 
                         <div
                           className="w-[43px] h-[43px] cursor-pointer"
-                          onClick={() => setActive(5)}
+                          onClick={() => setActive(1)}
                         >
                           <img src={plusImage} alt="" />
                         </div>
