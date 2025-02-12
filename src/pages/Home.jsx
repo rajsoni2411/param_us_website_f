@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <>
             <HeroSection />
-            {/* <OurServices /> */}
+            <OurServices />
             <WhyChooseParam />
             
         </>

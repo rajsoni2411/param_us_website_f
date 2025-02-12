@@ -255,207 +255,237 @@ const OurServices = () => {
 
 
     return (
-        // Main container
-        <div className='w-full flex justify-center'>
-            {/* Container inner */}
-            <div className="w-[80%] flex flex-col justify-center items-center gap-[60px]">
+      // Main container
+      <div className="w-full flex justify-center overflow-hidden">
+        {/* Container inner */}
+        <div className=" xl:w-[96%] 2xl:w-[80%] lg:w-[110%] md:w-[90%] sm:w-[90%] xs:w-[100%] flex flex-col justify-center items-center gap-[60px]">
+          {/* Our Services Text */}
+          <div className="w-full flex flex-col md:pt-72 text-center gap-4 font-['Faustina'] animate-zoomIn">
+            <h2 className="text-[56px] sm:text-[48px] font-semibold bg-gradient-to-r from-[#1FA2FF] from-[40%] via-cyan-300 via-50% to-[#A6FFCB] to-60% text-transparent bg-clip-text">
+              Our Services
+            </h2>
+            <p className="text-[18px] sm:text-[16px] font-normal text-white">
+              Explore The World Of Technology With Us. Come Find Your Hidden
+              Competencies
+            </p>
+            <p className="text-[18px] sm:text-[16px] font-normal text-white">
+              By Kick-Starting Your Business With New Insights
+            </p>
+          </div>
 
-                {/* Our Services Text */}
-                <div className="w-full flex flex-col text-center gap-4 font-['Faustina'] animate-zoomIn">
-                    <h2 className='text-[56px] font-semibold bg-gradient-to-r from-[#1FA2FF] from-[40%] via-cyan-300 via-50% to-[#A6FFCB] to-60% text-transparent bg-clip-text'>Our Services</h2>
-                    <p className='text-[18px] font-normal text-white'>Explore The World Of Technology With Us. Come Find Your Hidden Competencies</p>
-                    <p className='text-[18px] font-normal text-white'>By Kick-Starting Your Business With New Insights</p>
-                </div>
+          {/* carousel container */}
+          <div className="w-full flex flex-col">
+            {/* Carousel 1 */}
+            {carouselArray?.map((item, i) => {
+              if (i !== active) return null;
 
-                {/* carousel container */}
-                <div className="w-full flex flex-col">
-                    {/* Carousel 1*/}
-                    {carouselArray?.map((item, i) => {
-                        if (i !== active) return null;
-
-                        return (
-
-                            <div className="w-full h-[1281px] flex justify-center pt-[125px] relative" key={item.id}>
-
-                                {/* Main circle */}
-                                <div className="main-circle w-[80%] h-full px-1 pt-1 bg-gradient-to-r from-[#1FA2FF] from-[35%] via-cyan-300 via-50% to-[#A6FFCB] to-90% ">
-                                    <div className="main-circle w-full h-full bg-black flex justify-center items-center">
-
-                                        {/* main circle inner */}
-                                        <div className="flex w-[60%] gap-12 ">
-
-                                            <div className="arrow-container h-full w-[65px] flex items-center mt-[40%]">
-                                                <div className="left-arrow rounded-[6px] bg-gradient-to-r from-[#1FA2FF] from-[30%] via-[#12D8FA] via-50% to-[#A6FFCB] to-100% p-[2px] h-[50px] w-full" >
-
-                                                    <div className="bg-black w-full h-full rounded-[6px] flex justify-center items-center cursor-pointer play" onClick={carouselMovePrev}>
-
-                                                        <img src={leftArrow} alt="" className='play' />
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            {/* Content inside main circle */}
-                                            <div className="inner-2 w-full flex flex-col justify-center gap-4">
-                                                <div className="vector-img-div  w-full h-[110px] flex justify-center">
-                                                    {/* img */}
-                                                    <img src={item?.img} alt="" className='w-[80px] h-full' />
-                                                </div>
-                                                <div className="carousel-text w-full h-full  flex flex-col text-center gap-8 text-white">
-                                                    {/* name */}
-                                                    <p className='font-[Faustina] text-[40px] font-semibold'>{item?.name}</p>
-                                                    {/* content */}
-                                                    <p className='font-[Faustina] text-[20px] font-normal leading-10'>{item?.content}</p>
-                                                    {/* button */}
-                                                    <div className="w-full flex justify-center items-center">
-                                                        <div className="flex justify-center items-center w-[155px] h-[62px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
-                                                            <button
-                                                                className="button-main bg-black uppercase w-full h-full rounded-[14px]  font-poppins font-medium text-[20px] diagonal text-xl text-center relative py-[16px] px-[52px]"
-                                                                onMouseEnter={handleMouseEnter}
-                                                                onMouseLeave={handleMouseLeave}
-                                                            >
-                                                                <span className="btn1 absolute transition-all top-0 left-0 w-full h-full flex justify-center items-center text-white">
-                                                                    Learn more
-                                                                </span>
-                                                                <span className="btn2 absolute tranistion-all opacity-0 top-[50px] left-0 w-full h-full flex justify-center items-center text-white">
-                                                                    Learn more
-                                                                </span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className="arrow-container h-full w-[65px] flex items-center mt-[40%] ">
-                                                <div className="right-arrow rounded-[6px] bg-gradient-to-l from-[#1FA2FF] from-[30%] via-[#12D8FA] via-50% to-[#A6FFCB] to-100% p-[2px] h-[50px] w-full" >
-                                                    <div className="bg-black w-full h-full rounded-[6px] play flex justify-center items-center cursor-pointer" onClick={carouselMoveNext}>
-                                                        <img src={rightArrow} alt="" className='play' />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className='absolute'></div>
-                                </div>
-
-                                {/* Top circle */}
-                                <div className="top-circle absolute top-0 left-[42%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% h-[263px] w-[263px] rounded-[50%] p-1">
-
-                                    <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
-
-                                        <div className="top-circle-text w-[80%] h-[70%] p-4">
-
-                                            <p className='font-[Faustina] text-[40px] font-bold text-white text-center flex justify-center'>{item?.title}</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* top circle hidden on right */}
-                                <div className="top-circle-hidden-right absolute top-0 left-[62%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% h-[263px] w-[263px] rounded-[50%] p-1">
-
-                                    <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
-
-                                        <div className="top-circle-text w-[80%] h-[70%] p-4">
-
-                                            <p className='font-[Faustina] text-[40px] font-bold text-white text-center flex justify-center'>{item?.title}</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* top circle hidden on left */}
-                                <div className="top-circle-hidden-left absolute top-0 left-[22%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% h-[263px] w-[263px] rounded-[50%] p-1">
-
-                                    <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
-
-                                        <div className="top-circle-text w-[80%] h-[70%] p-4">
-
-                                            <p className='font-[Faustina] text-[40px] font-bold text-white text-center flex justify-center'>{item?.title}</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* small gradient vertical line */}
-                                <div className="gradient-vertical absolute top-[263px] left-[50%] h-[34px] w-1 bg-gradient-to-b from-[#1FA2FF] from-[5%] via-cyan-300 via-70% to-[#A6FFCB] to-100%"></div>
-
-                                {/* design below top circle */}
-                                <div className="mini-circle-1 w-[10px] h-[10px] rounded-[50%] absolute top-[294px] left-[40%] bg-gradient-to-r from-[#1FA2FF] from-[0%] via-cyan-300 via-1% to-[#A6FFCB] to-2%"></div>
-
-                                <div className="gradient-horizontal w-[313px] h-1 absolute top-[297px] left-[40%] bg-gradient-to-r from-[#1FA2FF] from-[0%] via-cyan-300 via-3% to-[#A6FFCB] to-4%"></div>
-
-                                <div className="mini-circle-1 w-[10px] h-[10px] rounded-[50%] absolute top-[294px] left-[60%] bg-gradient-to-r from-[#1FA2FF] from-[0%] via-cyan-300 via-1% to-[#A6FFCB] to-2%"></div>
-
-                                {/* left-1-circle */}
-                                <div className="left-1-circle absolute top-[11%] left-[22%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% h-[195px] w-[195px] rounded-[50%] p-1">
-                                    <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center cursor-pointer" onClick={carouselMovePrev}>
-                                        <div className="left-1-circle-text w-[80%] h-[70%]">
-                                            <p className='font-[Faustina] text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full'>{getSmallCircleTitle(6)}</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* left-2-circle */}
-                                <div className="left-2-circle absolute top-[31%] left-[7%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% h-[195px] w-[195px] rounded-[50%] p-1">
-                                    <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
-                                        <div className="left-1-circle-text w-[80%] h-[70%]">
-                                            <p className='font-[Faustina] text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full'>{getSmallCircleTitle(5)}</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* left-3-circle */}
-                                <div className="left-3-circle absolute top-[58%] left-[6%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% h-[195px] w-[195px] rounded-[50%] p-1">
-                                    <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
-                                        <div className="left-1-circle-text w-[80%] h-[70%]">
-                                            <p className='font-[Faustina] text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full'>{getSmallCircleTitle(4)}</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* right-1-circle */}
-                                <div className="left-1-circle absolute top-[11%] right-[22%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% h-[195px] w-[195px] rounded-[50%] p-1 cursor-pointer">
-                                    <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center" onClick={carouselMoveNext}>
-                                        <div className="left-1-circle-text w-[80%] h-[70%]">
-                                            <p className='font-[Faustina] text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full'>{getSmallCircleTitle(1)}</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* right-2-circle */}
-                                <div className="right-2-circle absolute top-[31%] right-[7%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% h-[195px] w-[195px] rounded-[50%] p-1">
-                                    <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
-                                        <div className="left-1-circle-text w-[80%] h-[70%]">
-                                            <p className='font-[Faustina] text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full' >{getSmallCircleTitle(2)}</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* right-3-circle */}
-                                <div className="right-3-circle absolute top-[58%] right-[6%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% h-[195px] w-[195px] rounded-[50%] p-1">
-                                    <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
-                                        <div className="left-1-circle-text w-[80%] h-[70%]">
-                                            <p className='font-[Faustina] text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full'>{getSmallCircleTitle(3)}</p>
-                                        </div>
-                                    </div>
-                                </div>
+              return (
+                <div
+                  className="w-full xl:h-[1281px] lg:h-[1240px] md:h-[1281px] sm:h-[1150px] xs:h-[1000px] flex justify-center md:pt-[125px] sm:pt-[100px] relative"
+                  key={item.id}
+                >
+                  {/* Main circle */}
+                  <div className="main-circle  xl:w-[80%] lg:w-[95%] md:w-[96%] lg:h-[100%] md:h-[78%] sm:w-[96%] xs:w-[100%] h-full px-1 pt-1 md:bg-gradient-to-r from-[#1FA2FF] from-[35%] via-cyan-300 via-50% to-[#A6FFCB] to-90% sm:bg-none xs:bg-none">
+                    <div className="main-circle w-full h-full bg-black flex justify-center items-center">
+                      {/* main circle inner */}
+                      <div className="flex lg:w-[59%] xl:w-[65%] 2xl:w-[60%] md:w-[79%]  sm:w-[76%] xs:w-[71%] md:gap-20 sm:gap-[15px] xs:gap-10 justify-center items-center">
+                        <div className="static arrow-container h-full md:w-[65px]  mb-10 sm:w-[55px] xs:w-[40px] flex items-center mt-[40%] sm:mt-[35%]">
+                          <div className="left-arrow rounded-[6px] bg-gradient-to-r from-[#1FA2FF] from-[30%] via-[#12D8FA] via-50% to-[#A6FFCB] to-100% p-[2px] md:h-[50px] sm:h-[40px] xs:h-[30px] w-full">
+                            <div
+                              className="bg-black w-full h-full rounded-[6px]  flex justify-center items-center cursor-pointer play"
+                              onClick={carouselMovePrev}
+                            >
+                              <img
+                                src={leftArrow}
+                                alt=""
+                                className="play w-4 h-4"
+                              />
                             </div>
-                        )
-                    })}
-                </div>
-                <div className='h-[250px] bg-black -mt-[120px] w-full z-10'>
+                          </div>
+                        </div>
 
+                        {/* Content inside main circle */}
+                        <div className="inner-2 w-full flex flex-col justify-center gap-4 lg:mt-0 md:mt-[17%] sm:mt-[24px] xs:mt-28">
+                          <div className="vector-img-div w-full md:h-[110px] sm:h-[80px] xs:h-[50px] flex justify-center">
+                            {/* img */}
+                            <img
+                              src={item?.img}
+                              alt=""
+                              className="lg:w-[80px]  md:w-[40px] sm:w-[60px] xs:w-full h-full"
+                            />
+                          </div>
+                          <div className="carousel-text w-full h-full flex flex-col text-center gap-8 text-white">
+                            {/* name */}
+                            <p className="font-[Faustina] lg:text-[40px] md:text-[27px] sm:text-[30px] xs:text-[20px] font-semibold">
+                              {item?.name}
+                            </p>
+                            {/* content */}
+                            <p className="font-[Faustina] lg:text-[20px] md:text-[17px] sm:text-[15px] xs:text-[10px] font-normal md:leading-10 sm:leading-7 xs:leading-4">
+                              {item?.content}
+                            </p>
+                            {/* button */}
+                            <div className="w-full flex justify-center items-center">
+                              <div className="flex justify-center items-center w-[155px] sm:w-[140px] h-[62px] sm:h-[55px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
+                                <button
+                                  className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium text-[20px] diagonal text-xl text-center relative py-[16px] sm:py-[14px] px-[52px] sm:px-[45px]"
+                                  onMouseEnter={handleMouseEnter}
+                                  onMouseLeave={handleMouseLeave}
+                                >
+                                  <span className="btn1 absolute transition-all top-0 left-0 w-full h-full flex justify-center items-center text-white">
+                                    Learn more
+                                  </span>
+                                  <span className="btn2 absolute tranistion-all opacity-0 top-[50px] sm:top-[45px] left-0 w-full h-full flex justify-center items-center text-white">
+                                    Learn more
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="arrow-container h-full md:w-[65px] sm:w-[55px] xs:w-[40px] flex items-center mt-[40%] sm:mt-[35%]">
+                          <div className="right-arrow rounded-[6px] bg-gradient-to-l mb-10  from-[#1FA2FF] from-[30%] via-[#12D8FA] via-50% to-[#A6FFCB] to-100% p-[2px] md:h-[50px] sm:h-[40px] xs:h-[30px] w-full">
+                            <div
+                              className="bg-black w-full h-full rounded-[6px]  flex justify-center items-center cursor-pointer play"
+                              onClick={carouselMoveNext}
+                            >
+                              <img
+                                src={rightArrow}
+                                alt=""
+                                className="play w-4 h-4"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="absolute"></div>
+                  </div>
+
+                  {/* Top circle */}
+                  <div className="top-circle absolute flex justify-center items-center top-0 lg:left-[42%] md:left-[36%] sm:left-[30%] xs:left-[19%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% h-[263px] w-[263px] rounded-[50%] p-1">
+                    <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
+                      <div className="top-circle-text xs:w-[60%] md:w-[80%]  h-[70%] p-4">
+                        <p className="font-[Faustina] lg:text-[40px] md:text-[30px]  text-[30px]  font-bold text-white text-center flex items-center justify-center">
+                          {item?.title}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* top circle hidden on right */}
+                  <div className="top-circle-hidden-right flex justify-center items-center absolute top-0 md:left-[72%] lg:left-[62%] sm:left-[80%] xs:left-[95%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100%  h-[263px] w-[263px] rounded-[50%] p-1">
+                    <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
+                      <div className="top-circle-text w-[80%] h-[70%] p-4">
+                        <p className="font-[Faustina] lg:text-[40px] md:text-[30px] text-[30px] font-bold text-white text-center flex items-center justify-center">
+                          {item?.title}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* top circle hidden on left */}
+                  <div className="top-circle-hidden-left flex justify-center items-center absolute top-0 lg:left-[22%] md:-left-[2%] sm:-left-[30%] xs:-left-[56%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% h-[263px] w-[263px] rounded-[50%] p-1">
+                    <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
+                      <div className="top-circle-text w-[80%] h-[70%] p-4">
+                        <p className="font-[Faustina] lg:text-[40px] md:text-[30px]   text-[30px]font-bold text-white text-center flex items-center justify-center">
+                          {item?.title}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* small gradient vertical line */}
+                  <div className="gradient-vertical absolute top-[263px] md:left-[50%] sm:left-[45%] h-[34px] w-1 bg-gradient-to-b from-[#1FA2FF] from-[5%] via-cyan-300 via-70% to-[#A6FFCB] to-100%"></div>
+
+                  {/* design below top circle */}
+                  <div className="mini-circle-1 w-[10px] h-[10px] rounded-[50%] absolute top-[294px] md:left-[40%] sm:left-[32%] xs:left-[23%] bg-gradient-to-r from-[#1FA2FF] from-[0%] via-cyan-300 via-1% to-[#A6FFCB] to-2%"></div>
+
+                  <div className="gradient-horizontal lg:w-[313px] md:w-[180px] sm:w-[270px] xs:w-[229px] h-1 absolute top-[297px] md:left-[40%] sm:left-[32%] xs:left-[23%] bg-gradient-to-r from-[#1FA2FF] from-[0%] via-cyan-300 via-3% to-[#A6FFCB] to-4%"></div>
+
+                  <div className="mini-circle-1 w-[10px] h-[10px] rounded-[50%] absolute top-[294px] md:left-[60%] sm:left-[67%] xs:left-[75%] bg-gradient-to-r from-[#1FA2FF] from-[0%] via-cyan-300 via-1% to-[#A6FFCB] to-2%"></div>
+
+                  {/* left-1-circle */}
+                  <div className="hidden md:block left-1-circle absolute top-[11%] md:left-[15%] xl:left-[22%]  lg:left-[16%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
+                    <div
+                      className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center cursor-pointer"
+                      onClick={carouselMovePrev}
+                    >
+                      <div className="left-1-circle-text w-[80%] h-[70%]">
+                        <p className="font-[Faustina] md:text-[20px] lg:text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full">
+                          {getSmallCircleTitle(6)}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* left-2-circle */}
+                  <div className="hidden md:block left-2-circle absolute xl:top-[31%] sm:top-[31%]  lg:top-[48%] md:-left-[2%] lg:left-[0%] xl:left-[7%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
+                    <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
+                      <div className="left-1-circle-text w-[80%] h-[70%]">
+                        <p className="font-[Faustina] md:text-[20px] lg:text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full">
+                          {getSmallCircleTitle(5)}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* left-3-circle */}
+                  <div className="hidden md:block left-3-circle absolute md:top-[69%] xl:top-[58%]  lg:top-[81%] md:left-[16%]  lg:left-[16%] xl:left-[6%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
+                    <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
+                      <div className="left-1-circle-text w-[80%] h-[70%]">
+                        <p className="font-[Faustina] md:text-[20px] lg:text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full">
+                          {getSmallCircleTitle(4)}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* right-1-circle */}
+                  <div className="hidden md:block left-1-circle absolute top-[11%] md:right-[11%] lg:right-[17%] xl:right-[22%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1 cursor-pointer">
+                    <div
+                      className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center"
+                      onClick={carouselMoveNext}
+                    >
+                      <div className="left-1-circle-text w-[80%] h-[70%]">
+                        <p className="font-[Faustina] md:text-[20px] lg:text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full">
+                          {getSmallCircleTitle(1)}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* right-2-circle */}
+                  <div className="hidden md:block right-2-circle absolute md:top-[31%] xl:top-[33%] xl:right-[7%] lg:top-[47%] md:-right-[2%] lg:right-[0%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
+                    <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
+                      <div className="left-1-circle-text w-[80%] h-[70%]">
+                        <p className="font-[Faustina] md:text-[20px] lg:text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full">
+                          {getSmallCircleTitle(2)}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* right-3-circle */}
+                  <div className="hidden md:block right-3-circle absolute  md:top-[68%] xl:top-[59%]  lg:top-[81%] md:right-[10%] lg:right-[17%] xl:right-[6%]  bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
+                    <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
+                      <div className="left-1-circle-text w-[80%] h-[70%]">
+                        <p className="font-[Faustina] md:text-[20px] lg:text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full">
+                          {getSmallCircleTitle(3)}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                {/* {active == 2 && <p className='text-red-400'>TEstt 2</p>}
-                {active == 1 && <p className='text-red-400'>TEstt ------------- 2</p>} */}
-            </div>
+              );
+            })}
+          </div>
+          <div className="h-[250px] sm:h-[220px] bg-black -mt-[120px] sm:-mt-[100px] w-full z-10"></div>
+          {/* {active == 2 && <p className='text-red-400'>TEstt 2</p>}
+    {active == 1 && <p className='text-red-400'>TEstt ------------- 2</p>} */}
         </div>
-    )
+      </div>
+    );
 }
 
 export default OurServices

@@ -530,5 +530,10 @@ body {
 
 .main-circle {
     border-radius: 50%;
-    clip-path: inset(0 0 17.99% 0);
+}
+
+@media (min-width: 1280px) {
+    .main-circle {
+        clip-path: inset(0 0 17.99% 0);
+    }
 }
