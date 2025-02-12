@@ -268,7 +268,7 @@ const WhyChooseParam = () => {
 
                 {/* Hex 4 */}
                 <div
-                  className="hex hex-parent group 2xl:w-[325px] 2xl:h-[325px] xl:w-[275px] xl:h-[275px]  md:w-[250px]  md:h-[250px] xs:w-[325px] xs:h-[525px]   lg:mb-0 xs:-mb-24 md:-mb-0 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                  className="hex hex-parent group 2xl:w-[325px] 2xl:h-[325px] xl:w-[275px] xl:h-[275px]  md:w-[250px]  md:h-[250px] xs:w-[325px] xs:h-[525px]   lg:mb-0 xs:-mb-24  md:mt-0 md:-mb-0 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
                   ref={hex4Ref}
                   onMouseEnter={() => handleMouseEnter(3)}
                   onMouseLeave={() => handleMouseLeave(3)}
@@ -296,7 +296,7 @@ const WhyChooseParam = () => {
               <div className=" flex xs:flex-col  xl:flex-row gap-10 relative">
                 {/* Hex 5*/}
                 <div
-                  className=" 2xl:w-[325px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px]  md:w-[250px] md:h-[250px] xs:w-[325px] xs:h-[525px]  xl:mb-0 xs:-mb-32    md:mb-0 flex justify-center items-center relative
+                  className=" 2xl:w-[325px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px]  md:w-[250px] md:h-[250px] xs:w-[325px] xs:h-[525px]  xl:mb-0 xs:-mb-32 xs:mt-24 md:mt-0   md:mb-0 flex justify-center items-center relative
                     "
                   ref={hex1Ref}
                 >

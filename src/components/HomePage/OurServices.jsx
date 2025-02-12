@@ -288,7 +288,7 @@ const OurServices = () => {
                   <div className="main-circle 2xl:w-[80%] xl:w-[89%] lg:w-[89%] md:w-[96%] lg:h-[100%] md:h-[78%] sm:w-[96%] xs:w-[100%] h-full px-1 pt-1 md:bg-gradient-to-r from-[#1FA2FF] from-[35%] via-cyan-300 via-50% to-[#A6FFCB] to-90% sm:bg-none xs:bg-none">
                     <div className="main-circle w-full h-full bg-black flex justify-center items-center">
                       {/* main circle inner */}
-                      <div className="flex lg:w-[59%] xl:w-[65%] 2xl:w-[60%] md:w-[79%]  sm:w-[76%] xs:w-[71%] md:gap-20 sm:gap-[15px] xs:gap-10 justify-center items-center">
+                      <div className="flex lg:w-[59%] xl:w-[65%] 2xl:w-[60%] md:w-[79%]  sm:w-[76%] xs:w-[71%] lg:gap-20 md:gap-[1.5rem] sm:gap-[15px] xs:gap-10 justify-center items-center">
                         <div className="static arrow-container h-full md:w-[65px]  mb-10 sm:w-[55px] xs:w-[40px] flex items-center mt-[40%] sm:mt-[35%]">
                           <div className="left-arrow rounded-[6px] bg-gradient-to-r from-[#1FA2FF] from-[30%] via-[#12D8FA] via-50% to-[#A6FFCB] to-100% p-[2px] md:h-[50px] sm:h-[40px] xs:h-[30px] w-full">
                             <div
@@ -305,18 +305,18 @@ const OurServices = () => {
                         </div>
 
                         {/* Content inside main circle */}
-                        <div className="inner-2 w-full flex flex-col justify-center gap-4 lg:mt-0 md:mt-[17%] sm:mt-[24px] xs:mt-28">
+                        <div className="inner-2 w-full flex flex-col justify-center gap-4  xl:mt-1 lg:mt-[144px] md:mt-[17%] sm:mt-[24px] xs:mt-28">
                           <div className="vector-img-div w-full md:h-[90px] sm:h-[80px] xs:h-[50px] flex justify-center">
                             {/* img */}
                             <img
                               src={item?.img}
                               alt=""
-                              className="lg:w-[60px] xl:w-[60px] md:w-[40px] sm:w-[60px] xs:w-full h-full"
+                              className="lg:w-[60px] xl:w-[50px] md:w-[40px] sm:w-[50px] xs:w-full h-full"
                             />
                           </div>
                           <div className="carousel-text w-full h-full flex flex-col text-center gap-8 text-white">
                             {/* name */}
-                            <p className="font-[Faustina] lg:text-[40px] md:text-[27px] sm:text-[30px] xs:text-[20px] font-semibold">
+                            <p className="font-[Faustina] lg:text-[30px] md:text-[25px] sm:text-[28px] xs:text-[20px] font-semibold">
                               {item?.name}
                             </p>
                             {/* content */}
@@ -363,7 +363,7 @@ const OurServices = () => {
                   </div>
 
                   {/* Top circle */}
-                  <div className="top-circle absolute flex justify-center items-center top-0 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% md:h-[263px] md:w-[263px] xs:h-[163px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-0">
+                  <div className="top-circle absolute flex justify-center items-center top-0 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[263px] lg:w-[263px] md:h-[210px] md:w-[210px] xs:h-[163px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24  md:mt-8 lg:mt-0">
                     <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
                       <div className="top-circle-text w-[80%] h-[70%] p-4 flex justify-center items-center">
                         <p className="font-[Faustina] lg:text-[40px] md:text-[30px] text-[30px] xs:text-[20px] font-bold text-white text-center">
@@ -399,11 +399,31 @@ const OurServices = () => {
                   <div className="gradient-vertical absolute top-[263px] md:left-[50%] sm:left-[50%] h-[34px] w-1 bg-gradient-to-b from-[#1FA2FF] from-[5%] via-cyan-300 via-70% to-[#A6FFCB] to-100%"></div>
 
                   {/* design below top circle */}
-                  <div className="mini-circle-1 w-[10px] h-[10px] rounded-[50%] absolute top-[294px] md:left-[40%] sm:left-[32%] xs:left-[23%] bg-gradient-to-r from-[#1FA2FF] from-[0%] via-cyan-300 via-1% to-[#A6FFCB] to-2%"></div>
+                  {/* Left Mini-Circle */}
+                  <div
+                    className="absolute top-[294px] 2xl:left-[40%] xl:left-[38%] lg:left-[38%] xs:left-[23%] sm:left-[30%] md:left-[38%] w-[10px] h-[10px] rounded-full 
+                  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"
+                  ></div>
 
-                  <div className="gradient-horizontal lg:w-[313px] md:w-[180px] sm:w-[270px] xs:w-[229px] h-1 absolute top-[297px] md:left-[40%] sm:left-[32%] xs:left-[23%] bg-gradient-to-r from-[#1FA2FF] from-[0%] via-cyan-300 via-3% to-[#A6FFCB] to-4%"></div>
+                  {/* Dynamic Line */}
+                  <div
+                    className="absolute top-[297px] 2xl:left-[40%] xl:left-[38%] lg:left-[38%] xs:left-[23%] sm:left-[30%] md:left-[38%]
+                  lg:w-[313px] md:w-[180px] sm:w-[270px] xs:w-[229px] 
+                  h-1 bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"
+                  ></div>
 
-                  <div className="mini-circle-1 w-[10px] h-[10px] rounded-[50%] absolute top-[294px] md:left-[60%] sm:left-[67%] xs:left-[75%] bg-gradient-to-r from-[#1FA2FF] from-[0%] via-cyan-300 via-1% to-[#A6FFCB] to-2%"></div>
+                  {/* Right Mini-Circle */}
+                  <div
+                    className="absolute top-[294px] 
+                      2xl:left-[calc(40%+313px)] 
+                      xl:left-[calc(38%+313px)] 
+                      lg:left-[calc(38%+313px)] 
+                      md:left-[calc(38%+180px)] 
+                  sm:left-[calc(30%+270px)] 
+                  xs:left-[calc(23%+229px)]
+                  w-[10px] h-[10px] rounded-full 
+                  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"
+                  ></div>
 
                   {/* left-1-circle */}
                   <div className="hidden md:block left-1-circle absolute top-[11%] md:left-[15%] xl:left-[18%]  2xl:left-[22%] lg:left-[16%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
