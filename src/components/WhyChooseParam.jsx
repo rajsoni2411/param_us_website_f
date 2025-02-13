@@ -361,7 +361,7 @@ const WhyChooseParam = () => {
           </div>
 
           <div
-            className={`hex-detail lg:w-[75%] xs:w-[100%] xs:mt-10 md:mt-0 items-center justify-center  xs:flex-col xl:flex-row   font-[Faustina] flex lg:flex-row gap-32 ${
+            className={`hex-detail lg:w-[75%] xs:w-[100%] xs:mt-10 md:mt-0 items-center justify-center  xs:flex-col xl:flex-row   font-[Faustina] flex lg:flex-row  ${
               active !== null ? "h-auto" : "h-0"
             }`}
             ref={activeRef}
@@ -381,7 +381,7 @@ const WhyChooseParam = () => {
                     <img
                       src={crossImage}
                       alt="Close"
-                      className="w-[40px] h-[40px] cursor-pointer absolute top-1 -right-[0%] lg:hidden xl:hidden "
+                      className="w-[40px] h-[40px] cursor-pointer absolute top-[3.75rem] -right-[0%] lg:hidden xl:hidden "
                       onClick={handleCancelClick}
                     />
                   </div>
@@ -398,8 +398,8 @@ const WhyChooseParam = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[5%] flex justify-start items-start ">
-              <div className="hidden lg:block xl:block w-[60px] h-[60px] cursor-pointer">
+            <div className="w-[5%] flex justify-start items-start">
+              <div className="hidden  absolute -top-[4.25rem] lg:block xl:block w-[60px] h-[60px] cursor-pointer">
                 <img src={crossImage} alt="" onClick={handleCancelClick} />
               </div>
             </div>

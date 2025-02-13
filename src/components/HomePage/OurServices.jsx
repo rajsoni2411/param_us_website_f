@@ -311,7 +311,7 @@ const OurServices = () => {
                             <img
                               src={item?.img}
                               alt=""
-                              className="lg:w-[60px] xl:w-[50px] md:w-[60px] sm:w-[50px] xs:w-full h-full"
+                              className="lg:w-[60px] xl:w-[90px] md:w-[60px] sm:w-[80px] xs:w-full h-full"
                             />
                           </div>
                           <div className="carousel-text w-full h-full flex flex-col text-center gap-8 text-white">
@@ -363,9 +363,9 @@ const OurServices = () => {
                   </div>
 
                   {/* Top circle */}
-                  <div className="top-circle absolute flex justify-center items-center top-0 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[263px] lg:w-[263px] md:h-[210px] md:w-[210px] xs:h-[163px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-8 lg:mt-0">
+                  <div className="top-circle absolute top-0 left-1/5 bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[263px] lg:w-[263px] md:h-[210px] md:w-[210px] xs:h-[163px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-8 lg:mt-0">
                     <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
-                      <div className="top-circle-text w-[80%] h-[70%] p-4 flex justify-center items-center">
+                      <div className="top-circle-text w-[80%] h-[70%] p-4">
                         <p className="font-[Faustina] lg:text-[40px] md:text-[30px] text-[30px] xs:text-[20px] font-bold text-white text-center">
                           {item?.title}
                         </p>
@@ -373,8 +373,8 @@ const OurServices = () => {
                     </div>
                   </div>
 
-                  {/* top circle hidden on right */}
-                  <div className="top-circle-hidden-right flex justify-center items-center absolute top-0 md:left-[72%] lg:left-[62%] sm:left-[80%] xs:left-[106%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100%  md:h-[210px] md:w-[210px] lg:h-[263px] lg:w-[263px] xs:h-[163px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-8 lg:mt-0">
+                  {/* Top circle hidden on right using calc */}
+                  <div className="top-circle-hidden-right absolute top-0 lg:left-[calc(50%+187px)] md:left-[calc(50%+217px)] xs:left-[calc(50%+236px)] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% md:h-[210px] md:w-[210px] lg:h-[263px] lg:w-[263px] xs:h-[163px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-8 lg:mt-0">
                     <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
                       <div className="top-circle-text w-[80%] h-[70%] p-4">
                         <p className="font-[Faustina] lg:text-[40px] md:text-[30px]  xs:text-[20px] text-[30px] font-bold text-white text-center flex items-center justify-center">
@@ -384,8 +384,8 @@ const OurServices = () => {
                     </div>
                   </div>
 
-                  {/* top circle hidden on left */}
-                  <div className="top-circle-hidden-left flex justify-center items-center absolute top-0 lg:left-[22%] md:-left-[2%] sm:-left-[30%] xs:-left-[44%] transform translate-x-1/2 bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% md:h-[210px] md:w-[210px] xs:h-[163px] lg:h-[263px] lg:w-[263px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-8 lg:mt-0">
+                  {/* Top circle hidden on left using calc */}
+                  <div className="top-circle-hidden-left absolute top-0  md:left-[calc(50%-453px)] lg:left-[calc(50%-423px)] xs:left-[calc(50%-401px)] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% md:h-[210px] md:w-[210px] xs:h-[163px] lg:h-[263px] lg:w-[263px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-8 lg:mt-0">
                     <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
                       <div className="top-circle-text w-[80%] h-[70%] p-4">
                         <p className="font-[Faustina] lg:text-[40px] md:text-[30px]   xs:text-[20px]  text-[30px]font-bold text-white text-center flex items-center justify-center">
@@ -400,30 +400,14 @@ const OurServices = () => {
 
                   {/* design below top circle */}
                   {/* Left Mini-Circle */}
-                  <div
-                    className="absolute lg:top-[294px] xs:top-[294px] md:top-[267px] 2xl:left-[40%] xl:left-[38%] lg:left-[38%] xs:left-[23%] sm:left-[30%] md:left-[38%] w-[10px] h-[10px] rounded-full 
-                  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"
-                  ></div>
-
-                  {/* Dynamic Line */}
-                  <div
-                    className="absolute xs:top-[297px] lg:top-[297px] md:top-[270px] 2xl:left-[40%] xl:left-[38%] lg:left-[38%] xs:left-[23%] sm:left-[30%] md:left-[38%]
-                  lg:w-[313px] md:w-[180px] sm:w-[270px] xs:w-[229px] 
-                  h-1 bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"
-                  ></div>
-
-                  {/* Right Mini-Circle */}
-                  <div
-                    className="absolute lg:top-[294px] xs:top-[294px] md:top-[267px]
-                      2xl:left-[calc(40%+313px)] 
-                      xl:left-[calc(38%+313px)] 
-                      lg:left-[calc(38%+313px)] 
-                      md:left-[calc(38%+180px)] 
-                  sm:left-[calc(30%+270px)] 
-                  xs:left-[calc(23%+229px)]
-                  w-[10px] h-[10px] rounded-full 
-                  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"
-                  ></div>
+                  <div className="absolute xs:top-[297px] lg:top-[297px] md:top-[270px] left-1/2 transform -translate-x-1/2 flex items-center">
+                    {/* Left Mini-Circle */}
+                    <div className="w-[10px] h-[10px] rounded-full bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
+                    {/* Dynamic Line */}
+                    <div className="lg:w-[313px] md:w-[180px] sm:w-[270px] xs:w-[229px] h-1 bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
+                    {/* Right Mini-Circle */}
+                    <div className="w-[10px] h-[10px] rounded-full bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
+                  </div>
 
                   {/* left-1-circle */}
                   <div className="hidden md:block left-1-circle absolute top-[11%] md:left-[15%] xl:left-[18%]  2xl:left-[22%] lg:left-[16%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">

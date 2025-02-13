@@ -422,11 +422,11 @@ const HeroSection = () => {
               </div>
             </div>
             {/* Image Content */}
-            <div className="flex justify-center">
+            <div className="flex justify-center items-center">
               <img
                 src={walk}
                 alt="walk through"
-                className="xs:w-[90%] xs:h-[90%] md:w-[680px] md:h-[700px] lg:w-[780px] lg:h-[831px] object-contain"
+                className="xs:w-[90%] xs:h-[90%] md:w-[680px] md:h-[700px] lg:w-[780px] lg:h-[831px] object-contain flex justify-center items-center"
               />
             </div>
             {/* Mobile Title (for xs/sm only) */}
