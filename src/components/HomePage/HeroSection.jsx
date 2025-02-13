@@ -202,17 +202,17 @@ const HeroSection = () => {
   return (
     <div>
       {/* Main Hero Section */}
-      <div className="text-white md:h-[80vh] lg:h-[100vh] xl:h-auto xs:h-[1250px]  sm:h-[1550px] mt-3 overflow-hidden relative z-50 md:flex">
+      <div className="text-white md:h-[820px] lg:h-[820px] xl:h-auto xs:h-[1250px]  sm:h-[1550px] mt-3 overflow-hidden relative z-50 md:flex">
         {/* Left Content */}
         <div className="md:w-[45%] w-[100%] overflow-hidden">
-          <div className="flex flex-col gap-3 mt-20  xl:ml-28 md:ml-8 xs:ml-6">
+          <div className="flex flex-col gap-3 mt-20 2xl:ml-28 xl:ml-20 md:ml-8 xs:ml-6">
             <p className="font-raleway font-medium xs:text-[20px] md:text-[24px] lg:text-[30px] xl:text-[36px]">
               Since 2001
             </p>
-            <h1 className="font-raleway font-medium xs:text-[25px] md:text-[25px] lg:text-[35px] xl:text-[48px]">
+            <h1 className="font-raleway font-medium xs:text-[25px] md:text-[25px] lg:text-[35px] 2xl:text-[48px] xl:text-[40px]">
               Delivering Excellence in{" "}
             </h1>
-            <div className="scroller font-faustina font-semibold xs:text-[48px] md:text-[50px] lg:text-[65px] xl:text-[90px]">
+            <div className="scroller font-faustina font-semibold xs:text-[48px] md:text-[50px] lg:text-[65px]  2xl:text-[90px] xl:text-[77px]">
               <span>
                 IT Consulting
                 <br />
@@ -225,11 +225,11 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Desktop Ring Boxes (visible on md and lg) */}
-          <div className="hidden md:block w-full h-full overflow-hidden">
-            <div className="ring-3 single-round 2xl:top-[51%]  md:top-[49%] 2xl:-left-[14%] xl:-left-[17%] lg:-left-[21%] lg:top-[50%] md:-left-[49%] md:w-[94%] md:h-[81%] lg:w-[841px] lg:h-[778px]">
-              <div className="w-full h-full relative -top-8 font-faustina">
-                <div className="box1 md:w-[180px] md:h-[85px] lg:w-[180px] lg:h-[95px] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute md:top-[8%] lg:top-0 md:left-[56%] lg:left-[35%]">
+          {/* only md and lg) */}
+          <div className="hidden md:block w-full h-auto overflow-hidden">
+            <div className="ring-3 single-round 2xl:top-[51%]  md:top-[49%] 2xl:-left-[14%] xl:-left-[17%] lg:-left-[23%] lg:top-[50%] md:-left-[30%] md:w-[84%] md:h-[78%] lg:w-[841px] lg:h-[778px] 2xl:w-[841px] 2xl:h-[778px] xl:w-[58%] xl:h-[77%]">
+              <div className="w-full h-full relative -top-8 font-faustina ">
+                <div className="box1 md:w-[180px] md:h-[85px] lg:w-[180px] lg:h-[95px] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute md:top-[3%] lg:top-7 md:left-[40%] lg:left-[35%]">
                   <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                   <div className="relative flex flex-col gap-1 justify-center items-center z-10">
                     <p className="md:text-[30px] lg:text-[28px] leading-[33px] font-semibold">
@@ -272,10 +272,10 @@ const HeroSection = () => {
         {/* Right Image Section */}
         <div className="flex flex-col md:w-[55%] xs:w-[100%] md:gap-9 xs:gap-4 z-20 relative h-full px-8 mt-10">
           {/* Decorative Rings */}
-          <div className="hidden md:block ring-1 ring-zoom-out absolute   md:left-[5%] md:top-[0%] md:w-[385.47px] md:h-[281.93px] lg:left-[25%] lg:top-[0%] lg:w-[385.47px] lg:h-[281.93px] xl:left-[25%] xl:top-[10%] xl:w-[475px] xl:h-[350px] 2xl:left-[30%] 2xl:top-[10%] 2xl:w-[585px] 2xl:h-[401px]"></div>
-          <div className="hidden md:block ring-2 ring-zoom-out absolute md:left-[52%] md:top-[0%] md:w-[482.82px] md:h-[546.36px] lg:left-[52%] lg:top-[0%] lg:w-[482.82px] lg:h-[546.36px] xl:left-[55%] xl:top-[10%] xl:w-[725px] xl:h-[828px]  2xl:left-[52%] 2xl:top-[10%] 2xl:w-[725px] 2xl:h-[828px]"></div>
-          <div className="block md:hidden ring-1 ring-zoom-out absolute xs:left-[30%] xs:top-[0%] xs:w-[54%] xs:h-[15%]"></div>
-          <div className="block md:hidden ring-2 ring-zoom-out absolute xs:left-[52%] xs:top-[2%] xs:w-[80%] xs:h-[29%]"></div>
+          <div className="hidden md:block ring-1 ring-zoom-out absolute   md:left-[17%] md:top-[1%] md:w-[385.47px] md:h-[281.93px] lg:left-[25%] lg:top-[0%] lg:w-[385.47px] lg:h-[281.93px] xl:left-[25%] xl:top-[10%] xl:w-[527px] xl:h-[380px] 2xl:left-[26%] 2xl:top-[10%] 2xl:w-[626px] 2xl:h-[476px]"></div>
+          <div className="hidden md:block ring-2 ring-zoom-out absolute md:left-[59%] md:top-[0%] md:w-[619px] md:h-[537.2px] lg:left-[52%] lg:top-[0%] lg:w-[482.82px] lg:h-[546.36px] xl:left-[55%] xl:top-[10%] xl:w-[725px] xl:h-[828px]  2xl:left-[52%] 2xl:top-[10%] 2xl:w-[725px] 2xl:h-[828px]"></div>
+          <div className="block md:hidden ring-1 ring-zoom-out absolute xs:left-[30%] xs:top-[4%] xs:w-[54%] xs:h-[15%]"></div>
+          <div className="block md:hidden ring-2 ring-zoom-out absolute xs:left-[59%] xs:top-[2%] xs:w-[68%] xs:h-[29%]"></div>
 
           <div className="flex gap-5 items-end pt-10">
             <div className="image overflow-hidden xs:w-[55%] xs:h-[81%] xl:w-[56%] xl:h-[260px] md:w-[271px] md:h-[171.85px]">
@@ -311,11 +311,11 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Mobile Ring Boxes (visible on xs/sm only) */}
+        {/* xs/sm only) */}
         <div className="block md:hidden w-full h-full overflow-hidden">
-          <div className="ring-3 xs:top-[70%] sm:top-[67.5%] xs:left-[-87%] xs:w-[179%] xs:h-[67%] md:top-0 single-round">
+          <div className="ring-3 xs:top-[69%] sm:top-[69%] xs:left-[-89.4%] xs:w-[180.7%] xs:h-[48.2%] md:top-0 single-round">
             <div className="w-full h-full relative -top-16 font-faustina">
-              <div className="box1 xs:w-[20%] xs:top-[8%] xs:h-[10%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[50%]">
+              <div className="box1 xs:w-[20%]  sm:top-[10%] xs:top-[14%] xs:h-[13%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[55%]">
                 <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                 <div className="relative flex flex-col gap-1 justify-center items-center z-10">
                   <p className="xs:text-[30px] md:text-[40px] leading-[33px] font-semibold">
@@ -327,7 +327,7 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="box2 xs:w-[20%] xs:top-[24%] xs:h-[10%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[73%]">
+              <div className="box2 xs:w-[20%] xs:top-[30%] xs:h-[13%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[79%]">
                 <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                 <div className="relative flex flex-col gap-1 justify-center items-center z-10">
                   <p className="xs:text-[30px] md:text-[40px] leading-[33px] font-semibold">
@@ -339,7 +339,7 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="box3 xs:w-[20%] xs:top-[40%] xs:h-[10%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[82%]">
+              <div className="box3 xs:w-[20%] xs:top-[55%] xs:h-[13%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[84%]">
                 <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                 <div className="relative flex flex-col gap-1 justify-center items-center z-10">
                   <p className="xs:text-[30px] md:text-[40px] leading-[33px] font-semibold">
@@ -356,16 +356,16 @@ const HeroSection = () => {
       </div>
 
       {/* "Our Success Speaks For Itself" Section */}
-      <div className="flex md:flex-row flex-col w-full justify-center items-center text-white font-faustina gap-20 z-10 relative h-[320px] md:-mt-[60px] lg:-mt-[60px] bg-black md:p-7 lg:p-7 ">
-        <p className="font-semibold xs:text-[29px] md:text-[60px] lg:text-[80px] xs:leading-none md:leading-[80px] lg:leading-[100px]">
+      <div className="flex md:flex-row flex-col w-full justify-center items-center text-white font-faustina gap-10 z-10 relative  xs:h-[180px] md:h-[320px] md:-mt-[60px] lg:-mt-[60px] bg-black md:p-7 lg:p-7 ">
+        <p className="font-semibold xs:text-[29px] md:text-[40px] lg:text-[50px] xl:text-[70px] xs:leading-none md:leading-[80px] lg:leading-[100px]">
           Our Success Speaks For Itself
         </p>
         <div className="flex gap-8 items-center">
-          <div className="play lg:w-[83px] lg:h-[83px] w-[70px] h-[50px] rounded-full flex justify-center items-center bg-gradient-to-r from-[rgb(31,162,255)] via-[rgb(18,216,250)] to-[rgb(166,255,203)]">
+          <div className="play lg:w-[83px] lg:h-[83px] xs:w-[50px] xs:h-[50px] rounded-full flex justify-center items-center bg-gradient-to-r from-[rgb(31,162,255)] via-[rgb(18,216,250)] to-[rgb(166,255,203)]">
             <img
               src={tringle}
               alt="TriangleImage"
-              className="lg:max-w-full lg:h-auto w-[20px] h-[20px]"
+              className="lg:max-w-full lg:h-auto md:w-[30px] md:h-[30px] xs:w-[25px] xs:h-[25px]"
             />
           </div>
           <p className="font-normal xs:text-[20px] md:text-[28px] lg:text-[32px] xs:leading-none md:leading-[80px] lg:leading-[100px]">
@@ -379,8 +379,8 @@ const HeroSection = () => {
         <div className="w-[85%] flex justify-center">
           <div className="flex md:flex-row lg:flex-row xl:flex-row flex-col-reverse justify-center gap-11">
             {/* Text Content */}
-            <div className="flex flex-col md:w-[700px] md:h-[450px] lg:w-[984px] lg:h-[579px] justify-between mb-32 gap-10">
-              <p className="hidden md:block lg:block bg-gradient-to-r from-[#1FA2FF] from-0% via-[#12D8FA] via-[95%] to-[#A6FFCB] to-[100%] text-transparent bg-clip-text font-semibold xs:text-3xl md:text-5xl lg:text-6xl font-faustina pt-20">
+            <div className="flex flex-col md:w-[700px] md:h-[450px] lg:w-[984px] lg:h-[579px] justify-between  xs:mb-10 md:mb-32 gap-10">
+              <p className="hidden md:block lg:block bg-gradient-to-r from-[#1FA2FF] from-0% via-[#12D8FA] via-[95%] to-[#A6FFCB] to-[100%] text-transparent bg-clip-text font-semibold xs:text-3xl md:text-5xl lg:text-6xl leading-2 font-faustina pt-20">
                 A Walk Through Us
               </p>
               <div className="flex flex-col gap-5 text-white md:text-start lg:text-start text-center font-faustina font-normal text-xl/[35px]">

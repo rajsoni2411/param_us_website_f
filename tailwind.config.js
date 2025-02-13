@@ -1,18 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       screens: {
-        xs: '320px',
-        sm: '640px',
-        miniTablet: '768px',
-        tablet: '1024px',
-        1280: '1280px',
-        1536: '1536px',
-        1920: '1920px',
+        xs: "300px",
+        sm: "640px",
+        miniTablet: "768px",
+        tablet: "1024px",
+        1280: "1280px",
+        1536: "1536px",
+        1320: "1320px",
+        1380: "1380px",
+        1290: "1290px",
+        1920: "1920px",
+        
       },
       backgroundImage: {
         "home-bg": "url('./assets/images/bgclients.jpeg')",
@@ -24,10 +26,10 @@ module.exports = {
         "hex4-bg": "url('./assets/hexagons/hex4.jpeg')",
         "hex5-bg": "url('./assets/hexagons/hex5.jpeg')",
         "hex6-bg": "url('./assets/hexagons/hex6.jpeg')",
-        "service-bg": "url('./assets/images/services.jpg')"
+        "service-bg": "url('./assets/images/services.jpg')",
       },
       clipPath: {
-        'bottom-inset': 'inset(0% 0% 20% 0%)'
+        "bottom-inset": "inset(0% 0% 20% 0%)",
       },
       keyframes: {
         "zoom-in": {
@@ -46,18 +48,18 @@ module.exports = {
 
         "fade-in": {
           "0%": {
-            opacity: 0
+            opacity: 0,
           },
           "100%": {
-            opacity: 1
+            opacity: 1,
           },
         },
         "fade-out": {
           "0%": {
-            opacity: 1
+            opacity: 1,
           },
           "100%": {
-            opacity: 0
+            opacity: 0,
           },
         },
         "slide-out-left": {
@@ -80,19 +82,18 @@ module.exports = {
         },
       },
       animation: {
-        zoomIn: 'zoom-in 1s ease-out 0.25s 1',
-        fadein: 'fade-in 1s ease-in-out 0.25s 1',
-        fadeout: 'fade-out 1s ease-out 0.25s 1',
-        slideoutleft: 'slide-out-left 1s ease-in-out 0.25s 1',
-        slideoutright: 'slide-out-right 1s ease-in-out 0.25s 1',
+        zoomIn: "zoom-in 1s ease-out 0.25s 1",
+        fadein: "fade-in 1s ease-in-out 0.25s 1",
+        fadeout: "fade-out 1s ease-out 0.25s 1",
+        slideoutleft: "slide-out-left 1s ease-in-out 0.25s 1",
+        slideoutright: "slide-out-right 1s ease-in-out 0.25s 1",
       },
       fontFamily: {
-        faustina: ['Faustina'],
-        raleway: ['Raleway'],
-        poppins: ['Poppins'],
+        faustina: ["Faustina"],
+        raleway: ["Raleway"],
+        poppins: ["Poppins"],
       },
     },
   },
   plugins: [],
-}
-
+};
