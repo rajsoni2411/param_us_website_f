@@ -23,8 +23,8 @@ function Aboutus() {
   // ----------------------------------------------  Animation Variants ----------------------------------------------
 
   return (
-    <div className="w-full min-h-screen bg-cover bg-center flex justify-center items-center text-white overflow-hidden relative -z-50">
-      <div className="w-[calc(100%_-_80px)] ">
+    <div className="w-full min-h-screen bg-cover bg-center flex justify-center items-center text-white overflow-hidden  -z-50">
+      <div className="w-[calc(100%_-_30px)] ">
         <div className="font-faustina h-auto  xs:h-[200px] lg:h-[440px] md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-aboutus-bg  xs:rounded-[62px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
           <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 rounded-[110px] xs:rounded-[62px]"></div>
           <p className="font-bold text-4xl lg:text-[64px] xs:text-2xl mb-9">
@@ -56,7 +56,7 @@ function Aboutus() {
               <div className="flex flex-col lg:flex-col xs:flex-row  xs:justify-center xs:items-center lg:items-center ml-0 lg:ml-5 mt-5 lg:mt-0">
                 <div className="w-10 h-10 rounded-full bg-[#1FA2FF]"></div>
                 <motion.div
-                  className="w-2 lg:w-2  xs:w-[336px] xl:h-[480px] lg:h-[780px] xs:h-2 bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%]  "
+                  className="w-2 lg:w-2 sm:w-[300px] xs:w-[200px] xl:h-[580px] lg:h-[780px] xs:h-2 bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%]  "
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
@@ -74,7 +74,7 @@ function Aboutus() {
                 viewport={{ once: true, amount: 0.5 }}
                 variants={slideInFromRight}
               >
-                <div className="leading-relaxed flex flex-col gap-5 font-poppins text-lg lg:text-xl whitespace-pre-line px-3 ">
+                <div className="leading-relaxed flex flex-col gap-5 font-poppins text-lg lg:text-xl whitespace-pre-line px-3 xs:py-4  ">
                   <p>
                     “At the end of the day, care is a human activity. Technology
                     is not there to replace caregivers; it is there to support
@@ -127,7 +127,7 @@ function Aboutus() {
               <div className="flex flex-col lg:flex-col xs:flex-row  xs:justify-center xs:items-center lg:items-center ml-0 lg:ml-5  lg:mt-0">
                 <div className="w-10 h-10 rounded-full bg-[#1FA2FF]"></div>
                 <motion.div
-                  className="w-2 lg:w-2  xs:w-[336px] xl:h-[880px] lg:h-[1280px] xs:h-2 bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%] "
+                  className="w-2 lg:w-2  sm:w-[300px] xs:w-[200px] xl:h-[880px] lg:h-[1280px] xs:h-2 bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%] "
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
@@ -145,7 +145,7 @@ function Aboutus() {
                 viewport={{ once: true, amount: 0.5 }}
                 variants={slideInFromRight}
               >
-                <div className="leading-relaxed px-3 mt-7 flex flex-col gap-5 font-poppins text-lg lg:text-xl whitespace-pre-line">
+                <div className="leading-relaxed px-3 mt-7  xs:py-4 flex flex-col gap-5 font-poppins text-lg lg:text-xl whitespace-pre-line">
                   <p>
                     Stronger when ‘UNITED’ <br /> -Like it is said, teamwork
                     makes the dream work- we at Param Group consider employees
@@ -214,7 +214,7 @@ function Aboutus() {
               <div className="flex flex-col lg:flex-col xs:flex-row  xs:justify-center xs:items-center lg:items-center lg:ml-5 mt-5 lg:mt-0">
                 <div className="w-10 h-10 rounded-full bg-[#1FA2FF]"></div>
                 <motion.div
-                  className="w-2 lg:w-2  xs:w-[336px] xl:h-[480px] lg:h-[480px] xs:h-2 bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%]  "
+                  className="w-2 lg:w-2 sm:w-[300px] xs:w-[200px]  xl:h-[480px] lg:h-[480px] xs:h-2 bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%]  "
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
@@ -232,7 +232,7 @@ function Aboutus() {
                 viewport={{ once: true, amount: 0.5 }}
                 variants={slideInFromRight}
               >
-                <div className="leading-relaxed  px-3 flex flex-col gap-5 font-poppins text-lg lg:text-xl whitespace-pre-line mt-7">
+                <div className="leading-relaxed  px-2 xs:py-4 flex flex-col gap-5 font-poppins text-lg lg:text-xl whitespace-pre-line mt-7">
                   <p>Care. Cater. Curate</p>
                   <p>
                     Our purpose is very clear that uniquely drives us to fulfill

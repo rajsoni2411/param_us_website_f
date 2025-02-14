@@ -154,7 +154,7 @@ const WhyChooseParam = () => {
           {/* Text */}
           <div className="w-[80%]">
             <div className="text-center flex flex-col gap-4 animate-zoomIn">
-              <h2 className="bg-gradient-to-r  from-[#1FA2FF] from-[40%] via-cyan-300 via-60% to-[#A6FFCB] to-70% text-transparent bg-clip-text font-semibold  lg:text-[56px] md:text-[56px] xs:text-[35px] font-[Faustina]">
+              <h2 className="bg-gradient-to-r  from-[#1FA2FF] from-[40%] via-cyan-300 via-60% to-[#A6FFCB] to-72% text-transparent bg-clip-text font-semibold  lg:text-[56px] md:text-[56px] xs:text-[35px] font-[Faustina]">
                 Why Choose Param
               </h2>
 
@@ -170,15 +170,15 @@ const WhyChooseParam = () => {
           {/* Hexagon */}
           <div className={` ${active !== null ? "h-0" : "h-full"} w-[90%] `}>
             <div className="flex    lg:flex-row xl:flex-row sm:flex-col  xs:flex-col md:flex-row   justify-center items-center font-[Faustina] font-semibold xl:text-[32px] xs:text-[25px] relative  sm:py-4">
-              <div className=" flex xs:flex-col  2xl:flex-row gap-10 relative 2xl:pt-0 xl:pt-[20%] ">
+              <div className=" flex xs:flex-col  2xl:flex-row md:gap-10 xs:gap-1 relative 2xl:pt-0 xl:pt-[9%] ">
                 {/* Hex 1*/}
                 <div
-                  className=" 2xl:w-[277px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px]  md:w-[250px] md:h-[250px] xs:w-[277px] xs:h-[525px]  2xl:mb-0 xs:-mb-32    md:mb-0 flex justify-center items-center relative
+                  className=" 2xl:w-[277px] 2xl:h-[525px] xl:w-[277px] xl:h-[238px] lg:w-[277px] lg:h-[250px]  md:w-[250px] md:h-[250px]   xs:w-[315px]  xs:h-[525px]  2xl:mb-0 xs:-mb-32    md:mb-0 flex justify-center items-center relative
                     "
                   ref={hex1Ref}
                 >
                   <div
-                    className="hex hex-parent group xl:w-[277px] xl:h-[285px]  md:w-[250px]  md:h-[250px] xs:w-[277px] xs:h-[277px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                    className="hex hex-parent group xl:w-[277px] xl:h-[238px]  md:w-[250px] lg:w-[277px] lg:h-[250px]  md:h-[250px] xs:w-[315px] xs:h-[277px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
                     onMouseEnter={() => handleMouseEnter(0)}
                     onMouseLeave={() => handleMouseLeave(0)}
                   >
@@ -186,8 +186,8 @@ const WhyChooseParam = () => {
                       {/* inner shadow of hex */}
                       <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
-                      <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
-                        <p className="text-white text-center">
+                      <div className="w-[60%] h-full flex flex-col justify-center items-center gap-4">
+                        <p className="text-white text-center xl:text-[26px] 2xl:text-text-[32px]">
                           Always there for you
                         </p>
 
@@ -206,19 +206,19 @@ const WhyChooseParam = () => {
 
                 {/* Hex 2 */}
                 <div
-                  className="2xl:w-[277px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px]  md:w-[250px]  md:h-[250px] xs:w-[277px] xs:h-[525px] flex justify-center items-center relative"
+                  className="2xl:w-[277px] 2xl:h-[525px] xl:w-[277px] xl:h-[238px] lg:w-[277px] lg:h-[250px]  md:w-[250px]  md:h-[250px] xs:w-[315px] xs:h-[525px] flex justify-center items-center relative"
                   ref={hex2Ref}
                 >
                   <div
-                    className="hex hex-parent group xl:w-[277px] xl:h-[285px]  md:w-[250px]  md:h-[250px] xs:w-[277px] xs:h-[277px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                    className="hex hex-parent group xl:w-[277px] xl:h-[238px] lg:w-[277px] lg:h-[250px]  md:w-[250px]  md:h-[250px] xs:w-[315px] xs:h-[277px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
                     onMouseEnter={() => handleMouseEnter(1)}
                     onMouseLeave={() => handleMouseLeave(1)}
                   >
                     <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
                       <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
-                      <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
-                        <p className="text-white text-center">
+                      <div className="w-[60%] h-full flex flex-col justify-center items-center gap-4">
+                        <p className="text-white text-center xl:text-[26px] 2xl:text-text-[32px]">
                           Enthusiastic Employees
                         </p>
 
@@ -237,12 +237,12 @@ const WhyChooseParam = () => {
 
               {/* Hex 3 and 4 */}
               <div
-                className="2xl:w-[277px] 2xl:h-[625px] xl:w-[275px] xl:h-[675px]  md:w-[250px]  md:h-[850px] xs:w-[277px] xs:h-[675px] 
+                className="2xl:w-[277px] 2xl:h-[625px] xl:w-[277px] xl:h-[675px] lg:w-[277px] lg:h-[850px]  md:w-[250px]  md:h-[850px] xs:w-[315px] xs:h-[575px] 
                  flex flex-col md:gap-10 xs:gap-52  relative"
               >
                 {/* Hex 3 */}
                 <div
-                  className="hex hex-parent group 2xl:w-[277px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px]  md:w-[250px]  md:h-[250px] xs:w-[277px] xs:h-[525px]   lg:mb-0 xs:-mb-24 md:mb-0 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1 "
+                  className="hex hex-parent group 2xl:w-[277px] 2xl:h-[257px] lg:w-[277px] lg:h-[250px] xl:w-[277px] xl:h-[238px]  md:w-[250px]  md:h-[250px] xs:w-[315px] xs:h-[525px]   lg:mb-0 xs:-mb-24 md:mb-0 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1 "
                   ref={hex3Ref}
                   onMouseEnter={() => handleMouseEnter(2)}
                   onMouseLeave={() => handleMouseLeave(2)}
@@ -250,8 +250,8 @@ const WhyChooseParam = () => {
                   <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
                     <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
-                    <div className="w-[70%] h-full flex flex-col justify-center items-center gap-8">
-                      <p className="text-white text-center">
+                    <div className="w-[72%] h-full flex flex-col justify-center items-center gap-4">
+                      <p className="text-white text-center xl:text-[26px] 2xl:text-text-[32px]">
                         Specialized Customer Service Model
                       </p>
 
@@ -268,7 +268,7 @@ const WhyChooseParam = () => {
 
                 {/* Hex 4 */}
                 <div
-                  className="hex hex-parent group 2xl:w-[277px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px]  md:w-[250px]  md:h-[250px] xs:w-[277px] xs:h-[525px]   lg:mb-0 xs:-mb-24  md:mt-0 md:-mb-0 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                  className="hex hex-parent group 2xl:w-[277px] 2xl:h-[257px] lg:w-[277px] lg:h-[250px] xl:w-[277px] xl:h-[238px]  md:w-[250px]  md:h-[250px] xs:w-[315px] xs:h-[525px]   lg:mb-0 xs:-mb-24  md:mt-0 md:-mb-0 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
                   ref={hex4Ref}
                   onMouseEnter={() => handleMouseEnter(3)}
                   onMouseLeave={() => handleMouseLeave(3)}
@@ -276,8 +276,8 @@ const WhyChooseParam = () => {
                   <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden ">
                     <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
-                    <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
-                      <p className="text-white text-center">
+                    <div className="w-[60%] h-full flex flex-col justify-center items-center gap-4">
+                      <p className="text-white text-center xl:text-[26px] 2xl:text-text-[32px]">
                         Affordable yet Effective
                       </p>
 
@@ -293,15 +293,15 @@ const WhyChooseParam = () => {
                 {/* <div className="hex-shadow absolute w-[130%] h-[90%] top-[46%] left-[-55px]"></div> */}
               </div>
 
-              <div className=" flex xs:flex-col  2xl:flex-row gap-10 relative 2xl:pt-0 xl:pt-[20%]">
+              <div className=" flex xs:flex-col  2xl:flex-row md:gap-10 xs:gap-1 relative 2xl:pt-0 xl:pt-[9%]">
                 {/* Hex 5*/}
                 <div
-                  className=" 2xl:w-[277px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px]  md:w-[250px] md:h-[250px] xs:w-[277px] xs:h-[525px]  xl:mb-0 xs:-mb-32 xs:mt-24 md:mt-0   md:mb-0 flex justify-center items-center relative
+                  className=" 2xl:w-[277px] 2xl:h-[525px] xl:w-[277px] xl:h-[238px]  lg:w-[277px] lg:h-[250px] md:w-[250px] md:h-[250px] xs:w-[315px] xs:h-[525px]  xl:mb-0 xs:-mb-32 xs:mt-24 md:mt-0   md:mb-0 flex justify-center items-center relative
                     "
                   ref={hex5Ref}
                 >
                   <div
-                    className="hex hex-parent group xl:w-[277px] xl:h-[285px]  md:w-[250px]  md:h-[250px] xs:w-[277px] xs:h-[277px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                    className="hex hex-parent group xl:w-[277px] xl:h-[238px]  lg:w-[277px] lg:h-[250px] md:w-[250px]  md:h-[250px] xs:w-[315px] xs:h-[277px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
                     onMouseEnter={() => handleMouseEnter(4)}
                     onMouseLeave={() => handleMouseLeave(4)}
                   >
@@ -309,8 +309,8 @@ const WhyChooseParam = () => {
                       {/* inner shadow of hex */}
                       <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
-                      <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
-                        <p className="text-white text-center">
+                      <div className="w-[60%] h-full flex flex-col justify-center items-center gap-4">
+                        <p className="text-white text-center xl:text-[26px] 2xl:text-text-[32px]">
                           Innovation at it's best
                         </p>
 
@@ -329,19 +329,19 @@ const WhyChooseParam = () => {
 
                 {/* Hex 6 */}
                 <div
-                  className="2xl:w-[277px] 2xl:h-[525px] xl:w-[275px] xl:h-[275px]  md:w-[250px]  md:h-[250px] xs:w-[277px] xs:h-[525px] flex justify-center items-center relative"
+                  className="2xl:w-[277px] 2xl:h-[525px] xl:w-[277px] xl:h-[238px] lg:w-[277px] lg:h-[250px]  md:w-[250px]  md:h-[250px] xs:w-[315px] xs:h-[525px] flex justify-center items-center relative"
                   ref={hex6Ref}
                 >
                   <div
-                    className="hex hex-parent group xl:w-[277px] xl:h-[285px]  md:w-[250px]  md:h-[250px] xs:w-[277px] xs:h-[277px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                    className="hex hex-parent group xl:w-[277px] xl:h-[238px]  lg:w-[277px] lg:h-[250px] md:w-[250px]  md:h-[250px] xs:w-[315px] xs:h-[277px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
                     onMouseEnter={() => handleMouseEnter(5)}
                     onMouseLeave={() => handleMouseLeave(5)}
                   >
                     <div className="hex-inner hex bg-black w-full h-full flex justify-center relative overflow-hidden">
                       <div className="hex-shadow-inner absolute w-[100%] h-[100%] z-[-1] group-hover:opacity-[0.3]"></div>
 
-                      <div className="w-[60%] h-full flex flex-col justify-center items-center gap-8">
-                        <p className="text-white text-center">
+                      <div className="w-[60%] h-full flex flex-col justify-center items-center gap-4">
+                        <p className="text-white text-center xl:text-[26px] 2xl:text-text-[32px]">
                           We bet to be on time
                         </p>
 
@@ -381,7 +381,7 @@ const WhyChooseParam = () => {
                     <img
                       src={crossImage}
                       alt="Close"
-                      className="w-[40px] h-[40px] cursor-pointer absolute top-[3.75rem] -right-[0%] lg:hidden xl:hidden "
+                      className="w-[40px] h-[40px] cursor-pointer absolute top-[0.75rem] -right-[0%] lg:hidden xl:hidden "
                       onClick={handleCancelClick}
                     />
                   </div>

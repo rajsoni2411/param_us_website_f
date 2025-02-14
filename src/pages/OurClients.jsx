@@ -84,8 +84,8 @@ const OurClients = () => {
 
 
     return (
-      <div className="our-clients w-full flex justify-center relative z-50">
-        <div className="our-clients-inner w-[calc(100%_-_60px)] 1024:w-[calc(100%_-_200px)]">
+      <div className="our-clients w-full flex justify-center  -z-50">
+        <div className="our-clients-inner w-[calc(100%_-_30px)] ">
           {/* -------------------------------------------------- Background Image div ----------------------------------------------- */}
 
           {/* <div className="font-faustina h-[440px] w-full mt-[60px] bg-home-bg rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
@@ -111,7 +111,7 @@ const OurClients = () => {
                 {imgArray1?.map((itm, i) => {
                   return (
                     <div className=" img-shadow  relative" key={i}>
-                      <div className=" img-shadow-inner rounded-[15px]  absolute w-[100%] h-[100%]   bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0 "></div>
+                      <div className=" img-shadow-inner rounded-[15px]  absolute w-[100%] h-[100%] px-10g-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0 "></div>
                       <div className="bg-gradient-to-r  from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[350px]   ">
                         <div className="bg-white  bg-opacity-80 w-full h-full rounded-[15px] p-7 flex items-center justify-center">
                           <img src={itm?.img} alt="" className="object-cover" />
@@ -129,7 +129,7 @@ const OurClients = () => {
                   {imgArray2?.map((itm, i) => {
                     return (
                       <div className="img-shadow relative" key={i}>
-                        <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
+                        <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%] px-10  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
                         <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[350px]  ">
                           <div className="bg-white bg-opacity-80 w-full h-full rounded-[15px] p-7 flex items-center justify-center">
                             <img

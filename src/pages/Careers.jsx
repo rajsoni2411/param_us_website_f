@@ -142,7 +142,7 @@ const Careers = () => {
     // };
 
     return (
-      <div className="h-full w-full flex  justify-center items-center relative z-50">
+      <div className="h-full w-full flex  justify-center items-center  -z-50">
         <div className="w-[90%] flex flex-col justify-center items-center">
           {/* Background image of Career */}
           {/* <div className="bg-careers-bg h-[440px] w-full  bg-center bg-cover object-cover opacity-95 rounded-[110px] flex flex-col justify-center items-center mt-20  font-faustina text-white gap-4 relative mb-[60px]">
@@ -171,17 +171,17 @@ const Careers = () => {
           <div className="flex flex-col gap-[60px] justify-center items-center w-[100%]">
             {/* IT Consulting */}
             <div className="flex justify-start h-full w-full">
-              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]  w-7 cylinder"></div>
+              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]   xs:w-5 md:w-7 cylinder"></div>
 
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
-                  <div className="flex flex-col py-8 px-10 gap-8">
+                  <div className="flex flex-col py-8 xs:px-4 md:px-10 gap-8">
                     <div className="text-white">
-                      <h2 className="font-faustina font-bold leading-[50.4px] text-[40px]">
+                      <h2 className="font-faustina font-bold leading-[50.4px]  xs:text-[20px] sm:text-[24px] md:text-[40px]">
                         IT Consulting
                       </h2>
                     </div>
-                    <div className=" text-white text-xl/[30px]">
+                    <div className=" text-white  xs:text-xs/[20px] md:text-xl/[30px]">
                       <p className="font-poppins font-semibold ">
                         "Occupy your resource and unlock new paradigms with our
                         IT solutions."
@@ -194,7 +194,7 @@ const Careers = () => {
                       </p>
                     </div>
                     {/* Button */}
-                    <div class="bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-[67px] w-[161px] p-[2px] rounded-[14px] ">
+                    <div class="bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] xs:h-[67px] xs:w-[161px] sm:h-[67px] sm:w-[161px]  h-[67px] w-[161px] p-[2px] rounded-[14px] ">
                       <button class="form-input button-style diagonal mb-0 mt-0 ">
                         <span class="old-text">VISIT CAREER</span>
                         <span class="new-text">VISIT CAREER</span>
@@ -211,13 +211,13 @@ const Careers = () => {
 
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
-                  <div className="flex flex-col py-8 px-10 gap-8">
+                  <div className="flex flex-col py-8 xs:px-4 md:px-10  gap-8">
                     <div className="  text-white">
-                      <h2 className="font-faustina font-bold leading[50.4px] text-[40px]">
+                      <h2 className="font-faustina font-bold leading[50.4px] xs:text-[20px] sm:text-[24px] md:text-[40px]">
                         Param Healthcare Services
                       </h2>
                     </div>
-                    <div className=" text-white mt-1 text-xl/[30px]">
+                    <div className=" text-white mt-1  xs:text-xs/[20px] md:text-xl/[30px]">
                       <p className="font-poppins font-semibold ">
                         "Committed to taking care of your every medical need. We
                         offer a diverse wellness portfolio of services to
@@ -249,13 +249,13 @@ const Careers = () => {
 
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
-                  <div className="flex flex-col py-8 px-10 gap-8">
+                  <div className="flex flex-col py-8 xs:px-4 md:px-10  gap-8">
                     <div className="text-white">
-                      <h2 className="font-faustina font-bold leading[50.4px] text-[40px]">
+                      <h2 className="font-faustina font-bold leading[50.4px] xs:text-[20px] sm:text-[24px] md:text-[40px]">
                         Param Institute Of Education
                       </h2>
                     </div>
-                    <div className=" text-white text-xl/[30px]">
+                    <div className=" text-white  xs:text-xs/[20px] md:text-xl/[30px]">
                       <p className="font-poppins font-semibold ">
                         "Get trained with us and your fineness will attract
                         opportunities for life."
@@ -285,13 +285,13 @@ const Careers = () => {
 
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
-                  <div className="flex flex-col py-8 px-10 gap-8">
+                  <div className="flex flex-col py-8 xs:px-4 md:px-10  gap-8">
                     <div className="  text-white">
-                      <h2 className="font-faustina font-bold leading[50.4px] text-[40px]">
+                      <h2 className="font-faustina font-bold leading[50.4px] xs:text-[20px] sm:text-[24px] md:text-[40px]">
                         Param Adult Day Care
                       </h2>
                     </div>
-                    <div className=" text-white text-xl/[30px]">
+                    <div className=" text-white  xs:text-xs/[20px] md:text-xl/[30px]">
                       <p className="font-poppins font-semibold ">
                         "A home away from home/ Parents are not the burden,
                         burden is the care and attention that follow. Make your
@@ -324,13 +324,13 @@ const Careers = () => {
 
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
-                  <div className="flex flex-col py-8 px-10 gap-8">
+                  <div className="flex flex-col py-8 xs:px-4 md:px-10  gap-8">
                     <div className="  text-white">
-                      <h2 className="font-faustina font-bold leading[50.4px] text-[40px]">
+                      <h2 className="font-faustina font-bold leading[50.4px] xs:text-[20px] sm:text-[24px] md:text-[40px]">
                         Param Wellness
                       </h2>
                     </div>
-                    <div className=" text-white text-xl/[30px]">
+                    <div className=" text-white  xs:text-xs/[20px] md:text-xl/[30px]">
                       <p className="font-poppins font-semibold ">
                         "Find your inner peace and discover the holistic ways of
                         wellness"
@@ -361,13 +361,13 @@ const Careers = () => {
 
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
-                  <div className="flex flex-col py-8 px-10 gap-8">
+                  <div className="flex flex-col py-8 xs:px-4 md:px-10  gap-8">
                     <div className="  text-white">
-                      <h2 className="font-faustina font-bold leading[50.4px] text-[40px]">
+                      <h2 className="font-faustina font-bold leading[50.4px] xs:text-[20px] sm:text-[24px] md:text-[40px]">
                         Param Care Foundation
                       </h2>
                     </div>
-                    <div className=" text-white text-xl/[30px]">
+                    <div className=" text-white  xs:text-xs/[20px] md:text-xl/[30px]">
                       <p className="font-poppins font-semibold ">
                         "Join us in our mission to spread awareness, motivate
                         people and transform lives"
@@ -397,13 +397,13 @@ const Careers = () => {
               <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]  w-7 cylinder"></div>
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
-                  <div className="flex flex-col py-8 px-10 gap-8">
+                  <div className="flex flex-col py-8 xs:px-4 md:px-10  gap-8">
                     <div className="text-white">
-                      <h2 className="font-faustina font-bold leading-[50.4px] text-[40px]">
+                      <h2 className="font-faustina font-bold leading-[50.4px] xs:text-[20px] sm:text-[24px] md:text-[40px]">
                         Research & Development
                       </h2>
                     </div>
-                    <div className=" text-white  text-xl/[30px]">
+                    <div className=" text-white  xs:text-xs/[20px] md:text-xl/[30px]">
                       <p className="font-poppins font-semibold ">
                         "Each day we get one step closer to finding solutions to
                         improve your health and lifestyle"

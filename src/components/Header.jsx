@@ -35,7 +35,7 @@ const Header = () => {
 
 
     return (
-      <header ref={headerRef} className="font-poppins px-6 lg:px-16 py-4 z-50">
+      <header ref={headerRef} className="font-poppins h-full px-6 lg:px-16 py-4 relative z-50">
         {/*  -------------------------------------------  Mini Navbar  -------------------------------------------  */}
 
         <div className="hidden md:flex justify-end items-center text-xs sm:text-sm md:text-base font-medium text-white gap-2 sm:gap-4 md:gap-6 lg:gap-10">
@@ -125,7 +125,7 @@ const Header = () => {
           </nav>
 
           <div
-            className={`lg:hidden  fixed top-0 left-0 w-full  bg-white text-black flex flex-col items-center gap-6 pt-20 transition-transform  duration-300 ${
+            className={`lg:hidden  fixed top-0 left-0 w-full  h-auto bg-white text-black flex flex-col items-center gap-6 pt-20 transition-transform  duration-300 ${
               isOpen ? "translate-x-0" : "-translate-x-full"
             }`}
           >

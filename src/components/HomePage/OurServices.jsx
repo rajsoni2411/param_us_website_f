@@ -260,15 +260,15 @@ const OurServices = () => {
         {/* Container inner */}
         <div className=" xl:w-[96%] 2xl:w-[80%] lg:w-[110%] md:w-[90%] sm:w-[90%] xs:w-[100%] flex flex-col justify-center items-center gap-[10px]">
           {/* Our Services Text */}
-          <div className="w-full flex flex-col md:pt-72 lg:pt-10 text-center gap-4 font-['Faustina'] animate-zoomIn">
-            <h2 className="text-[56px] sm:text-[48px] font-semibold bg-gradient-to-r from-[#1FA2FF] from-[40%] via-cyan-300 via-50% to-[#A6FFCB] to-60% text-transparent bg-clip-text">
-              Our Services
+          <div className="w-full flex flex-col md:pt-72 lg:pt-10 text-center  font-['Faustina'] animate-zoomIn">
+            <h2 className="text-[56px] xs:text-[36px] sm:text-[48px] font-semibold mb-3 bg-gradient-to-r from-[#1FA2FF] from-[40%] via-cyan-300 via-50% to-[#A6FFCB] to-60% text-transparent bg-clip-text">
+              Our Core Services
             </h2>
-            <p className="text-[18px] sm:text-[16px] font-normal text-white">
+            <p className="text-[18px] xs:text-[12px] sm:text-[16px] font-normal text-white">
               Explore The World Of Technology With Us. Come Find Your Hidden
               Competencies
             </p>
-            <p className="text-[18px] sm:text-[16px] font-normal text-white">
+            <p className="text-[18px]  xs:text-[12px] sm:text-[16px] font-normal text-white">
               By Kick-Starting Your Business With New Insights
             </p>
           </div>
@@ -288,7 +288,7 @@ const OurServices = () => {
                   <div className="main-circle 2xl:w-[80%] xl:w-[89%] lg:w-[89%] md:w-[96%] lg:h-[100%] md:h-[78%] sm:w-[96%] xs:w-[100%] h-full px-1 pt-1 md:bg-gradient-to-r from-[#1FA2FF] from-[35%] via-cyan-300 via-50% to-[#A6FFCB] to-90% sm:bg-none xs:bg-none">
                     <div className="main-circle w-full h-full bg-black flex justify-center items-center">
                       {/* main circle inner */}
-                      <div className="flex lg:w-[59%] xl:w-[65%] 2xl:w-[60%] md:w-[79%]  sm:w-[100%] xs:w-[88%]  lg:gap-8 xl:gap-10 md:gap-[1.5rem] sm:gap-[15px] xs:gap-10 justify-center items-center">
+                      <div className="flex lg:w-[59%] xl:w-[65%] 2xl:w-[60%] md:w-[79%]  sm:w-[100%] xs:w-[88%]  lg:gap-8 xl:gap-10 md:gap-[1.5rem] sm:gap-[15px] xs:gap-4 justify-center items-center">
                         <div className="static arrow-container h-full md:w-[65px]  mb-10 sm:w-[55px] xs:w-[40px] flex items-center mt-[40%] sm:mt-[35%]">
                           <div className="left-arrow rounded-[6px] bg-gradient-to-r from-[#1FA2FF] from-[30%] via-[#12D8FA] via-50% to-[#A6FFCB] to-100% p-[2px] md:h-[50px] sm:h-[40px] xs:h-[30px] w-full">
                             <div
@@ -305,14 +305,14 @@ const OurServices = () => {
                         </div>
 
                         {/* Content inside main circle */}
-                        <div className="inner-2 w-full flex flex-col justify-center gap-4  xl:mt-1 lg:mt-[144px] md:mt-[17%] sm:mt-[24px] xs:mt-28">
+                        <div className="inner-2 w-full flex flex-col justify-center gap-4  xl:mt-1 lg:mt-[144px] md:mt-[20%] sm:mt-[24px] xs:mt-[15rem]">
                           <div className="vector-img-div w-full md:h-[90px] sm:h-[80px] xs:h-[50px] flex justify-center">
                             {/* img */}
                             <img
                               src={item?.img}
                               alt=""
-                              className="lg:w-[60px] xl:w-[90px] md:w-[60px] sm:w-[80px] xs:w-full h-full"
-                            />
+                              className="lg:w-[60px] xl:w-[90px] md:w-[60px] sm:w-[80px]  mt-3 xs:w-[28px] h-full"
+                            />  
                           </div>
                           <div className="carousel-text w-full h-full flex flex-col text-center gap-8 text-white">
                             {/* name */}
@@ -320,7 +320,7 @@ const OurServices = () => {
                               {item?.name}
                             </p>
                             {/* content */}
-                            <p className="font-[Faustina] lg:text-[20px] md:text-[17px] sm:text-[15px] xs:text-[10px] font-normal md:leading-10 sm:leading-7 xs:leading-4">
+                            <p className="font-[Faustina] lg:text-[20px] md:text-[17px] sm:text-[16px] xs:text-[16px] font-normal md:leading-10 sm:leading-7 xs:leading-6">
                               {item?.content}
                             </p>
                             {/* button */}
@@ -365,7 +365,7 @@ const OurServices = () => {
                   {/* Top circle */}
                   <div className="top-circle absolute top-0 left-1/5 bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[263px] lg:w-[263px] md:h-[210px] md:w-[210px] xs:h-[163px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-8 lg:mt-0">
                     <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
-                      <div className="top-circle-text w-[80%] h-[70%] p-4">
+                      <div className="top-circle-text w-[80%] h-[70%] p-4 flex justify-center items-center">
                         <p className="font-[Faustina] lg:text-[40px] md:text-[30px] text-[30px] xs:text-[20px] font-bold text-white text-center">
                           {item?.title}
                         </p>
@@ -374,9 +374,9 @@ const OurServices = () => {
                   </div>
 
                   {/* Top circle hidden on right using calc */}
-                  <div className="top-circle-hidden-right absolute top-0 lg:left-[calc(50%+187px)] md:left-[calc(50%+217px)] xs:left-[calc(50%+236px)] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% md:h-[210px] md:w-[210px] lg:h-[263px] lg:w-[263px] xs:h-[163px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-8 lg:mt-0">
+                  <div className="top-circle-hidden-right absolute top-0 lg:left-[calc(50%+191px)] md:left-[calc(50%+217px)] xs:left-[calc(50%+240px)] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% md:h-[210px] md:w-[210px] lg:h-[263px] lg:w-[263px] xs:h-[163px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-8 lg:mt-0">
                     <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
-                      <div className="top-circle-text w-[80%] h-[70%] p-4">
+                      <div className="top-circle-text w-[80%] h-[70%] p-4 flex justify-center items-center">
                         <p className="font-[Faustina] lg:text-[40px] md:text-[30px]  xs:text-[20px] text-[30px] font-bold text-white text-center flex items-center justify-center">
                           {item?.title}
                         </p>
@@ -385,9 +385,9 @@ const OurServices = () => {
                   </div>
 
                   {/* Top circle hidden on left using calc */}
-                  <div className="top-circle-hidden-left absolute top-0  md:left-[calc(50%-453px)] lg:left-[calc(50%-423px)] xs:left-[calc(50%-401px)] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% md:h-[210px] md:w-[210px] xs:h-[163px] lg:h-[263px] lg:w-[263px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-8 lg:mt-0">
+                  <div className="top-circle-hidden-left absolute top-0  md:left-[calc(50%-423px)] lg:left-[calc(50%-453px)] xs:left-[calc(50%-401px)] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% md:h-[210px] md:w-[210px] xs:h-[163px] lg:h-[263px] lg:w-[263px] xs:w-[163px] rounded-[50%] p-1 xs:mt-24 md:mt-8 lg:mt-0">
                     <div className="top-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
-                      <div className="top-circle-text w-[80%] h-[70%] p-4">
+                      <div className="top-circle-text w-[80%] h-[70%] p-4 flex justify-center items-center">
                         <p className="font-[Faustina] lg:text-[40px] md:text-[30px]   xs:text-[20px]  text-[30px]font-bold text-white text-center flex items-center justify-center">
                           {item?.title}
                         </p>
@@ -404,7 +404,7 @@ const OurServices = () => {
                     {/* Left Mini-Circle */}
                     <div className="w-[10px] h-[10px] rounded-full bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
                     {/* Dynamic Line */}
-                    <div className="lg:w-[313px] md:w-[180px] sm:w-[270px] xs:w-[229px] h-1 bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
+                    <div className="lg:w-[313px] md:w-[180px] sm:w-[270px] xs:w-[190px] h-1 bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
                     {/* Right Mini-Circle */}
                     <div className="w-[10px] h-[10px] rounded-full bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
                   </div>

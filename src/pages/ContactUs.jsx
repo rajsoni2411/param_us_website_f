@@ -63,55 +63,72 @@ const ContactUs = () => {
     });
 
     return (
-      //----------main-div-----------
-      <div className="w-full flex flex-col   gap-[10px] mt-20 relative z-50 ">
+      // ----------main-div-----------
+
+      <div className="w-full flex flex-col   gap-[10px] mt-20  -z-50 ">
         {/* ---------------div-1--------------- */}
         <div className="w-full px-4 lg:px-10 flex flex-col lg:flex-row items-start space-y-4 lg:space-y-0 lg:space-x-4">
           <div className="flex justify-center lg:justify-start w-full">
-            <p className="line-1 xs:text-[40px] lg:text-[72.96px] font-faustina font-bold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text tracking-widest text-center">
+            <p className="line-1 xs:text-[35px] 2xl:text-[72.96px] lg:text-[55.96px] xl:text-[60.96px] font-faustina font-bold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text tracking-widest text-center">
               Connect With Us
             </p>
           </div>
 
           {/* --------text-2--------- */}
-          <div className="flex justify-center  w-full xs:text-[30px] sm:text-[48px] text-border font-faustina font-medium lg:text-[69.51px] opacity-40 text-[#00000080]">
+          <div className="flex justify-center  w-full xs:text-[24px] sm:text-[48px] text-border font-faustina font-medium  2xl:text-[69.51px] xl:text-[59.51px] lg:text-[39.51px] opacity-40 text-[#00000080]">
             "Let's Start A Project Together"
           </div>
         </div>
 
         {/* -----------------------div-2----------------- */}
         <div className="relative flex w-full h-full justify-center items-center">
-          <div className="hidden md:flex gradient-box absolute  lg:top-[48%] md:top-[51%] xl:top-[36%] w-full bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-sky-300 z-[-1]"></div>
+          <div className="hidden md:flex gradient-box absolute md:h-52 xl:h-[28%]   lg:top-[45%] md:top-[49%] xl:top-[36%] w-full bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-sky-300 z-[-1]"></div>
           {/* --------3-container-div---------- */}
 
           <div className="grid lg:grid-cols-2 md:grid-cols-2  xs:grid-cols-1 xl:grid-cols-3 sm:grid-cols-1 w-[90%] h-full gap-[60px] ">
             <div className="flex flex-col justify-center items-center bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-auto rounded-[25px] gap-8 p-1 self-stretch lg:mx-auto  md:mx-auto">
               <div className="flex flex-col bg-black rounded-[25px] h-full w-full gap-8 px-[25px] py-[32px]">
-                <p className="font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text text-[32px]">
+                <p className="font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text  xs:text-[18px]  sm:text-[22px] lg:text-[32px]">
                   Param Group of Companies Headquarter - USA
                 </p>
                 <div className="flex flex-col gap-8 text-white">
-                  <div className="flex gap-8 items-center">
-                    <img src={logo1} alt="img" className="object-contain" />
-                    <p className="font-faustina text-[24px] font-normal">
+                  <div className="flex gap-8 items-center ">
+                    <img
+                      src={logo1}
+                      alt="img"
+                      className="object-contain xs:w-5 sm:w-6 md:w-8"
+                    />
+                    <p className="font-faustina text-[24px] xs:text-[16px] sm:text-[20px] font-normal">
                       +1 732 404 0466
                     </p>
                   </div>
                   <div className="flex gap-8 items-center">
-                    <img src={logo2} alt="img" className="object-contain" />
-                    <p className="font-faustina text-[24px] font-normal">
+                    <img
+                      src={logo2}
+                      alt="img"
+                      className="object-contain  xs:w-5  sm:w-6 md:w-8"
+                    />
+                    <p className="font-faustina text-[24px] xs:text-[16px] sm:text-[20px] font-normal">
                       +1 732 404 0422
                     </p>
                   </div>
                   <div className="flex gap-8 items-center">
-                    <img src={logo3} alt="img" className="object-contain" />
-                    <p className="font-faustina text-[24px] font-normal">
+                    <img
+                      src={logo3}
+                      alt="img"
+                      className="object-contain  xs:w-5 sm:w-6 md:w-8"
+                    />
+                    <p className="font-faustina text-[24px] xs:text-[16px] sm:text-[20px] font-normal">
                       info@pcsionweb.com
                     </p>
                   </div>
                   <div className="flex gap-8 items-center">
-                    <img src={logo4} alt="img" className="object-contain" />
-                    <p className="font-faustina text-[24px] font-normal">
+                    <img
+                      src={logo4}
+                      alt="img"
+                      className="object-contain  xs:w-5 sm:w-6 md:w-8"
+                    />
+                    <p className="font-faustina text-[24px] xs:text-[16px] sm:text-[20px] font-normal">
                       200 Middlesex Essex TPK., Suite 110
                     </p>
                   </div>
@@ -120,31 +137,47 @@ const ContactUs = () => {
             </div>
             <div className="flex flex-col justify-center items-center bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-auto rounded-[25px] gap-8 p-1 self-stretch xl:mx-auto lg:mx-auto  md:mx-auto">
               <div className="flex flex-col bg-black rounded-[25px] h-full w-full gap-8 px-[25px] py-[32px]">
-                <p className="font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text text-[32px]">
+                <p className="font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text  xs:text-[18px]  sm:text-[22px] lg:text-[32px] ">
                   Param Group of Companies - INDIA
                 </p>
                 <div className="flex flex-col gap-8 text-white">
                   <div className="flex gap-8 items-center">
-                    <img src={logo1} alt="img" className="object-contain" />
-                    <p className="font-faustina text-[24px] font-normal">
+                    <img
+                      src={logo1}
+                      alt="img"
+                      className="object-contain xs:w-5 sm:w-6 md:w-8"
+                    />
+                    <p className="font-faustina text-[24px] xs:text-[16px] sm:text-[20px] font-normal">
                       +91 265 2466950
                     </p>
                   </div>
                   <div className="flex gap-8 items-center">
-                    <img src={logo2} alt="img" className="object-contain" />
-                    <p className="font-faustina text-[24px] font-normal">
+                    <img
+                      src={logo2}
+                      alt="img"
+                      className="object-contain xs:w-5 sm:w-6 md:w-8"
+                    />
+                    <p className="font-faustina text-[24px] xs:text-[16px] sm:text-[20px] font-normal">
                       +91 265 2466950
                     </p>
                   </div>
                   <div className="flex gap-8 items-center">
-                    <img src={logo3} alt="img" className="object-contain" />
-                    <p className="font-faustina text-[24px] font-normal">
+                    <img
+                      src={logo3}
+                      alt="img"
+                      className="object-contain xs:w-5 sm:w-6 md:w-8"
+                    />
+                    <p className="font-faustina text-[24px] xs:text-[16px] sm:text-[20px] font-normal">
                       info@pcsionweb.com
                     </p>
                   </div>
                   <div className="flex gap-8 items-center">
-                    <img src={logo4} alt="img" className="object-contain" />
-                    <p className="font-faustina text-[24px] font-normal">
+                    <img
+                      src={logo4}
+                      alt="img"
+                      className="object-contain xs:w-5 sm:w-6 md:w-8"
+                    />
+                    <p className="font-faustina text-[24px] xs:text-[16px] sm:text-[20px] font-normal">
                       709 - 710 Everest Onyx, Opp Inox Multiplex, Race Course
                       Rd, Vadodara - 3900 007
                     </p>
@@ -154,31 +187,47 @@ const ContactUs = () => {
             </div>
             <div className="flex flex-col justify-center items-center bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-auto rounded-[25px] gap-8 p-1 self-stretch md:col-span-2 lg:col-span-2 xl:col-span-1  lg:mx-auto  md:mx-auto">
               <div className="flex flex-col bg-black rounded-[25px] h-full w-full gap-8 px-[25px] py-[32px]">
-                <p className="font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text text-[32px]">
+                <p className="font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text  xs:text-[18px]  sm:text-[22px] lg:text-[32px]">
                   Param Group of Companies - CANADA
                 </p>
                 <div className="flex flex-col gap-8 text-white">
                   <div className="flex gap-8 items-center">
-                    <img src={logo1} alt="img" className="object-contain" />
-                    <p className="font-faustina text-[24px] font-normal">
+                    <img
+                      src={logo1}
+                      alt="img"
+                      className="object-contain xs:w-5 sm:w-6 md:w-8"
+                    />
+                    <p className="font-faustina text-[24px] xs:text-[16px] sm:text-[20px] font-normal">
                       +1 647 833 7205
                     </p>
                   </div>
                   <div className="flex gap-8 items-center">
-                    <img src={logo2} alt="img" className="object-contain" />
-                    <p className="font-faustina text-[24px] font-normal">
+                    <img
+                      src={logo2}
+                      alt="img"
+                      className="object-contain xs:w-5 sm:w-6 md:w-8"
+                    />
+                    <p className="font-faustina text-[24px] xs:text-[16px] sm:text-[20px] font-normal">
                       +1 905 604 0647
                     </p>
                   </div>
                   <div className="flex gap-8 items-center">
-                    <img src={logo3} alt="img" className="object-contain" />
-                    <p className="font-faustina text-[24px] font-normal">
+                    <img
+                      src={logo3}
+                      alt="img"
+                      className="object-contain xs:w-5 sm:w-6 md:w-8"
+                    />
+                    <p className="font-faustina text-[24px] xs:text-[16px] sm:text-[20px] font-normal">
                       info@pcsionweb.com
                     </p>
                   </div>
                   <div className="flex gap-8 items-center">
-                    <img src={logo4} alt="img" className="object-contain" />
-                    <p className="font-faustina text-[24px] font-normal">
+                    <img
+                      src={logo4}
+                      alt="img"
+                      className="object-contain xs:w-5 sm:w-6 md:w-8"
+                    />
+                    <p className="font-faustina text-[24px] xs:text-[16px] sm:text-[20px] font-normal">
                       84 Redkey DR., Markham, Ontario Canada, L3S 4R6
                     </p>
                   </div>
@@ -193,7 +242,7 @@ const ContactUs = () => {
         {/* -----------------div-3------------------------- */}
         <div className="flex flex-col  h-full w-full justify-center items-center gap-[42px]">
           <div className="flex justify-center items-center">
-            <p className="paragraph flex  items-center font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] from-0% via-[#12D8FA] via-50% to-[#A6FFCB]  to-80% text-transparent bg-clip-text text-[60px]">
+            <p className="paragraph flex  items-center font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] from-0% via-[#12D8FA] via-50% to-[#A6FFCB]  to-80% text-transparent bg-clip-text lg:text-[60px] xs:text-[40px] sm:text-[24px] md:tetx-[28px] xl:text-[34px]" >
               Send Us a Message
             </p>
           </div>
