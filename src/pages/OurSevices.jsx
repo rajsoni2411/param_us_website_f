@@ -178,7 +178,7 @@ const OurServices = () => {
           </p>
         </div>
         <div className="w-auto mt-24  overflow-x-auto gray-100">
-          <div className="p-8 overflow-x-auto scrollbar-hide flex justify-center">
+          <div className="p-8 overflow-x-auto scrollbar-hide flex xs:justify-start  2xl:justify-center">
             {hexagonDetails.map((hex, index) => (
               <div
                 key={index}
@@ -226,16 +226,16 @@ const OurServices = () => {
             {/* Text Content */}
             <div className="flex flex-col gap-8 w-1/2 xs:w-full">
               {hexagonDetails[active]?.p1 && (
-                <p className="mt-10 font-poppins md:text-2xl xs:text-xs tracking-[1px] font-normal text-white">
+                <p className="mt-10 font-poppins md:text-2xl xs:text-sm tracking-[1px] font-normal text-white">
                   {hexagonDetails[active].p1}
                 </p>
               )}
               {hexagonDetails[active]?.p2 && (
-                <p className=" font-poppins md:text-2xl xs:text-xs tracking-[1px] text-white">
+                <p className=" font-poppins md:text-2xl xs:text-sm tracking-[1px] text-white">
                   {hexagonDetails[active].p2}
                 </p>
               )}
-              <p className="mt-10 font-poppins md:text-2xl xs:text-xs tracking-[1px] text-white">
+              <p className="md:mt-10  font-poppins md:text-2xl xs:text-sm tracking-[1px] text-white">
                 For More Information
               </p>
               <div className="flex justify-center  items-center w-[220px] h-[62px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">

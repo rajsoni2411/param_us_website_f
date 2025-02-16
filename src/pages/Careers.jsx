@@ -158,7 +158,7 @@ const Careers = () => {
           </div> */}
           <div className="font-faustina h-auto  mb-10  xs:h-[200px] lg:h-[440px] md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-careers-bg xs:rounded-[62px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
             <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 rounded-[110px] xs:rounded-[62px]"></div>
-            <p className="font-bold text-4xl lg:text-[64px] xs:text-2xl mb-9">
+            <p className="font-bold text-4xl lg:text-[64px] xs:text-3xl mb-9">
               Come Work With Us
             </p>
             <p className="font-medium text-xl lg:text-[32px] xs:text-[18px] text-center">
@@ -171,7 +171,7 @@ const Careers = () => {
           <div className="flex flex-col gap-[60px] justify-center items-center w-[100%]">
             {/* IT Consulting */}
             <div className="flex justify-start h-full w-full">
-              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]   xs:w-5 md:w-7 cylinder"></div>
+              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]   xs:w-4 md:w-7 cylinder"></div>
 
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
@@ -207,7 +207,7 @@ const Careers = () => {
 
             {/* Param Healthcare Services */}
             <div className="flex justify-start h-full w-full">
-              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]  w-7 cylinder"></div>
+              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]  xs:w-4  md:w-7 cylinder"></div>
 
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
@@ -245,7 +245,7 @@ const Careers = () => {
 
             {/* Param Institute Of Education */}
             <div className="flex justify-start h-full w-full content-box">
-              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]  w-7 cylinder"></div>
+              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px] xs:w-4  md:w-7 cylinder"></div>
 
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
@@ -281,7 +281,7 @@ const Careers = () => {
 
             {/* Param Adult Day Care */}
             <div className="flex justify-start h-full w-full">
-              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]  w-7 cylinder"></div>
+              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px] xs:w-4  md:w-7 cylinder"></div>
 
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
@@ -320,7 +320,7 @@ const Careers = () => {
 
             {/* Param Wellness */}
             <div className="flex justify-start h-full w-full">
-              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]  w-7 cylinder"></div>
+              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px] xs:w-4  md:w-7 cylinder"></div>
 
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
@@ -357,7 +357,7 @@ const Careers = () => {
 
             {/* Param Care Foundation */}
             <div className="flex justify-start h-full w-full">
-              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]  w-7 cylinder"></div>
+              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px] xs:w-4  md:w-7 cylinder"></div>
 
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
@@ -394,7 +394,7 @@ const Careers = () => {
 
             {/* Research & Development */}
             <div className="flex justify-start h-full w-full">
-              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]  w-7 cylinder"></div>
+              <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px] xs:w-4  md:w-7 cylinder"></div>
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
                 <div className="bg-black rounded-[15px] ">
                   <div className="flex flex-col py-8 xs:px-4 md:px-10  gap-8">

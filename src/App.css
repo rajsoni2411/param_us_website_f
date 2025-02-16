@@ -537,3 +537,45 @@ body {
         clip-path: inset(0 0 17.99% 0);
     }
 }
+
+
+
+/* For screens up to 320px */
+@media (max-width: 300px) {
+    .hero-section {
+        height: 824px;
+    }
+}
+
+/* For screens between 321px and 400px */
+@media (min-width: 301px) and (max-width: 400px) {
+    .hero-section {
+        height: 920px;
+    }
+}
+
+/* For screens between 401px and 478px */
+@media (min-width: 401px) and (max-width: 478px) {
+    .hero-section {
+        height: 980px;
+    }
+}
+
+/* For screens between 479px and 528px */
+@media (min-width: 479px) and (max-width: 528px) {
+    .hero-section {
+        height: 1030px;
+    }
+}
+
+/* For screens between 529px and 640px */
+@media (min-width: 529px) and (max-width: 640px) {
+    .hero-section {
+        height: 1170px;
+    }
+}
+@media (min-width: 641px) and (max-width: 768px) {
+    .hero-section {
+        height: 1470px;
+    }
+}

@@ -281,14 +281,14 @@ const OurServices = () => {
 
               return (
                 <div
-                  className="w-full xl:h-[1281px] lg:h-[1240px] md:h-[1281px] sm:h-[1150px] xs:h-[1000px] flex justify-center md:pt-[125px] sm:pt-[100px] relative"
+                  className="w-full xl:h-[1281px] lg:h-[1240px] md:h-[1281px] sm:h-[1150px] xs:h-[1100px] flex justify-center md:pt-[125px] sm:pt-[100px] relative"
                   key={item.id}
                 >
                   {/* Main circle */}
                   <div className="main-circle 2xl:w-[80%] xl:w-[89%] lg:w-[89%] md:w-[96%] lg:h-[100%] md:h-[78%] sm:w-[96%] xs:w-[100%] h-full px-1 pt-1 md:bg-gradient-to-r from-[#1FA2FF] from-[35%] via-cyan-300 via-50% to-[#A6FFCB] to-90% sm:bg-none xs:bg-none">
                     <div className="main-circle w-full h-full bg-black flex justify-center items-center">
                       {/* main circle inner */}
-                      <div className="flex lg:w-[59%] xl:w-[65%] 2xl:w-[60%] md:w-[79%]  sm:w-[100%] xs:w-[88%]  lg:gap-8 xl:gap-10 md:gap-[1.5rem] sm:gap-[15px] xs:gap-4 justify-center items-center">
+                      <div className="flex lg:w-[59%] xl:w-[65%] 2xl:w-[60%] md:w-[79%]  sm:w-[100%] xs:w-[84%]  lg:gap-8 xl:gap-10 md:gap-[1.5rem]  xs:gap-[10px] sm:gap-[30px]  justify-center items-center">
                         <div className="static arrow-container h-full md:w-[65px]  mb-10 sm:w-[55px] xs:w-[40px] flex items-center mt-[40%] sm:mt-[35%]">
                           <div className="left-arrow rounded-[6px] bg-gradient-to-r from-[#1FA2FF] from-[30%] via-[#12D8FA] via-50% to-[#A6FFCB] to-100% p-[2px] md:h-[50px] sm:h-[40px] xs:h-[30px] w-full">
                             <div
@@ -305,7 +305,7 @@ const OurServices = () => {
                         </div>
 
                         {/* Content inside main circle */}
-                        <div className="inner-2 w-full flex flex-col justify-center gap-4  xl:mt-1 lg:mt-[144px] md:mt-[20%] sm:mt-[24px] xs:mt-[15rem]">
+                        <div className="inner-2 w-full flex flex-col justify-center gap-1  xl:mt-1 lg:mt-[144px] md:mt-[20%] sm:mt-[24px] xs:mt-[15rem]">
                           <div className="vector-img-div w-full md:h-[90px] sm:h-[80px] xs:h-[50px] flex justify-center">
                             {/* img */}
                             <img

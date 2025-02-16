@@ -168,17 +168,17 @@ const WhyChooseParam = () => {
             </div>
           </div>
           {/* Hexagon */}
-          <div className={` ${active !== null ? "h-0" : "h-full"} w-[90%] `}>
+          <div className={` ${active !== null ? "h-0" : "h-full"} w-[10%]  `}>
             <div className="flex    lg:flex-row xl:flex-row sm:flex-col  xs:flex-col md:flex-row   justify-center items-center font-[Faustina] font-semibold xl:text-[32px] xs:text-[25px] relative  sm:py-4">
               <div className=" flex xs:flex-col  2xl:flex-row md:gap-10 xs:gap-1 relative 2xl:pt-0 xl:pt-[9%] ">
                 {/* Hex 1*/}
                 <div
-                  className=" 2xl:w-[277px] 2xl:h-[525px] xl:w-[277px] xl:h-[238px] lg:w-[277px] lg:h-[250px]  md:w-[250px] md:h-[250px]   xs:w-[315px]  xs:h-[525px]  2xl:mb-0 xs:-mb-32    md:mb-0 flex justify-center items-center relative
+                  className=" 2xl:w-[277px] 2xl:h-[525px] xl:w-[277px] xl:h-[238px] lg:w-[277px] lg:h-[250px]  md:w-[250px] md:h-[250px]   xs:w-[300px]  xs:h-[525px]  2xl:mb-0 xs:-mb-32    md:mb-0 flex justify-center items-center relative
                     "
                   ref={hex1Ref}
                 >
                   <div
-                    className="hex hex-parent group xl:w-[277px] xl:h-[238px]  md:w-[250px] lg:w-[277px] lg:h-[250px]  md:h-[250px] xs:w-[315px] xs:h-[277px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                    className="hex hex-parent group xl:w-[277px] xl:h-[238px]  md:w-[250px] lg:w-[277px] lg:h-[250px]  md:h-[250px] xs:w-[250px] xs:h-[227px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
                     onMouseEnter={() => handleMouseEnter(0)}
                     onMouseLeave={() => handleMouseLeave(0)}
                   >
@@ -210,7 +210,7 @@ const WhyChooseParam = () => {
                   ref={hex2Ref}
                 >
                   <div
-                    className="hex hex-parent group xl:w-[277px] xl:h-[238px] lg:w-[277px] lg:h-[250px]  md:w-[250px]  md:h-[250px] xs:w-[315px] xs:h-[277px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                    className="hex hex-parent group xl:w-[277px] xl:h-[238px] lg:w-[277px] lg:h-[250px]  md:w-[250px]  md:h-[250px] xs:w-[250px] xs:h-[227px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
                     onMouseEnter={() => handleMouseEnter(1)}
                     onMouseLeave={() => handleMouseLeave(1)}
                   >
@@ -237,12 +237,12 @@ const WhyChooseParam = () => {
 
               {/* Hex 3 and 4 */}
               <div
-                className="2xl:w-[277px] 2xl:h-[625px] xl:w-[277px] xl:h-[675px] lg:w-[277px] lg:h-[850px]  md:w-[250px]  md:h-[850px] xs:w-[315px] xs:h-[575px] 
+                className="2xl:w-[277px] 2xl:h-[625px] xl:w-[277px] xl:h-[675px] lg:w-[277px] lg:h-[850px]  md:w-[250px]  md:h-[850px] xs:w-[315px] xs:h-[477px] 
                  flex flex-col md:gap-10 xs:gap-52  relative"
               >
                 {/* Hex 3 */}
                 <div
-                  className="hex hex-parent group 2xl:w-[277px] 2xl:h-[257px] lg:w-[277px] lg:h-[250px] xl:w-[277px] xl:h-[238px]  md:w-[250px]  md:h-[250px] xs:w-[315px] xs:h-[525px]   lg:mb-0 xs:-mb-24 md:mb-0 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1 "
+                  className="hex hex-parent group 2xl:w-[277px] 2xl:h-[257px] lg:w-[277px] lg:h-[250px] xl:w-[277px] xl:h-[238px]  md:w-[250px]  md:h-[250px] xs:w-[250px] xs:h-[400px]   lg:mb-0 xs:-mb-24 md:mb-0 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1  xs:ml-8 md:ml-0"
                   ref={hex3Ref}
                   onMouseEnter={() => handleMouseEnter(2)}
                   onMouseLeave={() => handleMouseLeave(2)}
@@ -268,7 +268,7 @@ const WhyChooseParam = () => {
 
                 {/* Hex 4 */}
                 <div
-                  className="hex hex-parent group 2xl:w-[277px] 2xl:h-[257px] lg:w-[277px] lg:h-[250px] xl:w-[277px] xl:h-[238px]  md:w-[250px]  md:h-[250px] xs:w-[315px] xs:h-[525px]   lg:mb-0 xs:-mb-24  md:mt-0 md:-mb-0 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                  className="hex hex-parent group 2xl:w-[277px] 2xl:h-[257px] lg:w-[277px] lg:h-[250px] xl:w-[277px] xl:h-[238px]  md:w-[250px]  md:h-[250px] xs:w-[250px] xs:h-[400px]   xs:ml-8 md:ml-0  lg:mb-0 xs:-mb-24  md:mt-0 md:-mb-0 bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
                   ref={hex4Ref}
                   onMouseEnter={() => handleMouseEnter(3)}
                   onMouseLeave={() => handleMouseLeave(3)}
@@ -301,7 +301,7 @@ const WhyChooseParam = () => {
                   ref={hex5Ref}
                 >
                   <div
-                    className="hex hex-parent group xl:w-[277px] xl:h-[238px]  lg:w-[277px] lg:h-[250px] md:w-[250px]  md:h-[250px] xs:w-[315px] xs:h-[277px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                    className="hex hex-parent group xl:w-[277px] xl:h-[238px]  lg:w-[277px] lg:h-[250px] md:w-[250px]  md:h-[250px] xs:w-[250px] xs:h-[227px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
                     onMouseEnter={() => handleMouseEnter(4)}
                     onMouseLeave={() => handleMouseLeave(4)}
                   >
@@ -333,7 +333,7 @@ const WhyChooseParam = () => {
                   ref={hex6Ref}
                 >
                   <div
-                    className="hex hex-parent group xl:w-[277px] xl:h-[238px]  lg:w-[277px] lg:h-[250px] md:w-[250px]  md:h-[250px] xs:w-[315px] xs:h-[277px] bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
+                    className="hex hex-parent group xl:w-[277px] xl:h-[238px]  lg:w-[277px] lg:h-[250px] md:w-[250px]  md:h-[250px] xs:w-[250px] xs:h-[227px]  bg-gradient-to-b from-[#A6FFCB] via-[#12D8FA] via-[40%] to-[#1FA2FF] to-[90%] p-1"
                     onMouseEnter={() => handleMouseEnter(5)}
                     onMouseLeave={() => handleMouseLeave(5)}
                   >
@@ -381,7 +381,7 @@ const WhyChooseParam = () => {
                     <img
                       src={crossImage}
                       alt="Close"
-                      className="w-[40px] h-[40px] cursor-pointer absolute top-[0.75rem] -right-[0%] lg:hidden xl:hidden "
+                      className="w-[40px] h-[40px] cursor-pointer absolute top-[2rem] -right-[0%] lg:hidden xl:hidden "
                       onClick={handleCancelClick}
                     />
                   </div>

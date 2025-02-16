@@ -207,9 +207,9 @@ const HeroSection = () => {
   // ---------------------------------------------------- rolling text button animation ----------------------------------------------------
 
   return (
-    <div>
+    <>
       {/* Main Hero Section */}
-      <div className="text-white md:h-[820px] lg:h-[820px] xl:h-auto xs:h-[1250px] sm:h-[1550px] mt-3 overflow-hidden relative -z-50 md:flex">
+      <div className="text-white md:h-[820px] lg:h-[887px] xl:h-auto hero-section  mt-3 overflow-hidden relative -z-50 md:flex">
         {/* Left Content */}
         <div className="md:w-[45%] w-[100%] overflow-hidden">
           <div className="flex flex-col gap-3 mt-20 2xl:ml-28 xl:ml-20 md:ml-8 xs:ml-6">
@@ -263,7 +263,7 @@ const HeroSection = () => {
                 <div className="box3 md:w-[180px] md:h-[85px] lg:w-[180px] lg:h-[95px] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute md:top-[45%] lg:top-80 md:left-[83%] lg:left-[85%]">
                   <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                   <div className="relative flex flex-col gap-1 justify-center items-center z-10">
-                    <p className="md:text-[30px] lg:text-[28px] leading-[33px] font-semibold">
+                    <p className="md:text-[30px] lg:text-[28px] xs:text-[0px] leading-[33px] font-semibold">
                       2100 +
                     </p>
                     <p className=" md:text-lg lg:text-lg leading-[25px]">
@@ -277,7 +277,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right Image Section */}
-        <div className="flex flex-col md:w-[55%] xs:w-[100%] md:gap-4 xs:gap-4 z-20 relative h-full px-8 mt-10">
+        <div className="flex flex-col md:w-[55%] xs:w-[100%] md:gap-4 xs:gap-4 z-20 relative h-full px-8 mt-16">
           {/* Decorative Rings */}
           <div className="hidden md:block ring-1 ring-zoom-out absolute md:left-[17%] md:top-[1%] md:w-[385.47px] md:h-[281.93px] lg:left-[25%] lg:top-[0%] lg:w-[385.47px] lg:h-[281.93px] xl:left-[25%] xl:top-[10%] xl:w-[527px] xl:h-[380px] 2xl:left-[26%] 2xl:top-[10%] 2xl:w-[626px] 2xl:h-[476px]"></div>
           <div className="hidden md:block ring-2 ring-zoom-out absolute md:left-[59%] md:top-[0%] md:w-[619px] md:h-[537.2px] lg:left-[52%] lg:top-[0%] lg:w-[482.82px] lg:h-[546.36px] xl:left-[55%] xl:top-[10%] xl:w-[725px] xl:h-[828px] 2xl:left-[52%] 2xl:top-[10%] 2xl:w-[725px] 2xl:h-[828px]"></div>
@@ -325,7 +325,7 @@ const HeroSection = () => {
               <div className="box1 xs:w-[20%] sm:top-[10%] xs:top-[14%] xs:h-[13%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[55%]">
                 <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                 <div className="relative flex flex-col gap-1 justify-center items-center z-10">
-                  <p className="xs:text-[30px] md:text-[40px] leading-[33px] font-semibold">
+                  <p className="xs:text-[20px] sm:text-[25px] md:text-[40px] leading-[33px] font-semibold">
                     109 +
                   </p>
                   <p className="xs:text-xs sm:text-xl md:text-xl leading-[25px]">
@@ -337,7 +337,7 @@ const HeroSection = () => {
               <div className="box2 xs:w-[20%] xs:top-[30%] xs:h-[13%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[79%]">
                 <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                 <div className="relative flex flex-col gap-1 justify-center items-center z-10">
-                  <p className="xs:text-[30px] md:text-[40px] leading-[33px] font-semibold">
+                  <p className="xs:text-[20px] sm:text-[25px] md:text-[40px] leading-[33px] font-semibold">
                     28000 +
                   </p>
                   <p className="xs:text-xs sm:text-xl md:text-xl leading-[25px]">
@@ -349,10 +349,10 @@ const HeroSection = () => {
               <div className="box3 xs:w-[20%] xs:top-[55%] xs:h-[13%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[84%]">
                 <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                 <div className="relative flex flex-col gap-1 justify-center items-center z-10">
-                  <p className="xs:text-[30px] md:text-[40px] leading-[33px] font-semibold">
+                  <p className="xs:text-[20px] sm:text-[25px] md:text-[40px] xs:leading-[20px] font-semibold">
                     2100 +
                   </p>
-                  <p className="xs:text-xs sm:text-lg md:text-xl leading-[25px]">
+                  <p className="xs:text-[10px] sm:text-lg md:text-xl leading-[25px]">
                     STUDENT TRAINED
                   </p>
                 </div>
@@ -391,7 +391,9 @@ const HeroSection = () => {
                 A Walk Through Us
               </p>
               <div className="flex flex-col gap-5 text-white   text-justify font-faustina font-normal text-xl/[35px]">
-                <p className="xs:text-center md:text-start" >Running strong since 2001</p>
+                <p className="xs:text-center md:text-start">
+                  Running strong since 2001
+                </p>
                 <p>
                   “At the end of the day, care is a human activity. Technology
                   is not there to replace caregivers; it is there to support
@@ -443,7 +445,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
