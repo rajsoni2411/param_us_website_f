@@ -1,6 +1,5 @@
 import gsap from "gsap";
 import React, { useEffect, useState } from "react";
-
 import big from "../assets/images/bigpolygon.png";
 import padc from "../assets/images/padc.png";
 import pcf from "../assets/images/pcf.png";
