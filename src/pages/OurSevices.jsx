@@ -166,7 +166,7 @@ const OurServices = () => {
     <div className="our-clients bg-container w-full flex justify-center overflow-hidden  -z-50">
       <div className="lg:w-[calc(100%_-_90px)] xs:w-[calc(100%_-_30px)]">
         <div className="font-faustina h-auto  xs:h-[200px] lg:h-[440px] md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-service-bg  xs:rounded-[84px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
-          <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 md:rounded-[79px] xs:rounded-[59px]"></div>
+          <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 md:rounded-[79px]   xs:rounded-[83px] "></div>
           <p className="font-bold text-4xl lg:text-[64px] xs:text-2xl mb-9">
             Our Core Services
           </p>
@@ -223,12 +223,12 @@ const OurServices = () => {
             {/* Text Content */}
             <div className="flex flex-col gap-8 w-1/2 xs:w-full">
               {hexagonDetails[active]?.p1 && (
-                <p className="mt-10 font-poppins md:text-2xl xs:text-sm tracking-[1px] font-normal text-white">
+                <p className="mt-10 font-poppins md:text-xl xs:text-sm tracking-[1px] font-normal text-white">
                   {hexagonDetails[active].p1}
                 </p>
               )}
               {hexagonDetails[active]?.p2 && (
-                <p className=" font-poppins md:text-2xl xs:text-sm tracking-[1px] text-white">
+                <p className=" font-poppins md:text-xl xs:text-sm tracking-[1px] text-white">
                   {hexagonDetails[active].p2}
                 </p>
               )}

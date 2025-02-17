@@ -209,7 +209,7 @@ const HeroSection = () => {
   return (
     <>
       {/* Main Hero Section */}
-      <div className="text-white md:h-[820px] lg:h-[813px] xl:h-[950px] hero-section  mt-3 overflow-hidden relative -z-50 md:flex">
+      <div className="text-white md:h-[750px] lg:h-[813px] xl:h-[950px] hero-section  mt-3 overflow-hidden relative -z-50 md:flex">
         {/* Left Content */}
         <div className="md:w-[45%] w-[100%] overflow-hidden">
           <div className="flex flex-col gap-3 mt-20 2xl:ml-[4rem] xl:ml-20 md:ml-8 xs:ml-6">
@@ -234,7 +234,7 @@ const HeroSection = () => {
 
           {/* only md and lg) */}
           <div className="hidden md:block w-full h-auto overflow-hidden">
-            <div className="ring-3 single-round 2xl:top-[51%] md:top-[49%] 2xl:-left-[14%] xl:-left-[17%] lg:-left-[calc(229px+23px)] lg:top-[43%] md:-left-[30%] md:w-[84%] md:h-[78%] lg:w-[841px] lg:h-[778px] 2xl:w-[841px] 2xl:h-[778px] xl:w-[58%] xl:h-[77%]">
+            <div className="ring-3 single-round 2xl:top-[51%] md:top-[45%] 2xl:-left-[14%] xl:-left-[17%] lg:-left-[calc(229px+23px)] lg:top-[43%] md:-left-[33%] md:w-[84%] md:h-[78%] lg:w-[841px] lg:h-[778px] 2xl:w-[841px] 2xl:h-[778px] xl:w-[58%] xl:h-[77%]">
               <div className="w-full h-full relative -top-8 font-faustina ">
                 <div className="box1 md:w-[180px] md:h-[85px] lg:w-[180px] lg:h-[95px] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute md:top-[3%] lg:top-7 md:left-[40%] lg:left-[35%]">
                   <div className="absolute inset-0 rounded-2xl border-gradient"></div>
@@ -248,7 +248,7 @@ const HeroSection = () => {
                   </div>
                 </div>
 
-                <div className="box2 md:w-[180px] md:h-[85px] lg:w-[180px] lg:h-[95px] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute md:top-[23%] lg:top-28 md:right-[5%] lg:right-[11.5%]">
+                <div className="box2 md:w-[180px] md:h-[85px] lg:w-[180px] lg:h-[95px] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute md:top-[20%] lg:top-28 md:right-[5%] lg:right-[11.5%]">
                   <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                   <div className="relative flex flex-col gap-1 justify-center items-center z-10">
                     <p className="md:text-[30px] lg:text-[28px] leading-[33px] font-semibold">
@@ -279,20 +279,20 @@ const HeroSection = () => {
         {/* Right Image Section */}
         <div className="flex flex-col md:w-[55%] xs:w-[100%] md:gap-4 xs:gap-4 z-20 relative h-full px-8 mt-16">
           {/* Decorative Rings */}
-          <div className="hidden md:block ring-1 ring-zoom-out absolute md:left-[17%] md:top-[1%] md:w-[385.47px] md:h-[281.93px] lg:left-[25%] lg:top-[0%] lg:w-[385.47px] lg:h-[281.93px] xl:left-[25%] xl:top-[10%] xl:w-[527px] xl:h-[380px] 2xl:left-[26%] 2xl:top-[10%] 2xl:w-[626px] 2xl:h-[476px]"></div>
-          <div className="hidden md:block ring-2 ring-zoom-out absolute md:left-[59%] md:top-[0%] md:w-[619px] md:h-[537.2px] lg:left-[52%] lg:top-[0%] lg:w-[482.82px] lg:h-[546.36px] xl:left-[55%] xl:top-[10%] xl:w-[725px] xl:h-[720px] 2xl:left-[60%] 2xl:top-[10%] 2xl:w-[725px] 2xl:h-[733px]"></div>
+          <div className="hidden md:block ring-1 ring-zoom-out absolute md:left-[17%] md:top-[1%] md:w-[325.47px] md:h-[231.93px] lg:left-[25%] lg:top-[0%] lg:w-[385.47px] lg:h-[281.93px] xl:left-[25%] xl:top-[10%] xl:w-[527px] xl:h-[380px] 2xl:left-[26%] 2xl:top-[10%] 2xl:w-[626px] 2xl:h-[476px]"></div>
+          <div className="hidden md:block ring-2 ring-zoom-out absolute md:left-[59%] md:top-[0%] md:w-[400px] md:h-[478.2px] lg:left-[52%] lg:top-[0%] lg:w-[482.82px] lg:h-[546.36px] xl:left-[55%] xl:top-[10%] xl:w-[725px] xl:h-[720px] 2xl:left-[60%] 2xl:top-[10%] 2xl:w-[725px] 2xl:h-[733px]"></div>
           <div className="block md:hidden ring-1 ring-zoom-out absolute xs:left-[30%] xs:top-[4%] xs:w-[54%] xs:h-[15%] sm:left-[24%] sm:top-[2%] sm:w-[61%] sm:h-[20%]"></div>
           <div className="block md:hidden ring-2 ring-zoom-out absolute xs:left-[59%] xs:top-[2%] xs:w-[68%] xs:h-[29%] sm:left-[59%] sm:top-[2%] sm:w-[68%] sm:h-[35%]"></div>
 
           <div className="flex gap-5 items-end pt-10">
-            <div className="image overflow-hidden xs:w-[55%] xs:h-[81%] xl:w-[56%] xl:h-[260px] md:w-[271px] md:h-[171.85px]">
+            <div className="image overflow-hidden xs:w-[55%] xs:h-[81%] xl:w-[56%] xl:h-[260px] md:w-[56%] md:h-[83%]">
               <img
                 src={image2}
                 alt="2"
                 className="object-cover object-top w-full h-full"
               />
             </div>
-            <div className="zoom-out overflow-hidden xs:w-[35%] xs:h-[135%] md:w-[41%] md:h-[141%] xl:w-[38%] xl:h-[362px]">
+            <div className="zoom-out overflow-hidden xs:w-[35%] xs:h-[135%] md:w-[46%] md:h-[130%] xl:w-[38%] xl:h-[362px]">
               <img
                 src={image1}
                 alt="1"
@@ -301,14 +301,14 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="flex gap-5 pb-10">
-            <div className="zoom-out overflow-hidden xs:w-[35%] xs:h-[135%] md:w-[41%] md:h-[141%] xl:w-[38%] xl:h-[362px]">
+            <div className="zoom-out overflow-hidden xs:w-[35%] xs:h-[135%] md:w-[46%] md:h-[130%] xl:w-[38%] xl:h-[362px]">
               <img
                 src={image3}
                 alt="3"
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="rotate-x overflow-auto xs:w-[55%] xs:h-[81%] xl:w-[56%] xl:h-[260px] md:w-[271px] md:h-[171.85px]">
+            <div className="rotate-x overflow-auto xs:w-[55%] xs:h-[81%] xl:w-[56%] xl:h-[260px]  md:w-[56%] md:h-[83%]">
               <img
                 src={image4}
                 alt="4"

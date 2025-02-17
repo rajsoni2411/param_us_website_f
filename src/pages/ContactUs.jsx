@@ -144,7 +144,7 @@ const ContactUs = () => {
     <div>
       <div className="w-full flex flex-col   gap-[10px] mt-20  -z-50 ">
         {/* ---------------div-1--------------- */}
-        <div className="w-full px-4 lg:px-10 flex flex-col lg:flex-row md:items-start xs:items-center space-y-4 lg:space-y-0 lg:space-x-4">
+        <div className="w-full px-4 lg:px-10 flex flex-col lg:flex-row md:items-start xs:items-center space-y-4 lg:-space-y-12 lg:space-x-4">
           <div className="flex justify-center lg:justify-start w-full">
             <p className="line-1 xs:text-[30px] sm:text-[50px] 2xl:text-[72.96px] lg:text-[55.96px] xl:text-[60.96px] font-faustina font-bold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text tracking-widest text-center">
               Connect With Us
@@ -152,7 +152,7 @@ const ContactUs = () => {
           </div>
 
           {/* --------text-2--------- */}
-          <div className="flex justify-center  w-full xs:text-[24px] sm:text-[48px] text-border font-faustina font-medium  2xl:text-[69.51px] xl:text-[59.51px] lg:text-[39.51px] opacity-40 text-[#00000080]">
+          <div className="flex justify-center xl:mb-2  w-full xs:text-[24px] sm:text-[48px] text-border font-faustina font-medium  2xl:text-[69.51px] xl:text-[59.51px] lg:text-[39.51px] opacity-40 text-[#00000080]">
             "Let's Start A Project Together"
           </div>
         </div>
