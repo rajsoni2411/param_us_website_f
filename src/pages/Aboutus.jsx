@@ -56,7 +56,7 @@ function Aboutus() {
               <div className="flex flex-col lg:flex-col xs:flex-row  xs:justify-center xs:items-center lg:items-center ml-0 lg:ml-5 mt-5 lg:mt-0">
                 <div className="w-10 h-10 rounded-full bg-[#1FA2FF]"></div>
                 <motion.div
-                  className="w-2 lg:w-2 sm:w-[300px] xs:w-[200px] xl:h-[calc(580px+20px)] lg:h-[780px] xs:h-2 bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%]   "
+                  className="line1 w-2  lg:w-2 sm:w-[300px] xs:w-[200px]  bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%]"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
@@ -64,7 +64,7 @@ function Aboutus() {
                   style={{
                     transformOrigin: "top",
                     marginTop: "0",
-                    borderRadius: "20px", 
+                    borderRadius: "20px",
                   }}
                 ></motion.div>
               </div>
@@ -128,7 +128,7 @@ function Aboutus() {
               <div className="flex flex-col lg:flex-col xs:flex-row  xs:justify-center xs:items-center lg:items-center ml-0 lg:ml-5  lg:mt-0">
                 <div className="w-10 h-10 rounded-full bg-[#1FA2FF]"></div>
                 <motion.div
-                  className="w-2 lg:w-2  sm:w-[300px] xs:w-[200px] xl:h-[880px] lg:h-[1280px] xs:h-2 bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%] "
+                  className="line2 w-2 lg:w-2 sm:w-[300px] xs:w-[200px]  bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%] "
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
@@ -216,7 +216,7 @@ function Aboutus() {
               <div className="flex flex-col lg:flex-col xs:flex-row  xs:justify-center xs:items-center lg:items-center lg:ml-5 mt-5 lg:mt-0">
                 <div className="w-10 h-10 rounded-full bg-[#1FA2FF]"></div>
                 <motion.div
-                  className="w-2 lg:w-2 sm:w-[300px] xs:w-[200px]  xl:h-[480px] lg:h-[480px] xs:h-2 bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%]   "
+                  className="line w-2 lg:w-2 sm:w-[300px] xs:w-[200px]  xl:h-[480px] lg:h-[480px] xs:h-2 bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%]   "
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
