@@ -109,7 +109,7 @@ const OurClients = () => {
                 {imgArray1?.map((itm, i) => (
                   <div className="img-shadow relative" key={i}>
                     <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
-                    <div className="bg-gradient-to-l from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] md:md:h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[300px] xs:h-[200px] sm:w-[350px] sm:h-[200px] ">
+                    <div className="bg-gradient-to-l from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] md:md:h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[290px] xs:h-[170px] sm:w-[350px] sm:h-[200px] ">
                       <div className="bg-opacity-80  bg-white w-full h-full rounded-[15px] p-7 flex items-center justify-center">
                         <img src={itm?.img} alt="" className="object-cover" />
                       </div>
@@ -129,7 +129,7 @@ const OurClients = () => {
                     return (
                       <div className="img-shadow relative" key={i}>
                         <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
-                        <div className="bg-gradient-to-l from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] md:h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[300px] xs:h-[200px] sm:w-[350px] sm:h-[200px] ">
+                        <div className="bg-gradient-to-l from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] md:h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[290px] xs:h-[170px] sm:w-[350px] sm:h-[200px] ">
                           <div className="bg-opacity-80  bg-white w-full h-full rounded-[15px] p-7 flex items-center justify-center">
                             <img
                               src={itm?.img}
@@ -152,7 +152,7 @@ const OurClients = () => {
                     return (
                       <div className="img-shadow relative" key={i}>
                         <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
-                        <div className="bg-gradient-to-l from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] md:h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[300px] xs:h-[200px] sm:w-[350px] sm:h-[200px]  ">
+                        <div className="bg-gradient-to-l from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] md:h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[290px] xs:h-[170px] sm:w-[350px] sm:h-[200px]  ">
                           <div className="bg-opacity-80  bg-white w-full h-full rounded-[15px] p-7 flex items-center justify-center">
                             <img
                               src={itm?.img}
@@ -175,7 +175,7 @@ const OurClients = () => {
                     return (
                       <div className="img-shadow relative" key={i}>
                         <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
-                        <div className="bg-gradient-to-l from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] md:h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[300px] xs:h-[200px] sm:w-[350px] sm:h-[200px]  ">
+                        <div className="bg-gradient-to-l from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] md:h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[290px] xs:h-[170px] sm:w-[350px] sm:h-[200px]  ">
                           <div className="bg-opacity-80  bg-white w-full h-full rounded-[15px] p-7 flex items-center justify-center">
                             <img
                               src={itm?.img}
@@ -198,7 +198,7 @@ const OurClients = () => {
                     return (
                       <div className="img-shadow relative" key={i}>
                         <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
-                        <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] md:h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[300px] xs:h-[200px]  sm:w-[350px] sm:h-[200px] ">
+                        <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] md:h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[290px] xs:h-[170px]  sm:w-[350px] sm:h-[200px] ">
                           <div className="bg-white bg-opacity-80 w-full h-full rounded-[15px] p-7 flex items-center justify-center">
                             <img
                               src={itm?.img}
@@ -213,7 +213,7 @@ const OurClients = () => {
 
                   <div className="img-shadow relative">
                     <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
-                    <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] md:h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[300px] xs:h-[200px] ">
+                    <div className="bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] p-1 rounded-[15px] md:h-[240px] w-[415px] lg:w-[415px]  xl:w-[415px] md:w-[390px]  xs:w-[290px] xs:h-[170px] ">
                       <div className="bg-white text-black font-['Poppins'] text-[40px] font-bold flex justify-center items-center bg-opacity-80 w-full h-full rounded-[15px] ">
                         <p>& Many More</p>
                       </div>

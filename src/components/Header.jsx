@@ -44,7 +44,7 @@ const Header = () => {
         <div className="hidden md:flex justify-end items-center text-xs sm:text-sm md:text-base font-medium text-white gap-2 sm:gap-4 md:gap-6 lg:gap-10">
           <span>Connect With Us</span>
           <a
-            href="https://twitter.com/"
+            href="https://twitter.com/Paraminc"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -55,7 +55,7 @@ const Header = () => {
             />
           </a>
           <a
-            href="https://facebook.com/"
+            href="https://www.facebook.com/people/Param-Group-of-Companies/100064194186278/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -66,7 +66,7 @@ const Header = () => {
             />
           </a>
           <a
-            href="https://instagram.com/"
+            href="https://www.instagram.com/param_group/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -77,7 +77,7 @@ const Header = () => {
             />
           </a>
           <a
-            href="https://linkedin.com/company/param-consulting-services-inc."
+            href="https://www.linkedin.com/in/paramgroup"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -91,7 +91,7 @@ const Header = () => {
 
         {/*  ------------------------------------------- Main Navbar  -------------------------------------------  */}
 
-        <div className="flex justify-between items-center mt-4">
+        <div className="flex md:justify-between xs:justify-stretch items-center  mt-4">
           {/*  ---------------------------------- Mobile sidebar button  -------------------------------------------  */}
 
           <button
@@ -107,14 +107,15 @@ const Header = () => {
 
           {/* ------------------------------------------- Logo ----------------------------------------- */}
 
-          <Link to="/" className="">
-            <img
-              src={paramLogo}
-              className="w-32 sm:w-40 md:w-48 lg:w-52 h-auto xs:items-center xs:flex xs:justify-center"
-              alt="Param Logo"
-            />
-          </Link>
-
+          <div className="flex items-center justify-center xs:mr-8 md:mr-0">
+            <Link to="/" className="">
+              <img
+                src={paramLogo}
+                className="w-32 sm:w-40 md:w-48 lg:w-52 h-auto xs:items-center xs:flex xs:justify-center"
+                alt="Param Logo"
+              />
+            </Link>
+          </div>
           {/* -------------------------------------------  Navigation Links  -------------------------------------------  */}
 
           <nav className="hidden md:flex">
