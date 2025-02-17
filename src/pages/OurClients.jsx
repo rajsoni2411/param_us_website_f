@@ -105,7 +105,7 @@ const OurClients = () => {
           <div className="our-clients-content   flex justify-center   text-[56px]">
             <div className="mt-[60px]">
               <h2 className="xs:text-[40px]  sm:text-[45px]  md:text-[60px] ">Financial</h2>
-              <div className="justify-center flex flex-wrap gap-5 px-4 xs:px-3">
+              <div className="justify-center flex flex-wrap gap-5 px-4 xs:px-1">
                 {imgArray1?.map((itm, i) => (
                   <div className="img-shadow relative" key={i}>
                     <div className="img-shadow-inner rounded-[15px] absolute w-[100%] h-[100%]  bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] opacity-0"></div>
@@ -119,7 +119,7 @@ const OurClients = () => {
               </div>
 
               <div className="mt-[60px]">
-                <h2 className="xs:text-[40px]  sm:text-[45px]  md:text-[60px]    ">
+                <h2 className="xs:text-[40px]  sm:text-[45px]  md:text-[60px]">
                   Insurance
                 </h2>
                 <div className="justify-center flex flex-wrap gap-5 px-4 xs:px-3">
@@ -167,7 +167,7 @@ const OurClients = () => {
                 </div>
               </div>
               <div className="mt-[60px]">
-                <h2 className="xs:text-[40px]  sm:text-[45px]  md:text-[60px] ">Pharmaceutical</h2>
+                <h2 className="xs:text-[35px]  sm:text-[45px]  md:text-[60px] ">Pharmaceutical</h2>
                 <div className="justify-center flex flex-wrap gap-5 px-4 xs:px-3">
                   {/* --------------------------------------------------- Gradient for image  -------------------------------------------------------- */}
 

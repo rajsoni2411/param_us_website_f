@@ -35,31 +35,58 @@ const Header = () => {
 
 
     return (
-      <header ref={headerRef} className="font-poppins h-full px-6 lg:px-16 py-4 relative z-50">
+      <header
+        ref={headerRef}
+        className="font-poppins h-full px-6 lg:px-16 py-4 relative z-50"
+      >
         {/*  -------------------------------------------  Mini Navbar  -------------------------------------------  */}
 
         <div className="hidden md:flex justify-end items-center text-xs sm:text-sm md:text-base font-medium text-white gap-2 sm:gap-4 md:gap-6 lg:gap-10">
           <span>Connect With Us</span>
-          <img
-            src={xImage}
-            className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5"
-            alt="Twitter icon"
-          />
-          <img
-            src={fbImage}
-            className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5"
-            alt="Facebook icon"
-          />
-          <img
-            src={instaImage}
-            className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5"
-            alt="Instagram icon"
-          />
-          <img
-            src={linkedinImage}
-            className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5"
-            alt="LinkedIn icon"
-          />
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={xImage}
+              className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5"
+              alt="Twitter icon"
+            />
+          </a>
+          <a
+            href="https://facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={fbImage}
+              className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5"
+              alt="Facebook icon"
+            />
+          </a>
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={instaImage}
+              className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5"
+              alt="Instagram icon"
+            />
+          </a>
+          <a
+            href="https://linkedin.com/company/param-consulting-services-inc."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={linkedinImage}
+              className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5"
+              alt="LinkedIn icon"
+            />
+          </a>
         </div>
 
         {/*  ------------------------------------------- Main Navbar  -------------------------------------------  */}
@@ -83,7 +110,7 @@ const Header = () => {
           <Link to="/" className="">
             <img
               src={paramLogo}
-              className="w-32 sm:w-40 md:w-48 lg:w-52 h-auto"
+              className="w-32 sm:w-40 md:w-48 lg:w-52 h-auto xs:items-center xs:flex xs:justify-center"
               alt="Param Logo"
             />
           </Link>

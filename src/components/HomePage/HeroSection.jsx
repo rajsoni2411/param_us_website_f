@@ -325,7 +325,7 @@ const HeroSection = () => {
               <div className="box1 xs:w-[20%] sm:top-[10%] xs:top-[14%] xs:h-[13%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[55%]">
                 <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                 <div className="relative flex flex-col gap-1 justify-center items-center z-10">
-                  <p className="xs:text-[20px] sm:text-[25px] md:text-[40px] leading-[33px] font-semibold">
+                  <p className="xs:text-[20px] sm:text-[25px] md:text-[40px] xs:leading-[20px] leading-[33px] font-semibold">
                     109 +
                   </p>
                   <p className="xs:text-xs sm:text-xl md:text-xl leading-[25px]">
@@ -337,7 +337,7 @@ const HeroSection = () => {
               <div className="box2 xs:w-[20%] xs:top-[30%] xs:h-[13%] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute xs:left-[79%]">
                 <div className="absolute inset-0 rounded-2xl border-gradient"></div>
                 <div className="relative flex flex-col gap-1 justify-center items-center z-10">
-                  <p className="xs:text-[20px] sm:text-[25px] md:text-[40px] leading-[33px] font-semibold">
+                  <p className="xs:text-[20px] sm:text-[25px] md:text-[40px] xs:leading-[20px] leading-[33px] font-semibold">
                     28000 +
                   </p>
                   <p className="xs:text-xs sm:text-xl md:text-xl leading-[25px]">

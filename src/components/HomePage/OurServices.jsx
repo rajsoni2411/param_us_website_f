@@ -311,8 +311,8 @@ const OurServices = () => {
                             <img
                               src={item?.img}
                               alt=""
-                              className="lg:w-[60px] xl:w-[90px] md:w-[60px] sm:w-[80px]  mt-3 xs:w-[28px] h-full"
-                            />  
+                              className="lg:w-[60px] xl:w-[90px] md:w-[60px] sm:w-[80px]  mt-1 xs:w-[45px] h-full"
+                            />
                           </div>
                           <div className="carousel-text w-full h-full flex flex-col text-center gap-8 text-white">
                             {/* name */}
@@ -398,13 +398,12 @@ const OurServices = () => {
                   {/* small gradient vertical line */}
                   <div className="gradient-vertical absolute md:top-[239px] lg:top-[263px] xs:top-[263px] md:left-[50%] sm:left-[50%] h-[34px] w-1 bg-gradient-to-b from-[#1FA2FF] from-[5%] via-cyan-300 via-70% to-[#A6FFCB] to-100%"></div>
 
-                  {/* design below top circle */}
                   {/* Left Mini-Circle */}
                   <div className="absolute xs:top-[297px] lg:top-[297px] md:top-[270px] left-1/2 transform -translate-x-1/2 flex items-center">
                     {/* Left Mini-Circle */}
                     <div className="w-[10px] h-[10px] rounded-full bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
                     {/* Dynamic Line */}
-                    <div className="lg:w-[313px] md:w-[180px] sm:w-[270px] xs:w-[190px] h-1 bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
+                    <div className="lg:w-[calc(313px-60px)] md:w-[180px] sm:w-[270px] xs:w-[190px] h-1 bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
                     {/* Right Mini-Circle */}
                     <div className="w-[10px] h-[10px] rounded-full bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
                   </div>

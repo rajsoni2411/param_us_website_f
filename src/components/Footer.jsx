@@ -1,16 +1,82 @@
 // ---------------------------------------------------------------- All Imports ----------------------------------------------------------------
 
-import React from 'react';
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import addressImage from '../assets/footer/address.svg';
 import dotImage from '../assets/footer/dot.svg';
 import emailImage from '../assets/footer/email.svg';
 import phoneImage from '../assets/footer/phone.svg';
 import sendImage from '../assets/footer/tabler_send.svg';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // ---------------------------------------------------------------- All Imports ----------------------------------------------------------------
 
 const Footer = () => {
+
+
+    const [formData, setFormData] = useState({
+      emailId: "",
+     
+    });
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData((prev) => ({
+        ...prev,
+        [name]: value,
+      }));
+    };
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      try {
+      const res = await fetch(
+        "http://localhost:4000/api/subscription/subscribe",
+        {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+        }
+      );
+      if (!res.ok) {
+        throw new Error("Network response was not ok");
+      }
+      const result = await res.json();
+      if (result.message === "Email already exists") {
+        toast.error("Email already subscribed!", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        });
+      } else {
+        setFormData({
+        emailId: "",
+        });
+        toast.success("Subscribed Successfully!", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        });
+      }
+      } catch (error) {
+      toast.error("Error to Subscribe!", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+      }
+    };
+
 
     return (
       <>
@@ -125,7 +191,7 @@ const Footer = () => {
                   </div>
                 </div>
 
-                <div className="subscribe w-full lg:w-1/2 flex flex-col gap-8">
+                <div className="subscribe w-full lg:w-1/2   xs:mt-10 flex flex-col gap-8">
                   <p className="text-2xl font-semibold">
                     Subscribe
                     <hr className="w-1/12 mt-2 border-0 h-1 bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB]" />
@@ -136,16 +202,21 @@ const Footer = () => {
                   <div className="email-input flex flex-row text-base">
                     <input
                       type="text"
-                      name="email"
-                      id="email"
+                      name="emailId"
+                      id="emailId"
+                      value={formData.emailId}
+                      onChange={handleChange}
                       placeholder="Your Email Address"
                       className="pl-3 text-[#495057] w-full focus:outline-none focus:ring-0 rounded-s"
                     />
-                    <div className="bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB] h-full w-[56px] flex justify-center items-center px-4 py-2 relative rounded-e">
+                    <div
+                      className="bg-gradient-to-r cursor-pointer from-[#1FA2FF] to-[#A6FFCB] h-full w-[56px] flex justify-center items-center px-4 py-2 relative rounded-e"
+                      onClick={handleSubmit}
+                    >
                       <img
                         src={sendImage}
                         className="w-6 h-6 relative"
-                        alt=""
+                        alt="Send"
                       />
                     </div>
                   </div>
@@ -169,6 +240,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <ToastContainer />
       </>
     );
 }

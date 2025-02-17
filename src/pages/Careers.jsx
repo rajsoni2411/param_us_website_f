@@ -194,10 +194,12 @@ const Careers = () => {
                       </p>
                     </div>
                     {/* Button */}
-                    <div class="bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] xs:h-[67px] xs:w-[161px] sm:h-[67px] sm:w-[161px]  h-[67px] w-[161px] p-[2px] rounded-[14px] ">
-                      <button class="form-input button-style diagonal mb-0 mt-0 ">
-                        <span class="old-text">VISIT CAREER</span>
-                        <span class="new-text">VISIT CAREER</span>
+                    <div className="flex justify-center items-center md:w-[155px] xs:w-[120px] md:h-[62px] xs:h-[50px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
+                      <button className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium  xs:text-[14px] md:text-[20px] diagonal text-xl text-center relative py-[16px] sm:py-[14px] px-[52px] sm:px-[45px]">
+                        <span className="old-text absolute transition-all top-0 left-0 w-full h-full flex justify-center items-center text-white">
+                          VISIT CAREER
+                        </span>
+                        <span className="new-text absolute ">VISIT CAREER</span>
                       </button>
                     </div>
                   </div>
@@ -232,10 +234,12 @@ const Careers = () => {
                       </p>
                     </div>
                     {/* Button */}
-                    <div class="bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-[67px] w-[161px] p-[2px] rounded-[14px] ">
-                      <button class="form-input button-style diagonal mb-0 mt-0 ">
-                        <span class="old-text">VISIT CAREER</span>
-                        <span class="new-text">VISIT CAREER</span>
+                    <div className="flex justify-center items-center md:w-[155px] xs:w-[120px] md:h-[62px] xs:h-[50px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
+                      <button className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium  xs:text-[14px] md:text-[20px] diagonal text-xl text-center relative py-[16px] sm:py-[14px] px-[52px] sm:px-[45px]">
+                        <span className="old-text absolute transition-all top-0 left-0 w-full h-full flex justify-center items-center text-white">
+                          VISIT CAREER
+                        </span>
+                        <span className="new-text absolute ">VISIT CAREER</span>
                       </button>
                     </div>
                   </div>
@@ -268,10 +272,12 @@ const Careers = () => {
                       </p>
                     </div>
                     {/* Button */}
-                    <div class="bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-[67px] w-[161px] p-[2px] rounded-[14px] ">
-                      <button class="form-input button-style diagonal mb-0 mt-0 ">
-                        <span class="old-text">VISIT CAREER</span>
-                        <span class="new-text">VISIT CAREER</span>
+                    <div className="flex justify-center items-center md:w-[155px] xs:w-[120px] md:h-[62px] xs:h-[50px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
+                      <button className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium  xs:text-[14px] md:text-[20px] diagonal text-xl text-center relative py-[16px] sm:py-[14px] px-[52px] sm:px-[45px]">
+                        <span className="old-text absolute transition-all top-0 left-0 w-full h-full flex justify-center items-center text-white">
+                          VISIT CAREER
+                        </span>
+                        <span className="new-text absolute ">VISIT CAREER</span>
                       </button>
                     </div>
                   </div>
@@ -307,10 +313,12 @@ const Careers = () => {
                       </p>
                     </div>
                     {/* Button */}
-                    <div class="bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-[67px] w-[161px] p-[2px] rounded-[14px] ">
-                      <button class="form-input button-style diagonal mb-0 mt-0 ">
-                        <span class="old-text">VISIT CAREER</span>
-                        <span class="new-text">VISIT CAREER</span>
+                    <div className="flex justify-center items-center md:w-[155px] xs:w-[120px] md:h-[62px] xs:h-[50px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
+                      <button className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium  xs:text-[14px] md:text-[20px] diagonal text-xl text-center relative py-[16px] sm:py-[14px] px-[52px] sm:px-[45px]">
+                        <span className="old-text absolute transition-all top-0 left-0 w-full h-full flex justify-center items-center text-white">
+                          VISIT CAREER
+                        </span>
+                        <span className="new-text absolute ">VISIT CAREER</span>
                       </button>
                     </div>
                   </div>
@@ -344,10 +352,12 @@ const Careers = () => {
                       </p>
                     </div>
                     {/* Button */}
-                    <div class="bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-[67px] w-[161px] p-[2px] rounded-[14px] ">
-                      <button class="form-input button-style diagonal mb-0 mt-0 ">
-                        <span class="old-text">VISIT CAREER</span>
-                        <span class="new-text">VISIT CAREER</span>
+                    <div className="flex justify-center items-center md:w-[155px] xs:w-[120px] md:h-[62px] xs:h-[50px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
+                      <button className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium  xs:text-[14px] md:text-[20px] diagonal text-xl text-center relative py-[16px] sm:py-[14px] px-[52px] sm:px-[45px]">
+                        <span className="old-text absolute transition-all top-0 left-0 w-full h-full flex justify-center items-center text-white">
+                          VISIT CAREER
+                        </span>
+                        <span className="new-text absolute ">VISIT CAREER</span>
                       </button>
                     </div>
                   </div>
@@ -381,10 +391,12 @@ const Careers = () => {
                       </p>
                     </div>
                     {/* Button */}
-                    <div class="bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-[67px] w-[161px] p-[2px] rounded-[14px] ">
-                      <button class="form-input button-style diagonal mb-0 mt-0 ">
-                        <span class="old-text">VISIT CAREER</span>
-                        <span class="new-text">VISIT CAREER</span>
+                    <div className="flex justify-center items-center md:w-[155px] xs:w-[120px] md:h-[62px] xs:h-[50px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
+                      <button className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium  xs:text-[14px] md:text-[20px] diagonal text-xl text-center relative py-[16px] sm:py-[14px] px-[52px] sm:px-[45px]">
+                        <span className="old-text absolute transition-all top-0 left-0 w-full h-full flex justify-center items-center text-white">
+                          VISIT CAREER
+                        </span>
+                        <span className="new-text absolute ">VISIT CAREER</span>
                       </button>
                     </div>
                   </div>
@@ -418,12 +430,14 @@ const Careers = () => {
                       </p>
                     </div>
                     {/* Button */}
-                    <div class="bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-[67px] w-[161px] p-[2px] rounded-[14px] ">
-                      <button class="form-input button-style diagonal mb-0 mt-0 ">
-                        <span class="old-text">VISIT CAREER</span>
-                        <span class="new-text">VISIT CAREER</span>
+                    <div className="flex justify-center items-center md:w-[155px] xs:w-[120px] md:h-[62px] xs:h-[50px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
+                      <button className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium  xs:text-[14px] md:text-[20px] diagonal text-xl text-center relative py-[16px] sm:py-[14px] px-[52px] sm:px-[45px]">
+                        <span className="old-text absolute transition-all top-0 left-0 w-full h-full flex justify-center items-center text-white">
+                          VISIT CAREER
+                        </span>
+                        <span className="new-text absolute ">VISIT CAREER</span>
                       </button>
-                    </div>
+                      </div>
                   </div>
                 </div>
               </div>

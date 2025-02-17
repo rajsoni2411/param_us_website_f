@@ -172,7 +172,7 @@ const OurServices = () => {
             Our Core Services
           </p>
           <p className="font-medium text-xl md:text-[30px] xs:text-[15px] sm:text-[20px] lg:text-[32px] text-center leading-8">
-            "Explore the world of technology with us. Come find your hidden 
+            "Explore the world of technology with us. Come find your hidden
             competencies by kick-starting your business with new insights"
           </p>
         </div>
@@ -237,16 +237,16 @@ const OurServices = () => {
               <p className="md:mt-10  font-poppins md:text-2xl xs:text-sm tracking-[1px] text-white">
                 For More Information
               </p>
-              <div className="flex justify-center  items-center w-[220px] h-[62px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
+              <div className="flex justify-center items-center md:w-[220px] md:h-[62px] xs:w-[150px]  xs:h-[50px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
                 <button
-                  className="button-main bg-black uppercase w-full h-full rounded-[14px]  font-poppins font-medium diagonal text-xl text-center relative py-[20px] !px-[60px]"
+                  className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium  xs:text-[12px] md:text-[20px] diagonal text-xl text-center relative py-[16px] sm:py-[14px] px-[52px] sm:px-[45px]"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
                   <span className="btn1 absolute transition-all top-0 left-0 w-full h-full flex justify-center items-center text-white">
                     VISIT OUR WEBSITE
                   </span>
-                  <span className="btn2 absolute tranistion-all opacity-0 top-[50px] left-0 w-full h-full flex justify-center items-center text-white">
+                  <span className="btn2  absolute tranistion-all opacity-0 top-[50px] left-0 w-full h-full flex justify-center items-center text-white">
                     VISIT OUR WEBSITE
                   </span>
                 </button>
