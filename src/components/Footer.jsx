@@ -80,12 +80,12 @@ const Footer = () => {
 
     return (
       <>
-        <div className="mt-72">
+        <div className="mt-10">
           {/* ------------------------------------------- Section-1 includes hr address email phone and hr  ------------------------------------------- */}
           <div className="flex flex-col xs:flex-row md:flex-row justify-center items-center relative md:py-12 lg:py-16">
-            <div className="w-[90%] md:w-[80%] h-full absolute left-[5%] md:left-[10%] div-2-mini z-10"></div>
-            <div className="div-1 w-full md:w-[10%]  xs:w-1/5 flex mb-4 md:mb-0">
-              <hr className="border-0 h-[3px] md:h-[5px] bg-gradient-to-r from-sky-400 to-cyan-300 my-2 md:my-4 w-11/12  mx-auto md:mx-0 rounded-r" />
+            <div className="w-[90%] md:w-[80%] h-full absolute  div-2-mini z-10"></div>
+            <div className="div-1 w-full 2xl:w-[36%]  xl:w-[20%] lg:w-[25%] md:w-[10%]   xs:w-1/5 flex mb-4 md:mb-0">
+              <hr className="border-0 h-[3px] md:h-[5px] bg-gradient-to-r from-sky-400 to-cyan-300  w-full  mx-auto md:mx-0 rounded-r" />
             </div>
             <div className="relative z-1 w-[90%] sm:w-full md:w-4/5 rounded-xl bg-gradient-to-r from-sky-500 via-cyan-300 to-teal-300 p-[3px] md:p-[5px]">
               <div className="bg-black w-full h-full rounded-xl flex flex-col md:flex-row items-center md:items-start justify-center px-4 md:px-10 py-6 md:py-8 text-white gap-6 md:gap-8 lg:gap-16">
@@ -99,7 +99,7 @@ const Footer = () => {
                     <h5 className="text-lg md:text-xl lg:text-2xl font-faustina font-semibold uppercase">
                       Address
                     </h5>
-                    <p className="text-sm md:text-base lg:text-xl font-medium font-faustina">
+                    <p className="text-sm md:text-base lg:text-sm xl:text-xl font-medium font-faustina">
                       200 MIDDLESEX ESSEX TPK., SUITE 110, ISELIN, NJ, 08830
                     </p>
                   </div>
@@ -114,7 +114,7 @@ const Footer = () => {
                     <h5 className="text-lg md:text-xl lg:text-2xl font-faustina font-semibold uppercase">
                       Email
                     </h5>
-                    <p className="text-sm md:text-base lg:text-xl font-medium font-faustina">
+                    <p className="text-sm md:text-base lg:text-sm xl:text-xl font-medium font-faustina">
                       info@pcsionweb.com hr@pcsionweb.com
                     </p>
                   </div>
@@ -129,21 +129,21 @@ const Footer = () => {
                     <h5 className="text-lg md:text-xl lg:text-2xl font-semibold font-faustina uppercase">
                       Phone
                     </h5>
-                    <p className="text-sm md:text-base lg:text-xl font-medium font-faustina">
+                    <p className="text-sm md:text-base lg:text-base xl:text-xl font-medium font-faustina">
                       +1 732 404 0466
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-[10%] xs:w-1/5 mt-4 md:mt-0">
-              <hr className="border-0 h-[3px] md:h-[5px]   bg-gradient-to-r from-teal-300 to-teal-200 my-2 md:my-4 w-11/12 mx-auto md:ml-auto rounded-l" />
+            <div className="w-full 2xl:w-[36%] xl:w-[20%] lg:w-[25%] md:w-[10%] xs:w-1/5 mt-4 md:mt-0">
+              <hr className="border-0 h-[3px] md:h-[5px]   bg-gradient-to-r from-teal-300 to-teal-200  w-full mx-auto md:ml-auto rounded-l" />
             </div>
           </div>
 
           {/* ------------------------------------------- Section-2 includes about us, reference, subscribe ---------------------------------------------------------- */}
 
-          <div className="font-faustina text-white px-4 sm:px-8 md:px-24 mt-16">
+          <div className="font-faustina text-white px-4 sm:px-8 md:px-24 ">
             <div className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-between items-start py-[100px] gap-16 md:gap-0 lg:gap-12">
               <div className="about-us w-full md:w-1/2 lg:w-1/3 flex flex-col justify-between">
                 <div className="about-us-text">
@@ -191,7 +191,7 @@ const Footer = () => {
                   </div>
                 </div>
 
-                <div className="subscribe w-full lg:w-1/2   xs:mt-10 flex flex-col gap-8">
+                <div className="subscribe w-full lg:w-1/2   xs:mt-10 md:mt-0 flex flex-col gap-8">
                   <p className="text-2xl font-semibold">
                     Subscribe
                     <hr className="w-1/12 mt-2 border-0 h-1 bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB]" />

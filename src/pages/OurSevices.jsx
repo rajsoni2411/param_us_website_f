@@ -70,7 +70,7 @@ const hexagonDetails = [
     image: pcf,
   },
   {
-    title: "Research & Development",
+    title: "R & D",
     mainTitle: "Param Healthcare & Research Services",
     highlight:
       "Each day we get one step closer to finding solutions to improve your health and lifestyle",
@@ -164,29 +164,27 @@ const OurServices = () => {
 
   return (
     <div className="our-clients bg-container w-full flex justify-center overflow-hidden  -z-50">
-      <div className="our-clients-inner w-[calc(100%-34px)]">
-        {/* Background Section */}
-        <div className="font-faustina relative w-full mt-16 bg-service-bg bg-cover bg-center bg-no-repeat rounded-[110px] xs:rounded-[62px] text-white flex flex-col justify-center items-center h-auto xs:h-[200px] sm:h-[313px] md:h-[313px] lg:h-[440px]">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1FA2FF] via-[25%] to-[#A6FFCB] opacity-20 rounded-[110px] xs:rounded-[62px]"></div>
-          <p className="font-bold  xs:text-[30px] sm:text-[35px] md:text-[40px] lg:text-[64px] mb-4">
+      <div className="lg:w-[calc(100%_-_90px)] xs:w-[calc(100%_-_30px)]">
+        <div className="font-faustina h-auto  xs:h-[200px] lg:h-[440px] md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-service-bg  xs:rounded-[84px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
+          <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 md:rounded-[79px] xs:rounded-[59px]"></div>
+          <p className="font-bold text-4xl lg:text-[64px] xs:text-2xl mb-9">
             Our Core Services
           </p>
-          <p className="font-medium text-xl md:text-[30px] xs:text-[15px] sm:text-[20px] lg:text-[32px] text-center leading-8">
+          <p className="font-medium text-xl lg:text-[32px] xs:text-[18px] text-center">
             "Explore the world of technology with us. Come find your hidden
             competencies by kick-starting your business with new insights"
           </p>
         </div>
-        <div className="w-auto mt-24  overflow-x-auto gray-100">
-          <div className="p-8 overflow-x-auto scrollbar-hide flex xs:justify-start  2xl:justify-center">
+        <div className="w- mt-24  overflow-x-auto gray-100">
+          <div className="p-8 overflow-x-auto scrollbar-hide flex xs:justify-start  ">
             {hexagonDetails.map((hex, index) => (
               <div
                 key={index}
-                className="flex justify-center items-center relative cursor-pointer mx-2 "
+                className="flex w-64 justify-center items-center relative cursor-pointer mx-0 "
                 onClick={() => handleHexagonClick(index)}
-                style={{ maxWidth: "300px", minHeight: "30px" }}
               >
                 <div
-                  className={`hex hex-parent group min-w-[150px]  px-2 py-1 bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] via-[90%] to-[#1FA2FF] to-[180%]`}
+                  className={`hex hex-parent group w-64  px-2 py-1 bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] via-[90%] to-[#1FA2FF] to-[180%]`}
                 >
                   <div
                     className={`hex bg-black ${
@@ -196,7 +194,7 @@ const OurServices = () => {
                     } w-full h-full flex justify-center items-center relative`}
                   >
                     <p
-                      className={`text-center font-faustina text-lg font-bold p-6 whitespace-nowrap px-10 ${
+                      className={`text-center font-faustina text-2xl font-bold p-6 whitespace-nowrap px-10 ${
                         active === index ? "text-black" : "text-white"
                       }`}
                     >
@@ -239,7 +237,7 @@ const OurServices = () => {
               </p>
               <div className="flex justify-center items-center md:w-[220px] md:h-[62px] xs:w-[150px]  xs:h-[50px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
                 <button
-                  className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium  xs:text-[12px] md:text-[20px] diagonal text-xl text-center relative py-[16px] sm:py-[14px] px-[52px] sm:px-[45px]"
+                  className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium  xs:text-[12px] md:text-[18px] diagonal text-xl text-center relative py-[16px] sm:py-[14px] px-[52px] sm:px-[45px]"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -254,7 +252,7 @@ const OurServices = () => {
             </div>
 
             {/* Image Section */}
-            <div className="relative flex items-center justify-center w-1/2 xs:w-[80%] lg:mr-16">
+            <div className="relative flex items-center justify-center md:w-1/2 xs:w-[80%] lg:mr-16">
               {/* Small Hexagon */}
               <img
                 src={small}

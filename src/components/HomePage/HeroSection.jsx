@@ -209,10 +209,10 @@ const HeroSection = () => {
   return (
     <>
       {/* Main Hero Section */}
-      <div className="text-white md:h-[820px] lg:h-[887px] xl:h-auto hero-section  mt-3 overflow-hidden relative -z-50 md:flex">
+      <div className="text-white md:h-[820px] lg:h-[813px] xl:h-[950px] hero-section  mt-3 overflow-hidden relative -z-50 md:flex">
         {/* Left Content */}
         <div className="md:w-[45%] w-[100%] overflow-hidden">
-          <div className="flex flex-col gap-3 mt-20 2xl:ml-28 xl:ml-20 md:ml-8 xs:ml-6">
+          <div className="flex flex-col gap-3 mt-20 2xl:ml-[4rem] xl:ml-20 md:ml-8 xs:ml-6">
             <p className="font-raleway font-medium xs:text-[14px] sm:text-[20px] md:text-[24px] lg:text-[30px] xl:text-[36px]">
               Since 2001
             </p>
@@ -234,7 +234,7 @@ const HeroSection = () => {
 
           {/* only md and lg) */}
           <div className="hidden md:block w-full h-auto overflow-hidden">
-            <div className="ring-3 single-round 2xl:top-[51%] md:top-[49%] 2xl:-left-[14%] xl:-left-[17%] lg:-left-[23%] lg:top-[50%] md:-left-[30%] md:w-[84%] md:h-[78%] lg:w-[841px] lg:h-[778px] 2xl:w-[841px] 2xl:h-[778px] xl:w-[58%] xl:h-[77%]">
+            <div className="ring-3 single-round 2xl:top-[51%] md:top-[49%] 2xl:-left-[14%] xl:-left-[17%] lg:-left-[calc(229px+23px)] lg:top-[43%] md:-left-[30%] md:w-[84%] md:h-[78%] lg:w-[841px] lg:h-[778px] 2xl:w-[841px] 2xl:h-[778px] xl:w-[58%] xl:h-[77%]">
               <div className="w-full h-full relative -top-8 font-faustina ">
                 <div className="box1 md:w-[180px] md:h-[85px] lg:w-[180px] lg:h-[95px] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute md:top-[3%] lg:top-7 md:left-[40%] lg:left-[35%]">
                   <div className="absolute inset-0 rounded-2xl border-gradient"></div>
@@ -280,7 +280,7 @@ const HeroSection = () => {
         <div className="flex flex-col md:w-[55%] xs:w-[100%] md:gap-4 xs:gap-4 z-20 relative h-full px-8 mt-16">
           {/* Decorative Rings */}
           <div className="hidden md:block ring-1 ring-zoom-out absolute md:left-[17%] md:top-[1%] md:w-[385.47px] md:h-[281.93px] lg:left-[25%] lg:top-[0%] lg:w-[385.47px] lg:h-[281.93px] xl:left-[25%] xl:top-[10%] xl:w-[527px] xl:h-[380px] 2xl:left-[26%] 2xl:top-[10%] 2xl:w-[626px] 2xl:h-[476px]"></div>
-          <div className="hidden md:block ring-2 ring-zoom-out absolute md:left-[59%] md:top-[0%] md:w-[619px] md:h-[537.2px] lg:left-[52%] lg:top-[0%] lg:w-[482.82px] lg:h-[546.36px] xl:left-[55%] xl:top-[10%] xl:w-[725px] xl:h-[828px] 2xl:left-[52%] 2xl:top-[10%] 2xl:w-[725px] 2xl:h-[828px]"></div>
+          <div className="hidden md:block ring-2 ring-zoom-out absolute md:left-[59%] md:top-[0%] md:w-[619px] md:h-[537.2px] lg:left-[52%] lg:top-[0%] lg:w-[482.82px] lg:h-[546.36px] xl:left-[55%] xl:top-[10%] xl:w-[725px] xl:h-[720px] 2xl:left-[60%] 2xl:top-[10%] 2xl:w-[725px] 2xl:h-[733px]"></div>
           <div className="block md:hidden ring-1 ring-zoom-out absolute xs:left-[30%] xs:top-[4%] xs:w-[54%] xs:h-[15%] sm:left-[24%] sm:top-[2%] sm:w-[61%] sm:h-[20%]"></div>
           <div className="block md:hidden ring-2 ring-zoom-out absolute xs:left-[59%] xs:top-[2%] xs:w-[68%] xs:h-[29%] sm:left-[59%] sm:top-[2%] sm:w-[68%] sm:h-[35%]"></div>
 
@@ -363,7 +363,7 @@ const HeroSection = () => {
       </div>
 
       {/* "Our Success Speaks For Itself" Section */}
-      <div className="flex md:flex-row flex-col w-full justify-center items-center text-white font-faustina gap-10 z-10 relative xs:h-[180px] md:h-[320px] md:-mt-[60px] lg:-mt-[60px] bg-black md:p-7 lg:p-7 ">
+      <div className="flex md:flex-row flex-col w-full justify-center items-center text-white font-faustina gap-10 z-10 relative xs:h-[180px] md:h-[320px] md:-mt-[60px] lg:-mt-[60px] bg-black md:p-7 lg:p-10">
         <p className="font-semibold xs:text-[23px] md:text-[40px] lg:text-[50px] xl:text-[70px]  xs:leading-none md:leading-[80px] lg:leading-[100px]">
           Our Success Speaks For Itself
         </p>
@@ -382,18 +382,16 @@ const HeroSection = () => {
       </div>
 
       {/* "A Walk Through Us" Section */}
-      <div className="w-full h-full flex justify-center md:p-5 lg:p-7 xl:p-0">
-        <div className="w-[85%] flex justify-center">
-          <div className="flex md:flex-row lg:flex-row xl:flex-row flex-col-reverse justify-center gap-11">
+      <div className="w-full h-full flex justify-center items-center p-7 lg:-mt-20">
+        <div className="w-full flex justify-center items-center">
+          <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-11">
             {/* Text Content */}
-            <div className="flex flex-col md:w-[700px] md:h-[450px] lg:w-[984px] lg:h-[579px] justify-between  xs:mb-10 md:mb-32 gap-10">
-              <p className="hidden md:block lg:block bg-gradient-to-r from-[#1FA2FF] from-0% via-[#12D8FA] via-[95%] to-[#A6FFCB] to-[100%] text-transparent bg-clip-text font-semibold xs:text-3xl md:text-6xl lg:text-[3.75rem]/[80px] leading-6 font-faustina pt-12">
+            <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left w-full md:w-[700px] lg:w-[984px] gap-10 xs:px-1 md:px-4">
+              <p className=" hidden md:block bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB] text-transparent bg-clip-text font-semibold text-3xl md:text-4xl/[80px] lg:text-[3.75rem]/[100px] leading-6 font-faustina">
                 A Walk Through Us
               </p>
-              <div className="flex flex-col gap-5 text-white   text-justify font-faustina font-normal text-xl/[35px]">
-                <p className="xs:text-center md:text-start">
-                  Running strong since 2001
-                </p>
+              <div className="flex flex-col gap-5 text-white text-justify font-faustina font-normal text-xl/[35px] ">
+                <p>Running strong since 2001</p>
                 <p>
                   “At the end of the day, care is a human activity. Technology
                   is not there to replace caregivers; it is there to support
@@ -411,11 +409,10 @@ const HeroSection = () => {
                   company around the globe that has successfully crossed decades
                   of excellence.
                 </p>
-                {/* //xs:justify-center xs:items-center */}
                 <div className="flex justify-start items-start w-full">
-                  <div className="flex justify-center items-center w-[155px] md:w-[170px] lg:w-[200px] text-center h-[62px] md:h-[70px] lg:h-[80px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
+                  <div className="flex justify-center items-center w-[155px] md:w-[170px] lg:w-[200px] text-center h-[62px] md:h-[62px] lg:h-[62px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
                     <button
-                      className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium text-[20px] md:text-[22px] lg:text-[24px] diagonal text-center relative py-[16px] px-[52px]"
+                      className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium text-[20px] md:text-[18px] lg:text-[20px] diagonal text-center relative py-[16px] px-[52px]"
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
                     >
@@ -435,11 +432,11 @@ const HeroSection = () => {
               <img
                 src={walk}
                 alt="walk through"
-                className="xs:w-[90%] xs:h-[90%] md:w-[680px] md:h-[700px] lg:w-[780px] lg:h-[831px] object-contain flex justify-center items-center"
+                className="w-[90%] md:w-[680px] md:h-[700px] lg:w-[780px] lg:h-[831px] object-contain"
               />
             </div>
-            {/* Mobile Title (for xs/sm only) */}
-            <p className="block md:hidden bg-gradient-to-r from-[#1FA2FF] from-0% via-[#12D8FA] via-[95%] to-[#A6FFCB] to-[100%] text-transparent bg-clip-text font-semibold xs:text-[2.7rem]/[40px] text-center font-faustina">
+            {/* Mobile Title */}
+            <p className="block md:hidden bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text font-semibold text-[2.7rem]/[40px] text-center font-faustina">
               A Walk Through Us
             </p>
           </div>

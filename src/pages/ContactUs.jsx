@@ -319,13 +319,13 @@ const ContactUs = () => {
         {/* -----------------div-3------------------------- */}
         <div className="flex flex-col  h-full w-full justify-center items-center gap-[42px]">
           <div className="flex justify-center items-center">
-            <p className="paragraph flex  items-center font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] from-0% via-[#12D8FA] via-50% to-[#A6FFCB]  to-80% text-transparent bg-clip-text lg:text-[60px] xs:text-[40px] sm:text-[24px] md:tetx-[28px] xl:text-[34px]">
+            <p className="paragraph flex  items-center font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] from-0% via-[#12D8FA] via-50% to-[#A6FFCB]  to-80% text-transparent bg-clip-text lg:text-[60px] xs:text-[40px] sm:text-[24px] md:text-[28px] xl:text-[34px]">
               Send Us a Message
             </p>
           </div>
 
           {/* ---------form & map---------- */}
-          <div className="flex w-[90%] xs:flex-col-reverse md:flex-row  md:w-[90%]   xs:w-full  md:gap-[30px] gap-[165px] justify-center items-center">
+          <div className="flex w-[90%] xs:flex-col-reverse md:flex-row  md:w-[90%]   xs:w-full  md:gap-[163px] gap-[165px] justify-center items-center">
             {/* -------info----------- */}
             <div className="  md:w-[50%] xs:w-[90%]  flex flex-col  gap-6">
               <div className="flex bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]  w-full h-auto rounded-[5px] p-0.5 self-stretch">

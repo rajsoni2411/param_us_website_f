@@ -170,7 +170,7 @@ const WhyChooseParam = () => {
           {/* Hexagon */}
           <div className={` ${active !== null ? "h-0" : "h-full"} w-[10%]  `}>
             <div className="flex    lg:flex-row xl:flex-row sm:flex-col  xs:flex-col md:flex-row   justify-center items-center font-[Faustina] font-semibold xl:text-[32px] xs:text-[25px] relative  sm:py-4">
-              <div className=" flex xs:flex-col  2xl:flex-row md:gap-10 xs:gap-1 relative 2xl:pt-0 xl:pt-[9%] ">
+              <div className=" flex xs:flex-col  2xl:flex-row md:gap-10 xs:gap-1 relative 2xl:pt-0 xl:pt-[88%]  md:-mr-10 2xl:mr-0">
                 {/* Hex 1*/}
                 <div
                   className=" 2xl:w-[277px] 2xl:h-[525px] xl:w-[277px] xl:h-[238px] lg:w-[277px] lg:h-[250px]  md:w-[250px] md:h-[250px]   xs:w-[300px]  xs:h-[525px]  2xl:mb-0 xs:-mb-32    md:mb-0 flex justify-center items-center relative
@@ -293,7 +293,7 @@ const WhyChooseParam = () => {
                 {/* <div className="hex-shadow absolute w-[130%] h-[90%] top-[46%] left-[-55px]"></div> */}
               </div>
 
-              <div className=" flex xs:flex-col  2xl:flex-row md:gap-10 xs:gap-1 relative 2xl:pt-0 xl:pt-[9%]">
+              <div className=" flex xs:flex-col  2xl:flex-row md:gap-10 xs:gap-1 relative 2xl:pt-0 xl:pt-[88%] md:-ml-10 2xl:ml-0">
                 {/* Hex 5*/}
                 <div
                   className=" 2xl:w-[277px] 2xl:h-[525px] xl:w-[277px] xl:h-[238px]  lg:w-[277px] lg:h-[250px] md:w-[250px] md:h-[250px] xs:w-[315px] xs:h-[525px]  xl:mb-0 xs:-mb-32 xs:mt-24 md:mt-0   md:mb-0 flex justify-center items-center relative
@@ -361,45 +361,43 @@ const WhyChooseParam = () => {
           </div>
 
           <div
-            className={`hex-detail lg:w-[75%] xs:w-[100%] xs:mt-10 md:mt-0 items-center justify-center  xs:flex-col xl:flex-row   font-[Faustina] flex lg:flex-row  ${
+            className={`hex-detail lg:w-[90%] xs:w-[100%] xs:mt-10 md:mt-0 lg:px-60 items-center justify-center xs:flex-col xl:flex-row font-[Faustina] flex lg:flex-row ${
               active !== null ? "h-auto" : "h-0"
             }`}
             ref={activeRef}
           >
-            <div className="img-text-container w-[95%] flex  justify-center items-center ">
-              <div className="img-text-inner h-full justify-start items-center w-[100%] flex lg:flex-row xl:flex-row xs:flex-col  xs:gap-6 lg:gap-20">
-                <div className="img-text-inner relative h-full w-[100%] flex lg:flex-col xl:flex-col xs:flex-row sm:flex-row md:flex-row items-center gap-5 left-[12%]">
-                  {/* Left Side - Image (80%) */}
-                  <div className="w-[80%] flex lg:justify-start xs:justify-center items-center relative">
-                    <img
-                      src={hexArray[active]?.img}
-                      alt=""
-                      className="img-container lg:h-auto lg:w-full  xs:w-2/3 sm:w-3/4 xs:h-full "
-                    />
-
-                    {/* Close Button - Positioned at the Top-Right */}
-                    <img
-                      src={crossImage}
-                      alt="Close"
-                      className="w-[40px] h-[40px] cursor-pointer absolute top-[2rem] -right-[0%] lg:hidden xl:hidden "
-                      onClick={handleCancelClick}
-                    />
-                  </div>
+            <div className="img-text-container w-[95%] flex justify-center items-center">
+              <div className="img-text-inner h-full w-full flex lg:flex-row xs:flex-col ">
+                {/* Left Side - Image */}
+                <div className="w-full lg:w-[40%] flex justify-center items-center relative">
+                  <img
+                    src={hexArray[active]?.img}
+                    alt=""
+                    className="img-container lg:w-[100%] lg:h-[100%]  xs:w-[50%] xs:h-[100%] "
+                  />
+                  {/* Close Button - Positioned at the Top-Right */}
+                  <img
+                    src={crossImage}
+                    alt="Close"
+                    className="w-[40px] h-[40px] cursor-pointer absolute top-[2rem] right-0 lg:hidden xl:hidden"
+                    onClick={handleCancelClick}
+                  />
                 </div>
 
-                <div className="text-container flex flex-col items-center justify-center gap-10 text-center text-white lg:w-[55%] xs:w-[85%] w-full">
-                  <p className="lg:text-[40px] md:text-[35px] xs:text-[30px] font-semibold bg-gradient-to-r from-[#1FA2FF] from-[0%] via-45% to-[#A6FFCB] to-[92%] bg-clip-text text-transparent">
+                {/* Right Side - Text */}
+                <div className="text-container w-full lg:w-[89%]  flex flex-col items-center justify-center text-center text-white   ">
+                  <p className="lg:text-[40px] md:text-start md:text-[35px] xs:text-[30px] font-semibold bg-gradient-to-r from-[#1FA2FF] from-0% via-45% to-[#A6FFCB] to-92% bg-clip-text text-transparent">
                     {hexArray[active]?.title}
                   </p>
-
                   <p className="text-[20px] leading-[30px] font-normal">
                     {hexArray[active]?.content}
                   </p>
                 </div>
               </div>
             </div>
+
             <div className="w-[5%] flex justify-start items-start">
-              <div className="hidden  absolute -top-[4.25rem] lg:block xl:block w-[60px] h-[60px] cursor-pointer">
+              <div className="hidden absolute -top-[4.25rem] lg:block xl:block w-[40px] h-[40px] cursor-pointer">
                 <img src={crossImage} alt="" onClick={handleCancelClick} />
               </div>
             </div>

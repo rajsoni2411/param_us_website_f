@@ -281,15 +281,15 @@ const OurServices = () => {
 
               return (
                 <div
-                  className="w-full xl:h-[1281px] lg:h-[1240px] md:h-[1281px] sm:h-[1150px] xs:h-[1100px] flex justify-center md:pt-[125px] sm:pt-[100px] relative"
+                  className="w-full 2xl:h-[1281px] xl:h-[1245px] lg:h-[1106px] md:h-[1281px] sm:h-[1150px] xs:h-[1100px] flex justify-center md:pt-[125px] sm:pt-[100px] relative"
                   key={item.id}
                 >
                   {/* Main circle */}
                   <div className="main-circle 2xl:w-[80%] xl:w-[89%] lg:w-[89%] md:w-[96%] lg:h-[100%] md:h-[78%] sm:w-[96%] xs:w-[100%] h-full px-1 pt-1 md:bg-gradient-to-r from-[#1FA2FF] from-[35%] via-cyan-300 via-50% to-[#A6FFCB] to-90% sm:bg-none xs:bg-none">
                     <div className="main-circle w-full h-full bg-black flex justify-center items-center">
                       {/* main circle inner */}
-                      <div className="flex lg:w-[59%] xl:w-[65%] 2xl:w-[60%] md:w-[79%]  sm:w-[100%] xs:w-[84%]  lg:gap-8 xl:gap-10 md:gap-[1.5rem]  xs:gap-[10px] sm:gap-[30px]  justify-center items-center">
-                        <div className="static arrow-container h-full md:w-[65px]  mb-10 sm:w-[55px] xs:w-[40px] flex items-center mt-[40%] sm:mt-[35%]">
+                      <div className="flex lg:w-[59%] xl:w-[65%] 2xl:w-[60%] md:w-[69%]  sm:w-[100%] xs:w-[84%]  lg:gap-8 xl:gap-10 md:gap-[1.5rem]  xs:gap-[10px] sm:gap-[30px]  justify-center items-center">
+                        <div className="static arrow-container h-full md:w-[65px]  mb-10 sm:w-[55px] xs:w-[40px] flex items-center ">
                           <div className="left-arrow rounded-[6px] bg-gradient-to-r from-[#1FA2FF] from-[30%] via-[#12D8FA] via-50% to-[#A6FFCB] to-100% p-[2px] md:h-[50px] sm:h-[40px] xs:h-[30px] w-full">
                             <div
                               className="bg-black w-full h-full rounded-[6px]  flex justify-center items-center cursor-pointer play"
@@ -305,7 +305,7 @@ const OurServices = () => {
                         </div>
 
                         {/* Content inside main circle */}
-                        <div className="inner-2 w-full flex flex-col justify-center gap-1  xl:mt-1 lg:mt-[144px] md:mt-[20%] sm:mt-[24px] xs:mt-[15rem]">
+                        <div className="inner-2 w-full flex flex-col justify-center gap-1  xl:mt-1 lg:mt-[144px] md:mt-[20%]">
                           <div className="vector-img-div w-full md:h-[90px] sm:h-[80px] xs:h-[50px] flex justify-center">
                             {/* img */}
                             <img
@@ -327,7 +327,7 @@ const OurServices = () => {
                             <div className="w-full flex justify-center items-center">
                               <div className="flex justify-center items-center w-[155px] sm:w-[140px] h-[62px] sm:h-[55px] bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] rounded-[14px] bg-transparent p-0.5">
                                 <button
-                                  className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium text-[20px] diagonal text-xl text-center relative py-[16px] sm:py-[14px] px-[52px] sm:px-[45px]"
+                                  className="button-main bg-black uppercase w-full h-full rounded-[14px] font-poppins font-medium text-[14px] diagonal  text-center relative py-[16px] sm:py-[14px] px-[52px] sm:px-[45px]"
                                   onMouseEnter={handleMouseEnter}
                                   onMouseLeave={handleMouseLeave}
                                 >
@@ -343,7 +343,7 @@ const OurServices = () => {
                           </div>
                         </div>
 
-                        <div className="arrow-container h-full md:w-[65px] sm:w-[55px] xs:w-[40px] flex items-center mt-[40%] sm:mt-[35%]">
+                        <div className="arrow-container h-full md:w-[65px] sm:w-[55px] xs:w-[40px] flex items-center  md:mt-0 ">
                           <div className="right-arrow rounded-[6px] bg-gradient-to-l mb-10  from-[#1FA2FF] from-[30%] via-[#12D8FA] via-50% to-[#A6FFCB] to-100% p-[2px] md:h-[50px] sm:h-[40px] xs:h-[30px] w-full">
                             <div
                               className="bg-black w-full h-full rounded-[6px]  flex justify-center items-center cursor-pointer play"
@@ -403,13 +403,13 @@ const OurServices = () => {
                     {/* Left Mini-Circle */}
                     <div className="w-[10px] h-[10px] rounded-full bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
                     {/* Dynamic Line */}
-                    <div className="lg:w-[calc(313px-60px)] md:w-[180px] sm:w-[270px] xs:w-[190px] h-1 bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
+                    <div className="lg:w-[calc(313px-60px)] md:w-[180px] sm:w-[200px] xs:w-[170px] h-1 bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
                     {/* Right Mini-Circle */}
                     <div className="w-[10px] h-[10px] rounded-full bg-gradient-to-r from-[#1FA2FF] via-cyan-300 to-[#A6FFCB]"></div>
                   </div>
 
                   {/* left-1-circle */}
-                  <div className="hidden md:block left-1-circle absolute top-[11%] md:left-[15%] xl:left-[18%]  2xl:left-[22%] lg:left-[16%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
+                  <div className="hidden md:block left-1-circle absolute top-[11%] md:left-[11%] xl:left-[18%]  2xl:left-[22%] lg:left-[16%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
                     <div
                       className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center cursor-pointer"
                       onClick={carouselMovePrev}
@@ -434,7 +434,7 @@ const OurServices = () => {
                   </div>
 
                   {/* left-3-circle */}
-                  <div className="hidden md:block left-3-circle absolute md:top-[69%] xl:top-[58%]  lg:top-[81%] md:left-[16%]  lg:left-[16%] xl:left-[1%] 2xl:left-[6%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
+                  <div className="hidden md:block left-3-circle absolute md:top-[69%] xl:top-[58%]  lg:top-[81%] md:left-[11%]  lg:left-[16%] xl:left-[1%] 2xl:left-[6%] bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
                     <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
                       <div className="left-1-circle-text w-[80%] h-[70%]">
                         <p className="font-[Faustina] md:text-[20px] lg:text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full">
@@ -470,7 +470,7 @@ const OurServices = () => {
                   </div>
 
                   {/* right-3-circle */}
-                  <div className="hidden md:block right-3-circle absolute  md:top-[68%] xl:top-[59%]  lg:top-[81%] md:right-[10%] lg:right-[17%] xl:right-[1%] 2xl:right-[6%]  bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
+                  <div className="hidden md:block right-3-circle absolute  md:top-[68%] xl:top-[58%]  lg:top-[81%] md:right-[10%] lg:right-[17%] xl:right-[1%] 2xl:right-[6%]  bg-gradient-to-r from-[#1FA2FF] from-[25%] via-cyan-300 via-70% to-[#A6FFCB] to-100% lg:h-[195px] lg:w-[195px] md:h-[142px] md:w-[142px] rounded-[50%] p-1">
                     <div className="left-1-circle-inner w-full h-full bg-black rounded-[50%] flex justify-center items-center">
                       <div className="left-1-circle-text w-[80%] h-[70%]">
                         <p className="font-[Faustina] md:text-[20px] lg:text-[24px] font-medium text-white text-center flex justify-center items-center w-full h-full">
