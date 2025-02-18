@@ -41,7 +41,11 @@ body {
 
 .div-2-mini {
     animation: gradient 5s ease-in-out infinite;
+    border-radius: auto;
+    
 }
+
+
 
 @keyframes gradient {
     0% {

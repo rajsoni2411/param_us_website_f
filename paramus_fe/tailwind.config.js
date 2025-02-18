@@ -8,6 +8,7 @@ module.exports = {
         sm: "640px",
         miniTablet: "768px",
         tablet: "1024px",
+        Txl: "1940px",
         1280: "1280px",
         1536: "1536px",
         1320: "1320px",

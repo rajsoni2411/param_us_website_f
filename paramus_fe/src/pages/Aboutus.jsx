@@ -27,10 +27,10 @@ function Aboutus() {
       <div className="lg:w-[calc(100%_-_90px)] xs:w-[calc(100%_-_30px)]">
         <div className="font-faustina h-auto  xs:h-[200px] lg:h-[440px] md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-aboutus-bg  xs:rounded-[62px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
           <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 rounded-[110px] xs:rounded-[62px]"></div>
-          <p className="font-bold text-4xl lg:text-[64px] xs:text-2xl mb-9">
+          <p className="font-bold text-4xl lg:text-7xl md:text-4xl sm:text-3xl xs:text-2xl mb-9">
             Our History
           </p>
-          <p className="font-medium text-xl lg:text-[32px] xs:text-[18px] text-center">
+          <p className="font-medium text-xl lg:text-3xl  md:text-2xl xs:text-[18px] text-center">
             "Everyone Has A Past, Ours Is Just More Inspiring. Dive Into The
             Making Of Param Group"
           </p>
@@ -56,15 +56,13 @@ function Aboutus() {
               <div className="flex flex-col lg:flex-col xs:flex-row  xs:justify-center xs:items-center lg:items-center ml-0 lg:ml-5 mt-5 lg:mt-0">
                 <div className="w-10 h-10 rounded-full bg-[#1FA2FF]"></div>
                 <motion.div
-                  className="line1 w-2  lg:w-2 sm:w-[300px] xs:w-[200px]  bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%]"
+                  className="line1 w-2  lg:w-2 sm:w-[300px] xs:w-[200px] lg:rounded-b-3xl xs:rounded-e-3xl  bg-gradient-to-b  lg:-mt-3 lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%]"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
                   variants={verticalLineAnimation}
                   style={{
                     transformOrigin: "top",
-                    marginTop: "0",
-                    borderRadius: "20px",
                   }}
                 ></motion.div>
               </div>
@@ -128,15 +126,13 @@ function Aboutus() {
               <div className="flex flex-col lg:flex-col xs:flex-row  xs:justify-center xs:items-center lg:items-center ml-0 lg:ml-5  lg:mt-0">
                 <div className="w-10 h-10 rounded-full bg-[#1FA2FF]"></div>
                 <motion.div
-                  className="line2 w-2 lg:w-2 sm:w-[300px] xs:w-[200px]  bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%] "
+                  className="line2 w-2 lg:w-2 sm:w-[300px]  lg:rounded-b-3xl xs:rounded-e-3xl xs:w-[200px] lg:-mt-3 bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%] "
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
                   variants={verticalLineAnimation}
                   style={{
                     transformOrigin: "top",
-                    marginTop: "0",
-                    borderRadius: "20px",
                   }}
                 ></motion.div>
               </div>
@@ -216,15 +212,13 @@ function Aboutus() {
               <div className="flex flex-col lg:flex-col xs:flex-row  xs:justify-center xs:items-center lg:items-center lg:ml-5 mt-5 lg:mt-0">
                 <div className="w-10 h-10 rounded-full bg-[#1FA2FF]"></div>
                 <motion.div
-                  className="line w-2 lg:w-2 sm:w-[300px] xs:w-[200px]  xl:h-[480px] lg:h-[480px] xs:h-2 bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%]   "
+                  className="line w-2 lg:w-2 sm:w-[300px] xs:w-[200px] lg:-mt-3 xl:h-[480px]  lg:h-[480px] xs:h-2 bg-gradient-to-b lg:bg-gradient-to-b xs:bg-gradient-to-r from-[#1FA2FF] from-[10%] to-[#A6FFCB] to-[90%] lg:rounded-b-3xl xs:rounded-e-3xl"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
                   variants={verticalLineAnimation}
                   style={{
                     transformOrigin: "top",
-                    marginTop: "0",
-                    borderRadius: "20px",
                   }}
                 ></motion.div>
               </div>

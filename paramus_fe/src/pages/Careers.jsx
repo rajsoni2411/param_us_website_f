@@ -161,7 +161,7 @@ const Careers = () => {
             <p className="font-bold text-4xl lg:text-[64px] xs:text-3xl mb-9">
               Come Work With Us
             </p>
-            <p className="font-medium text-xl lg:text-[32px] xs:text-[18px] text-center">
+            <p className="font-medium text-xl lg:text-3xl xs:text-[18px] text-center px-10">
               "You Are Standing At The Door Of Opportunities, Explore Your
               Professional Journey With Us"
             </p>

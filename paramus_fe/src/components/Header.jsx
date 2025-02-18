@@ -41,7 +41,7 @@ const Header = () => {
       >
         {/*  -------------------------------------------  Mini Navbar  -------------------------------------------  */}
 
-        <div className="hidden md:flex justify-end items-center text-xs sm:text-sm md:text-base font-medium text-white gap-2 sm:gap-4 md:gap-6 lg:gap-10">
+        <div className="flex justify-end items-center text-xs sm:text-sm md:text-base font-medium text-white gap-2 sm:gap-4 md:gap-6 lg:gap-10">
           <span>Connect With Us</span>
           <a
             href="https://twitter.com/Paraminc"

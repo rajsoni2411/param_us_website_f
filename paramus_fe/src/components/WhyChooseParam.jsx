@@ -361,7 +361,7 @@ const WhyChooseParam = () => {
           </div>
 
           <div
-            className={`hex-detail lg:w-[90%] xs:w-[100%] xs:mt-10 md:mt-0 lg:px-60 items-center justify-center xs:flex-col xl:flex-row font-[Faustina] flex lg:flex-row ${
+            className={`hex-detail lg:w-[]xl:w-[90%] xs:w-[100%] xs:mt-10 md:mt-0 lg:px-60 items-center justify-center xs:flex-col xl:flex-row font-[Faustina] flex lg:flex-row ${
               active !== null ? "h-auto" : "h-0"
             }`}
             ref={activeRef}
@@ -386,10 +386,10 @@ const WhyChooseParam = () => {
 
                 {/* Right Side - Text */}
                 <div className="text-container w-full lg:w-[89%]  flex flex-col items-center justify-center text-center text-white   ">
-                  <p className="lg:text-[40px] md:text-start md:text-[35px] xs:text-[30px] font-semibold bg-gradient-to-r from-[#1FA2FF] from-0% via-45% to-[#A6FFCB] to-92% bg-clip-text text-transparent">
+                  <p className="lg:text-[40px]  md:text-start md:text-[35px] xs:text-[30px] font-semibold bg-gradient-to-r from-[#1FA2FF] from-0% via-45% to-[#A6FFCB] to-92% bg-clip-text text-transparent">
                     {hexArray[active]?.title}
                   </p>
-                  <p className="text-[20px] leading-[30px] font-normal">
+                  <p className="text-[20px] px-20 leading-[30px] font-normal">
                     {hexArray[active]?.content}
                   </p>
                 </div>

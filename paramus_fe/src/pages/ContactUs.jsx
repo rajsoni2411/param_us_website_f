@@ -146,7 +146,7 @@ const ContactUs = () => {
         {/* ---------------div-1--------------- */}
         <div className="w-full px-4 lg:px-10 flex flex-col lg:flex-row md:items-start xs:items-center space-y-4 lg:-space-y-12 lg:space-x-4">
           <div className="flex justify-center lg:justify-start w-full">
-            <p className="line-1 xs:text-[30px] sm:text-[50px] 2xl:text-[72.96px] lg:text-[55.96px] xl:text-[60.96px] font-faustina font-bold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text tracking-widest text-center">
+            <p className="line-1 xs:text-[30px] sm:text-[50px] 2xl:text-[71.16px] lg:text-[55.96px] xl:text-[71.96px] font-faustina font-bold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text tracking-widest text-center">
               Connect With Us
             </p>
           </div>
@@ -319,7 +319,7 @@ const ContactUs = () => {
         {/* -----------------div-3------------------------- */}
         <div className="flex flex-col  h-full w-full justify-center items-center gap-[42px]">
           <div className="flex justify-center items-center">
-            <p className="paragraph flex  items-center font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] from-0% via-[#12D8FA] via-50% to-[#A6FFCB]  to-80% text-transparent bg-clip-text lg:text-[60px] xs:text-[40px] sm:text-[24px] md:text-[28px] xl:text-[34px]">
+            <p className="paragraph flex  text=center items-center font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] from-0% via-[#12D8FA] via-50% to-[#A6FFCB]  to-80% text-transparent bg-clip-text lg:text-[60px] xs:text-[30px] sm:text-[30px] md:text-[32px] xl:text-[34px]">
               Send Us a Message
             </p>
           </div>

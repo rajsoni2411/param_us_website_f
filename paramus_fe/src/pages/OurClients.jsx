@@ -95,10 +95,10 @@ const OurClients = () => {
           </div> */}
           <div className="font-faustina h-auto  xs:h-[200px] lg:h-[440px]  md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-home-bg   xs:rounded-[62px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
             <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 rounded-[110px] xs:rounded-[62px]"></div>
-            <p className="font-bold text-4xl lg:text-[64px] xs:text-2xl mb-9">
+            <p className="font-bold text-4xl lg:text-7xl md:text-5xl sm:text-4xl xs:text-3xl mb-9">
               Our Clients
             </p>
-            <p className="font-medium text-xl lg:text-[32px] xs:text-[13px] text-center">
+            <p className="font-medium text-xl md:text-2xl lg:text-[32px] sm:text-3xl xs:text-[13px] text-center">
               "Come Meet Our Clients Turned Into Friends"
             </p>
           </div>

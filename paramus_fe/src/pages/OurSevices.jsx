@@ -11,6 +11,7 @@ import small from "../assets/images/smallpolygon.svg";
 import wellness from "../assets/images/wellness.png";
 
 const hexagonDetails = [
+  
   {
     title: "IT Consulting",
     mainTitle: "Param Consulting Services",
@@ -165,26 +166,26 @@ const OurServices = () => {
   return (
     <div className="our-clients bg-container w-full flex justify-center overflow-hidden  -z-50">
       <div className="lg:w-[calc(100%_-_90px)] xs:w-[calc(100%_-_30px)]">
-        <div className="font-faustina h-auto  xs:h-[200px] lg:h-[440px] md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-service-bg  xs:rounded-[84px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
-          <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 md:rounded-[79px]   xs:rounded-[83px] "></div>
-          <p className="font-bold text-4xl lg:text-[64px] xs:text-2xl mb-9">
+        <div className="font-faustina h-auto  xs:h-[200px] lg:h-[440px] md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-service-bg  xs:rounded-[84px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat sm:gap-10">
+          <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 md:rounded-[79px]    xs:rounded-[83px] "></div>
+          <p className="font-bold text-4xl  md:text-4xl lg:text-7xl  sm:text-4xl xs:text-2xl mb-9">
             Our Core Services
           </p>
-          <p className="font-medium text-xl lg:text-[32px] xs:text-[18px] text-center">
+          <p className="font-medium text-xl md:text-2xl  lg:text-3xl xs:px-10 sm:px-0  xs:text-[14px] text-center">
             "Explore the world of technology with us. Come find your hidden
             competencies by kick-starting your business with new insights"
           </p>
         </div>
         <div className="w- mt-24  overflow-x-auto gray-100">
-          <div className="p-8 overflow-x-auto scrollbar-hide flex xs:justify-start  ">
+          <div className="p-8 overflow-x-auto flex xs:justify-start Txl:justify-center no-scrollbar">
             {hexagonDetails.map((hex, index) => (
               <div
                 key={index}
-                className="flex w-64 justify-center items-center relative cursor-pointer mx-0 "
+                className="flex w-64 justify-center items-center relative cursor-pointer mx-0"
                 onClick={() => handleHexagonClick(index)}
               >
                 <div
-                  className={`hex hex-parent group w-64  px-2 py-1 bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] via-[90%] to-[#1FA2FF] to-[180%]`}
+                  className={`hex hex-parent group w-64 px-2 py-1 bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] via-[90%] to-[#1FA2FF] to-[180%]`}
                 >
                   <div
                     className={`hex bg-black ${

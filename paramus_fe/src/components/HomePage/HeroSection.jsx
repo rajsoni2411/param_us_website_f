@@ -234,7 +234,7 @@ const HeroSection = () => {
 
           {/* only md and lg) */}
           <div className="hidden md:block w-full h-auto overflow-hidden">
-            <div className="ring-3 single-round 2xl:top-[51%] md:top-[45%] 2xl:-left-[14%] xl:-left-[17%] lg:-left-[calc(229px+23px)] lg:top-[43%] md:-left-[33%] md:w-[84%] md:h-[78%] lg:w-[841px] lg:h-[778px] 2xl:w-[841px] 2xl:h-[778px] xl:w-[58%] xl:h-[77%]">
+            <div className="ring-3 single-round 2xl:top-[51%] md:top-[45%] 2xl:-left-[14%] Txl:-left-[9%] xl:-left-[17%] lg:-left-[calc(229px+23px)] lg:top-[43%] md:-left-[33%] md:w-[84%] md:h-[78%] lg:w-[841px] lg:h-[778px] 2xl:w-[841px] 2xl:h-[778px] xl:w-[58%] xl:h-[77%]">
               <div className="w-full h-full relative -top-8 font-faustina ">
                 <div className="box1 md:w-[180px] md:h-[85px] lg:w-[180px] lg:h-[95px] gradBorder uppercase z-10 bg-black rounded-2xl text-white flex flex-col gap-2 items-center justify-center absolute md:top-[3%] lg:top-7 md:left-[40%] lg:left-[35%]">
                   <div className="absolute inset-0 rounded-2xl border-gradient"></div>
