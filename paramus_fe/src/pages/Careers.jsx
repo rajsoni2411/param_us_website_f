@@ -144,7 +144,6 @@ const Careers = () => {
     return (
       <div className="h-full w-full flex  justify-center items-center  -z-50">
         <div className="w-[90%] flex flex-col justify-center items-center">
-          {/* Background image of Career */}
           {/* <div className="bg-careers-bg h-[440px] w-full  bg-center bg-cover object-cover opacity-95 rounded-[110px] flex flex-col justify-center items-center mt-20  font-faustina text-white gap-4 relative mb-[60px]">
             <div className=" absolute inset-0 bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  opacity-15 rounded-[110px]"></div>
             <div className="z-50 flex  flex-col justify-center items-center">
@@ -156,6 +155,7 @@ const Careers = () => {
               </p>
             </div>
           </div> */}
+          {/*  ----------------------- -----------------------Background image of Career ----------------------- ----------------------- */}
           <div className="font-faustina h-auto  mb-10  xs:h-[200px] lg:h-[440px] md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-careers-bg xs:rounded-[62px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
             <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 rounded-[110px] xs:rounded-[62px]"></div>
             <p className="font-bold text-4xl lg:text-[64px] xs:text-3xl mb-9">
@@ -167,9 +167,9 @@ const Careers = () => {
             </p>
           </div>
 
-          {/* Career Box Main div */}
+          {/*  ----------------------- -----------------------Career Box Main div ----------------------- ----------------------- */}
           <div className="flex flex-col gap-[60px] justify-center items-center w-[100%]">
-            {/* IT Consulting */}
+            {/* ----------------------- ----------------------- IT Consulting  ----------------------- -----------------------*/}
             <div className="flex justify-start h-full w-full">
               <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]   xs:w-4 md:w-7 cylinder"></div>
 
@@ -207,7 +207,7 @@ const Careers = () => {
               </div>
             </div>
 
-            {/* Param Healthcare Services */}
+            {/*  ----------------------- -----------------------Param Healthcare Services ----------------------- ----------------------- */}
             <div className="flex justify-start h-full w-full">
               <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px]  xs:w-4  md:w-7 cylinder"></div>
 
@@ -247,7 +247,7 @@ const Careers = () => {
               </div>
             </div>
 
-            {/* Param Institute Of Education */}
+            {/*  ----------------------- -----------------------Param Institute Of Education ----------------------- ----------------------- */}
             <div className="flex justify-start h-full w-full content-box">
               <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px] xs:w-4  md:w-7 cylinder"></div>
 
@@ -285,7 +285,7 @@ const Careers = () => {
               </div>
             </div>
 
-            {/* Param Adult Day Care */}
+            {/*  ----------------------- -----------------------Param Adult Day Care ----------------------- ----------------------- */}
             <div className="flex justify-start h-full w-full">
               <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px] xs:w-4  md:w-7 cylinder"></div>
 
@@ -326,7 +326,7 @@ const Careers = () => {
               </div>
             </div>
 
-            {/* Param Wellness */}
+            {/* ----------------------- ----------------------- Param Wellness ----------------------- ----------------------- */}
             <div className="flex justify-start h-full w-full">
               <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px] xs:w-4  md:w-7 cylinder"></div>
 
@@ -365,7 +365,7 @@ const Careers = () => {
               </div>
             </div>
 
-            {/* Param Care Foundation */}
+            {/* ----------------------- ----------------------- Param Care Foundation ----------------------- ----------------------- */}
             <div className="flex justify-start h-full w-full">
               <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px] xs:w-4  md:w-7 cylinder"></div>
 
@@ -404,7 +404,7 @@ const Careers = () => {
               </div>
             </div>
 
-            {/* Research & Development */}
+            {/* ----------------------- ----------------------- Research & Development  ----------------------- -----------------------*/}
             <div className="flex justify-start h-full w-full">
               <div className="bg-gradient-to-r from-[#A6FFCB] via-[#12D8FA] to-[#1FA2FF] rounded-[11px] xs:w-4  md:w-7 cylinder"></div>
               <div className="bg-gradient-to-r from-[#1FA2FF]  via-[#12D8FA]   to-[#A6FFCB]  p-1 rounded-[20px] -ml-2 my-2 w-full h-[80%] content-box">
@@ -437,7 +437,7 @@ const Careers = () => {
                         </span>
                         <span className="new-text absolute ">VISIT CAREER</span>
                       </button>
-                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

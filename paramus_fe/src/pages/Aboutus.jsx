@@ -25,6 +25,7 @@ function Aboutus() {
   return (
     <div className="w-full min-h-screen bg-cover bg-center flex justify-center items-center text-white overflow-hidden  -z-50">
       <div className="lg:w-[calc(100%_-_90px)] xs:w-[calc(100%_-_30px)]">
+        {/*  ----------------------- -----------------------bg image of aboutus ----------------------- ----------------------- */}
         <div className="font-faustina h-auto  xs:h-[200px] lg:h-[440px] md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-aboutus-bg  xs:rounded-[62px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat">
           <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 rounded-[110px] xs:rounded-[62px]"></div>
           <p className="font-bold text-4xl lg:text-7xl md:text-4xl sm:text-3xl xs:text-2xl mb-9">
@@ -38,6 +39,7 @@ function Aboutus() {
 
         <div className="w-full py-[60px] font-poppins">
           <div className="relative w-full">
+            {/*  ----------------------------------------------card 1 ---------------------------------------------- */}
             <div className="relative flex flex-col  lg:flex-row xs:items-start items-center xs:justify-start ">
               <motion.div
                 className="flex flex-col  lg:text-end w-full lg:w-[23%]"
@@ -107,7 +109,7 @@ function Aboutus() {
                 </div>
               </motion.div>
             </div>
-
+            {/*  ---------------------------------------------- card2 ----------------------------------------------  */}
             <div className="relative flex flex-col  lg:flex-row xs:items-start items-center xs:justify-start">
               <motion.div
                 className="flex flex-col  lg:text-end w-full lg:w-[23%]"
@@ -194,6 +196,7 @@ function Aboutus() {
                 </div>
               </motion.div>
             </div>
+            {/*  ---------------------------------------------- card3 ----------------------------------------------  */}
             <div className="relative flex flex-col  lg:flex-row xs:items-start items-center xs:justify-start">
               <motion.div
                 className="flex flex-col  lg:text-end w-full lg:w-[23%]"

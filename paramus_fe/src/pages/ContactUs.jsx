@@ -163,6 +163,7 @@ const ContactUs = () => {
           {/* --------3-container-div---------- */}
 
           <div className="grid lg:grid-cols-2 md:grid-cols-2  xs:grid-cols-1 xl:grid-cols-3 sm:grid-cols-1 w-[90%] h-full gap-[60px] ">
+            {/*  -----------------------inner div 1 ----------------------------------- */}
             <div className="flex flex-col justify-center items-center bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-auto rounded-[25px] gap-8 p-1 self-stretch lg:mx-auto  md:mx-auto">
               <div className="flex flex-col bg-black rounded-[25px] h-full w-full gap-8 px-[25px] py-[32px]">
                 <p className="font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text  xs:text-[18px]  sm:text-[22px] lg:text-[32px]">
@@ -212,6 +213,9 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
+
+            {/*  -----------------------inner div 2 ----------------------------------- */}
+
             <div className="flex flex-col justify-center items-center bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-auto rounded-[25px] gap-8 p-1 self-stretch xl:mx-auto lg:mx-auto  md:mx-auto">
               <div className="flex flex-col bg-black rounded-[25px] h-full w-full gap-8 px-[25px] py-[32px]">
                 <p className="font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text  xs:text-[18px]  sm:text-[22px] lg:text-[32px] ">
@@ -262,6 +266,8 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
+
+            {/*  -----------------------inner div 3 ----------------------------------- */}
             <div className="flex flex-col justify-center items-center bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] h-auto rounded-[25px] gap-8 p-1 self-stretch md:col-span-2 lg:col-span-2 xl:col-span-1  lg:mx-auto  md:mx-auto">
               <div className="flex flex-col bg-black rounded-[25px] h-full w-full gap-8 px-[25px] py-[32px]">
                 <p className="font-faustina font-semibold bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text  xs:text-[18px]  sm:text-[22px] lg:text-[32px]">
@@ -324,9 +330,9 @@ const ContactUs = () => {
             </p>
           </div>
 
-          {/* ---------form & map---------- */}
+          {/* --- -----------------------------form & map-- ------------------------------- */}
           <div className="flex w-[90%] xs:flex-col-reverse md:flex-row  md:w-[90%]   xs:w-full  md:gap-[163px] gap-[165px] justify-center items-center">
-            {/* -------info----------- */}
+            {/* ---- --------------------------info------- --------------------------- */}
             <div className="  md:w-[50%] xs:w-[90%]  flex flex-col  gap-6">
               <div className="flex bg-gradient-to-r from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]  w-full h-auto rounded-[5px] p-0.5 self-stretch">
                 <input
