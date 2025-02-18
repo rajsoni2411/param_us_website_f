@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import big from "../assets/images/bigpolygon.png";
 import padc from "../assets/images/padc.png";
 import pcf from "../assets/images/pcf.png";
@@ -84,6 +84,30 @@ const hexagonDetails = [
 
 const OurServices = () => {
   const [active, setActive] = useState(0);
+  const scrollRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 1; // Adjust scrolling speed
+    scrollRef.current.scrollLeft = scrollLeft - walk;
+  };
 
   // Animate the background container on mount
   useEffect(() => {
@@ -167,7 +191,7 @@ const OurServices = () => {
     <div className="our-clients bg-container w-full flex justify-center overflow-hidden  -z-50">
       <div className="lg:w-[calc(100%_-_90px)] xs:w-[calc(100%_-_30px)]">
         <div className="font-faustina h-auto  xs:h-[200px] lg:h-[440px] md:h-[313px] sm:h-[313px]  w-full mt-[60px] bg-service-bg  xs:rounded-[84px] rounded-[110px] text-white flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat sm:gap-10">
-          <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 md:rounded-[79px]    xs:rounded-[83px] "></div>
+          <div className="bg-inner absolute inset-0 bg-gradient-to-r from-[#1FA2FF] from-[0%] via-25% to-[#A6FFCB] to-[70%] opacity-20 md:rounded-[87px]    xs:rounded-[83px] "></div>
           <p className="font-bold text-4xl  md:text-4xl lg:text-7xl  sm:text-4xl xs:text-2xl mb-9">
             Our Core Services
           </p>
@@ -176,8 +200,16 @@ const OurServices = () => {
             competencies by kick-starting your business with new insights"
           </p>
         </div>
-        <div className="w- mt-24  overflow-x-auto gray-100">
-          <div className="p-8 overflow-x-auto flex xs:justify-start Txl:justify-center no-scrollbar">
+        <div className="w- mt-24 gray-100">
+          <div
+            ref={scrollRef}
+            className="p-8 flex xs:justify-start Txl:justify-center overflow-x-auto cursor-grab no-scrollbar"
+            onMouseDown={handleMouseDown}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseUp}
+            onMouseMove={handleMouseMove}
+            style={{ overflowX: "scroll", whiteSpace: "nowrap" }}
+          >
             {hexagonDetails.map((hex, index) => (
               <div
                 key={index}

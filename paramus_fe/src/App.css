@@ -42,11 +42,20 @@ body {
 .div-2-mini {
     animation: gradient 5s ease-in-out infinite;
     border-radius: auto;
-    
+
 }
 
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
 
-
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
 @keyframes gradient {
     0% {
         opacity: 0;
